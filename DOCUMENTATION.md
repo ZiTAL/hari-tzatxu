@@ -1,6 +1,6 @@
 # Stitch Studio — Repository Documentation
 
-> Generated on 2026-11-09 from commit `25cd889eacf3c0e89e6653170dd7d387e0a5960e`.
+> Generated on 2026-11-09. The code was reorganised into the module layout described below.
 > Repository: <https://github.com/ZiTAL/hari-tzatxu>
 
 This document describes everything in the repository: the application, its
@@ -114,12 +114,20 @@ hari-tzatxu/
 │   │   └── eu.json                 Basque labels
 │   ├── shots/                      Screenshots from development, 1280 × 820 PNG
 │   ├── src/
-│   │   ├── main.rs                 Application, UI, canvas, input, tests (2721 lines)
-│   │   ├── model.rs                Data model, hoops, stitch generation, tests (1177 lines)
-│   │   ├── io.rs                   Project/DST/SVG/CSV I/O and file browser (868 lines)
-│   │   ├── theme.rs                Palette, styling, icons, small widgets (416 lines)
-│   │   └── lang.rs                 Translation loading and lookup (287 lines)
-│   └── target/                     Build output, ignored by git (about 2.7 GB here)
+│   │   ├── main.rs                 Entry point, CLI and font setup (93 lines)
+│   │   ├── app/
+│   │   │   ├── mod.rs              App state, actions, ticks, eframe loop (551 lines)
+│   │   │   ├── chrome.rs           Top/bottom bars, menus and toolbar (498 lines)
+│   │   │   ├── panels.rs           Left panel, right tabs and object list (771 lines)
+│   │   │   ├── canvas.rs           Canvas painting, input and rulers (685 lines)
+│   │   │   ├── windows.rs          Help and about windows (111 lines)
+│   │   │   └── tests.rs            Headless UI render tests (187 lines)
+│   │   ├── model.rs                Data model, hoops, stitch generation, tests (1211 lines)
+│   │   ├── io.rs                   Project/DST/SVG/CSV I/O and file browser (943 lines)
+│   │   ├── theme.rs                Palette, styling, icons, widgets (574 lines)
+│   │   ├── lang.rs                 Translation loading and lookup (287 lines)
+│   │   └── ui.rs                   Shared formatting and UI helpers (156 lines)
+│   └── target/                     Build output, ignored by git
 ├── capture/
 │   └── README.md                   Initial clean-room note
 ├── checks/                         Historical verification screenshots and a request
@@ -180,9 +188,9 @@ cargo run -- --lang es   # launch in Spanish
 cargo run -- --screenshot shot.png
 ```
 
-On this machine the pinned build configuration sends build output to the
-absolute `target-dir` in `.cargo/config.toml`, so `app/target/` may not be the
-directory Cargo actually writes to. Both paths are ignored by git.
+Build output goes to `app/target/`, which git ignores. Cargo can also be
+started from the repository root with
+`cargo build --manifest-path app/Cargo.toml`.
 
 ### Command-line options
 
@@ -247,23 +255,35 @@ It contains only the language code:
 
 ### Build configuration and portability
 
-Both `.cargo/config.toml` files pin machine-specific absolute paths:
+Both `.cargo/config.toml` files use paths relative to their own location, so
+the checkout no longer contains machine-specific absolute paths.
+
+Root config:
 
 ```toml
 [build]
-rustc = "/home/zital/Documents/Craft Anything/janome/app/.cargo/rustc-shim.sh"
-rustdoc = "/home/zital/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustdoc"
-target-dir = "/home/zital/Documents/Craft Anything/janome/app/target"
+rustc = "app/.cargo/rustc-shim.sh"
+target-dir = "app/target"
 
 [target.x86_64-unknown-linux-gnu]
-linker = "/usr/bin/cc"
+linker = "cc"
 
 [target.aarch64-unknown-linux-gnu]
-linker = "/usr/bin/cc"
+linker = "cc"
+```
+
+App config:
+
+```toml
+[build]
+rustc = ".cargo/rustc-shim.sh"
+target-dir = "target"
 ```
 
 The root copy exists because Cargo ignores `app/.cargo/config.toml` when it is
-launched from the repository root; the two files are meant to be kept in sync.
+launched from the repository root; the two files are kept in sync. The linkers
+are found by name, and the shim restores a normal `PATH` before starting the
+compiler.
 
 `rustc-shim.sh` exists because the original build checker started Cargo from a
 temporary directory that could be deleted before `rustc` ran, with a `PATH`
@@ -276,14 +296,9 @@ containing only the Rust tools. The shim:
    invalid working directory;
 5. executes the real `rustc` with all arguments unchanged.
 
-For a fresh clone on a different machine, one of these is required:
-
-- update the three absolute paths in both config files; or
-- remove the `rustc`, `rustdoc`, and `target-dir` overrides and build with the
-  normal system toolchain.
-
-The `linker = "/usr/bin/cc"` entries can stay if `cc` exists there, otherwise
-change them to the local compiler path.
+The only portability requirement is a POSIX-style shell for the shim, plus
+`cargo`, `rustc`, and a C compiler on `PATH` (or replace the `rustc` setting
+with the normal system compiler).
 
 ---
 
@@ -293,11 +308,18 @@ change them to the local compiler path.
 
 | File | Lines | Responsibility |
 |---|---:|---|
-| `app/src/main.rs` | 2721 | `App` state, startup, CLI, all panels, canvas painting/input, menus, dialogs, simulation, screenshots, UI tests |
-| `app/src/model.rs` | 1177 | Hoop catalogue, thread palette, `Obj`/`Project`, geometry, stitch generators, timeline, statistics, flower example, model tests |
-| `app/src/io.rs` | 868 | Project JSON, DST import/export, SVG export, CSV export, in-app file browser, I/O tests |
-| `app/src/theme.rs` | 416 | Colour palette, global `egui` style, cards/sections, hand-drawn icons, segmented control |
+| `app/src/main.rs` | 93 | Crate declarations, `main`, CLI parsing, window setup, font installation |
+| `app/src/app/mod.rs` | 551 | `App` state, constructors, document actions, shortcuts, simulation/screenshot ticks, eframe loop |
+| `app/src/app/chrome.rs` | 498 | Top bar, language picker, menus, toolbar, transport bar, status bar |
+| `app/src/app/panels.rs` | 771 | Design/summary/object panel, Threads/Settings/Plan tabs |
+| `app/src/app/canvas.rs` | 685 | Canvas painting, pointer input, selection/movement, rulers |
+| `app/src/app/windows.rs` | 111 | Help and about windows |
+| `app/src/app/tests.rs` | 187 | Headless UI render tests |
+| `app/src/model.rs` | 1211 | Hoop catalogue, thread palette, `Obj`/`Project`, geometry, stitch generators, timeline, statistics, flower example, model tests |
+| `app/src/io.rs` | 943 | Project JSON, DST import/export, SVG export, CSV export, in-app file browser, I/O tests |
+| `app/src/theme.rs` | 574 | Colour palette, global `egui` style, cards/sections, hand-drawn icons, segmented control |
 | `app/src/lang.rs` | 287 | Embedded/on-disk translations, language discovery, fallback, placeholders, saved choice, language tests |
+| `app/src/ui.rs` | 156 | Shared number field, snapping, ruler, text and formatting helpers |
 
 ### Startup flow
 
@@ -367,7 +389,7 @@ rebuild()    → recompute seq and stats, clamp simulation index, clear stale se
 ```text
              ┌──────────────┐
  user input  │  App / UI    │  save/open/import/export
- ──────────► │  main.rs     │ ──────────────────────► io.rs
+ ──────────► │  app/        │ ──────────────────────► io.rs
              └──────┬───────┘
                     │ mutates
                     ▼
@@ -1315,7 +1337,7 @@ test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 | `model` | 10 | Flower size/stitches, demo fit, fill density, satin zigzag, run outline, rotation bounds, free hoop sizes, best-fit hoop and tie-break, time follows rate, legacy files |
 | `io` | 7 | Project JSON round trip, DST export plan, DST import round trip, `0x7F` stop, `0x40` colour change, exact end record, SVG/CSV export |
 | `lang` | 2 | All languages have English keys/placeholders; switching languages |
-| `main` | 8 | Example menu, ruler density, time formatting, rate changes, rendered hoop/rate fields, rendered time updates, odd hoop size, flower name in all languages |
+| `app` | 8 | Example menu, ruler density, time formatting, rate changes, rendered hoop/rate fields, rendered time updates, odd hoop size, flower name in all languages |
 
 Notable test techniques:
 
@@ -1592,9 +1614,9 @@ and `DEFAULT_RATE_SPS`. Update `MECHANICS.md` if the provenance claim changes.
     counts contiguous colour runs.
 15. **Language list is fixed at startup.** Extra language files require a
     restart to appear.
-16. **Machine-specific build paths.** Both Cargo config files contain absolute
-    paths that must be updated on another machine. `app/target/` may be stale
-    because the config redirects output.
+16. **Build wrapper is POSIX-only.** `rustc-shim.sh` assumes a `/bin/sh`-style
+    shell; a native Windows build would need a different wrapper or removal of
+    the `build.rustc` setting.
 17. **No licence file.** The repository does not state a licence.
 18. **Limited automated UI coverage.** Pointer gestures, the file dialog, and
     pixel appearance are not covered by `cargo test`; screenshots are generated
@@ -1717,7 +1739,14 @@ Black.
 | `app/lang/en.json` | English labels |
 | `app/lang/es.json` | Spanish labels |
 | `app/lang/eu.json` | Basque labels |
-| `app/src/main.rs` | Application shell, UI, canvas, input, simulation, tests |
+| `app/src/main.rs` | Entry point, CLI, font installation |
+| `app/src/app/mod.rs` | App state, actions, simulation, eframe loop |
+| `app/src/app/chrome.rs` | Top bar, menus, toolbar, transport/status bars |
+| `app/src/app/panels.rs` | Left panel, object list, right tabs |
+| `app/src/app/canvas.rs` | Canvas rendering, pointer input, rulers |
+| `app/src/app/windows.rs` | Help and about windows |
+| `app/src/app/tests.rs` | Headless UI render tests |
+| `app/src/ui.rs` | Shared UI/formatting helpers |
 | `app/src/model.rs` | Data model, hoops, threads, stitch generation, tests |
 | `app/src/io.rs` | Project/DST/SVG/CSV I/O, file dialog, tests |
 | `app/src/theme.rs` | Palette, style, hand-drawn icons, widgets |

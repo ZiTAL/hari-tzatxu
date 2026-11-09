@@ -289,18 +289,18 @@ impl Obj {
 
     pub fn to_world(&self, p: P) -> P {
         let (s, c) = self.rot.sin_cos();
-        [
-            self.cx + p[0] * c - p[1] * s,
-            self.cy + p[0] * s + p[1] * c,
-        ]
+        [self.cx + p[0] * c - p[1] * s, self.cy + p[0] * s + p[1] * c]
     }
 
     /// Axis aligned bounds in hoop millimetres.
     pub fn bounds(&self) -> (f32, f32, f32, f32) {
         if matches!(self.shape, ShapeKind::Path | ShapeKind::Stitches) && !self.path.is_empty() {
-            let (_, w, h) = path_bounds(&self.path);
-            let _ = (w, h);
-            return (self.cx - self.w / 2.0, self.cy - self.h / 2.0, self.cx + self.w / 2.0, self.cy + self.h / 2.0);
+            return (
+                self.cx - self.w / 2.0,
+                self.cy - self.h / 2.0,
+                self.cx + self.w / 2.0,
+                self.cy + self.h / 2.0,
+            );
         }
         // Rotated ellipse / rect: use the rotated extents of the local box.
         let c = self.rot.cos().abs();
@@ -497,8 +497,16 @@ impl Project {
 
     /// Set both sides at once, e.g. after picking a preset or typing a size.
     pub fn set_hoop_size(&mut self, w: f32, h: f32) {
-        self.hoop_w = if w.is_finite() { w.clamp(HOOP_MIN_MM, HOOP_MAX_MM) } else { DEFAULT_HOOP.0 };
-        self.hoop_h = if h.is_finite() { h.clamp(HOOP_MIN_MM, HOOP_MAX_MM) } else { DEFAULT_HOOP.1 };
+        self.hoop_w = if w.is_finite() {
+            w.clamp(HOOP_MIN_MM, HOOP_MAX_MM)
+        } else {
+            DEFAULT_HOOP.0
+        };
+        self.hoop_h = if h.is_finite() {
+            h.clamp(HOOP_MIN_MM, HOOP_MAX_MM)
+        } else {
+            DEFAULT_HOOP.1
+        };
     }
 
     /// Give the design one of the preset hoops.
@@ -824,23 +832,17 @@ pub struct Stats {
 
 pub fn timeline(p: &Project) -> Vec<Step> {
     let mut out: Vec<Step> = Vec::new();
-    let mut last_color: Option<usize> = None;
     for o in &p.objects {
         if !o.visible {
             continue;
         }
         for el in object_stitches(o) {
-            let c = o.color;
-            if let El::Move(_) = el {
-                if let Some(lc) = last_color {
-                    if lc == c {
-                        // Same colour: keep the travel as a jump.
-                    }
-                }
-            }
-            out.push(Step { el, color: c, obj: o.id });
+            out.push(Step {
+                el,
+                color: o.color,
+                obj: o.id,
+            });
         }
-        last_color = Some(o.color);
     }
     out
 }
@@ -1023,12 +1025,24 @@ mod tests {
         let p = demo_project();
         let st = stats(&p);
         assert!(p.objects.len() >= 5, "demo should have several objects");
-        assert!(st.stitches > 1000, "demo should produce a real stitch count, got {}", st.stitches);
+        assert!(
+            st.stitches > 1000,
+            "demo should produce a real stitch count, got {}",
+            st.stitches
+        );
         assert!(st.colors >= 4);
         let (hw, hh) = p.hoop_size();
         let b = p.bounds().unwrap();
-        assert!(b.0 >= -hw / 2.0 && b.2 <= hw / 2.0, "width {} outside hoop", st.w);
-        assert!(b.1 >= -hh / 2.0 && b.3 <= hh / 2.0, "height {} outside hoop", st.h);
+        assert!(
+            b.0 >= -hw / 2.0 && b.2 <= hw / 2.0,
+            "width {} outside hoop",
+            st.w
+        );
+        assert!(
+            b.1 >= -hh / 2.0 && b.3 <= hh / 2.0,
+            "height {} outside hoop",
+            st.h
+        );
     }
 
     #[test]
@@ -1038,7 +1052,10 @@ mod tests {
         let stitches = el.iter().filter(|e| matches!(e, El::Stitch(_))).count();
         assert!(stitches > 200, "expected a dense fill, got {stitches}");
         let moves = el.iter().filter(|e| matches!(e, El::Move(_))).count();
-        assert!(moves > 5, "fill should start a new row repeatedly, got {moves}");
+        assert!(
+            moves > 5,
+            "fill should start a new row repeatedly, got {moves}"
+        );
     }
 
     #[test]
@@ -1086,8 +1103,14 @@ mod tests {
         o.rot = std::f32::consts::FRAC_PI_2;
         let b1 = o.bounds();
         assert!((b0.2 - b0.0 - 40.0).abs() < 0.01);
-        assert!((b1.2 - b1.0 - 10.0).abs() < 0.5, "rotated box should be narrow");
-        assert!((b1.3 - b1.1 - 40.0).abs() < 0.5, "rotated box should be tall");
+        assert!(
+            (b1.2 - b1.0 - 10.0).abs() < 0.5,
+            "rotated box should be narrow"
+        );
+        assert!(
+            (b1.3 - b1.1 - 40.0).abs() < 0.5,
+            "rotated box should be tall"
+        );
     }
 
     #[test]
@@ -1115,7 +1138,10 @@ mod tests {
         q.set_hoop_size(60.0, 60.0);
         let b = q.bounds().unwrap();
         let (hw, hh) = q.hoop_size();
-        assert!(b.2 > hw / 2.0 || b.3 > hh / 2.0, "an 8 cm design cannot fit a 6 cm hoop");
+        assert!(
+            b.2 > hw / 2.0 || b.3 > hh / 2.0,
+            "an 8 cm design cannot fit a 6 cm hoop"
+        );
     }
 
     #[test]
@@ -1151,7 +1177,12 @@ mod tests {
         p.set_stitches_per_second(10.0);
         let st = stats(&p);
         let n = st.stitches as f32;
-        assert!((st.minutes - n / 600.0).abs() < 0.01, "{} vs {}", st.minutes, n / 600.0);
+        assert!(
+            (st.minutes - n / 600.0).abs() < 0.01,
+            "{} vs {}",
+            st.minutes,
+            n / 600.0
+        );
 
         p.set_stitches_per_second(25.0);
         let faster = stats(&p);
@@ -1162,7 +1193,10 @@ mod tests {
         let mut q = flower_example();
         q.rate = 0.0;
         assert_eq!(q.stitches_per_second(), DEFAULT_RATE_SPS);
-        assert_eq!(stats(&q).minutes, st.stitches as f32 / (DEFAULT_RATE_SPS * 60.0));
+        assert_eq!(
+            stats(&q).minutes,
+            st.stitches as f32 / (DEFAULT_RATE_SPS * 60.0)
+        );
     }
 
     #[test]

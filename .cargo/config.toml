@@ -1,20 +1,17 @@
 # Cargo reads this file when it is started from the project folder rather than
 # from app/, so it repeats what app/.cargo/config.toml says. Keep them in sync.
 #
-# - rustc: a script that steps into app/ before handing over to the compiler.
-#   Craft Anything runs the build inside a folder it deletes straight away, and
-#   rustc then dies with "Current directory is invalid". See rustc-shim.sh.
-# - target-dir: always build in app/target, whatever folder cargo is started
-#   from (a copy of the project, the project folder above, ...).
-# - linker: point the link step at the C compiler by absolute path instead of
-#   relying on PATH lookup, which made it fail with "linker `cc` not found".
+# The paths are relative to this file's parent directory so a clone can build
+# on another machine. The rustc wrapper steps into app/ before invoking the
+# real compiler: Craft Anything starts the build in a folder it can delete
+# immediately, and rustc otherwise fails with "Current directory is invalid".
+# The wrapper restores PATH, so the linker can be found by name.
 [build]
-rustc = "/home/zital/Documents/Craft Anything/janome/app/.cargo/rustc-shim.sh"
-rustdoc = "/home/zital/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustdoc"
-target-dir = "/home/zital/Documents/Craft Anything/janome/app/target"
+rustc = "app/.cargo/rustc-shim.sh"
+target-dir = "app/target"
 
 [target.x86_64-unknown-linux-gnu]
-linker = "/usr/bin/cc"
+linker = "cc"
 
 [target.aarch64-unknown-linux-gnu]
-linker = "/usr/bin/cc"
+linker = "cc"

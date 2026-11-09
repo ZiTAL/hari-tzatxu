@@ -8,20 +8,14 @@ use std::path::{Path, PathBuf};
 fn err_write(path: &Path, e: impl std::fmt::Display) -> String {
     tf(
         "err.write",
-        &[
-            ("path", &path.display().to_string()),
-            ("e", &e.to_string()),
-        ],
+        &[("path", &path.display().to_string()), ("e", &e.to_string())],
     )
 }
 
 fn err_read(path: &Path, e: impl std::fmt::Display) -> String {
     tf(
         "err.read",
-        &[
-            ("path", &path.display().to_string()),
-            ("e", &e.to_string()),
-        ],
+        &[("path", &path.display().to_string()), ("e", &e.to_string())],
     )
 }
 
@@ -53,7 +47,6 @@ pub fn export_svg(p: &Project, path: &Path) -> Result<(), String> {
     let seq = model::timeline(p);
     let mut cur: Option<(usize, u32)> = None;
     let mut d = String::new();
-    let mut last: Option<[f32; 2]> = None;
     for step in &seq {
         if cur != Some((step.color, step.obj)) {
             if !d.is_empty() {
@@ -69,12 +62,9 @@ pub fn export_svg(p: &Project, path: &Path) -> Result<(), String> {
         match step.el {
             El::Move(pt) => {
                 d.push_str(&format!("M {:.2} {:.2} ", ox + pt[0], oy - pt[1]));
-                last = Some(pt);
             }
             El::Stitch(pt) => {
-                let _ = last;
                 d.push_str(&format!("L {:.2} {:.2} ", ox + pt[0], oy - pt[1]));
-                last = Some(pt);
             }
         }
     }
@@ -98,7 +88,14 @@ pub fn export_csv(p: &Project, path: &Path) -> Result<(), String> {
             El::Stitch(p) => (p, "stitch"),
         };
         let name = crate::lang::thread_name(st.color.min(THREADS.len() - 1));
-        s.push_str(&format!("{},{:.2},{:.2},{},{}\n", i + 1, pt[0], pt[1], kind, name));
+        s.push_str(&format!(
+            "{},{:.2},{:.2},{},{}\n",
+            i + 1,
+            pt[0],
+            pt[1],
+            kind,
+            name
+        ));
     }
     fs::write(path, s).map_err(|e| err_write(path, e))
 }
@@ -305,14 +302,30 @@ pub fn dst_decode(rec: &[u8]) -> Option<(i32, i32)> {
 /// One byte's `(dx, dy)` pair from the original's table: bits 0/1 are the
 /// small step, bits 2/3 the large one, on x and then y.
 fn add_dst_byte(b: u8, small: i32, big: i32, x: &mut i32, y: &mut i32) {
-    if b & 0x01 != 0 { *x += small; }
-    if b & 0x02 != 0 { *x -= small; }
-    if b & 0x04 != 0 { *x += big; }
-    if b & 0x08 != 0 { *x -= big; }
-    if b & 0x80 != 0 { *y += small; }
-    if b & 0x40 != 0 { *y -= small; }
-    if b & 0x20 != 0 { *y += big; }
-    if b & 0x10 != 0 { *y -= big; }
+    if b & 0x01 != 0 {
+        *x += small;
+    }
+    if b & 0x02 != 0 {
+        *x -= small;
+    }
+    if b & 0x04 != 0 {
+        *x += big;
+    }
+    if b & 0x08 != 0 {
+        *x -= big;
+    }
+    if b & 0x80 != 0 {
+        *y += small;
+    }
+    if b & 0x40 != 0 {
+        *y -= small;
+    }
+    if b & 0x20 != 0 {
+        *y += big;
+    }
+    if b & 0x10 != 0 {
+        *y -= big;
+    }
 }
 
 /// Thread colours used for imported files, which carry no colour data.
@@ -387,7 +400,11 @@ pub fn import_dst(path: &Path) -> Result<Project, String> {
     };
     p.set_hoop_preset(model::largest_preset());
     for (c, pts) in chains {
-        p.push(model::Obj::new_stitches(0, DST_PALETTE[c % DST_PALETTE.len()], pts));
+        p.push(model::Obj::new_stitches(
+            0,
+            DST_PALETTE[c % DST_PALETTE.len()],
+            pts,
+        ));
     }
     // Pick the smallest hoop that the imported design fits in, by the same
     // rule the original uses (see `model::best_preset_for`).
@@ -555,11 +572,12 @@ impl FileDialog {
                                         name.clone()
                                     };
                                     let selected = !is_dir && self.name == name;
-                                    let txt = egui::RichText::new(label).size(12.5).color(if is_dir {
-                                        crate::theme::BLUE
-                                    } else {
-                                        crate::theme::TEXT
-                                    });
+                                    let txt =
+                                        egui::RichText::new(label).size(12.5).color(if is_dir {
+                                            crate::theme::BLUE
+                                        } else {
+                                            crate::theme::TEXT
+                                        });
                                     let resp = ui.selectable_label(selected, txt);
                                     if resp.clicked() {
                                         if is_dir {
@@ -577,7 +595,11 @@ impl FileDialog {
                     });
                 ui.add_space(6.0);
                 ui.horizontal(|ui| {
-                    ui.label(egui::RichText::new(t("dialog.name")).size(12.0).color(crate::theme::MUTED));
+                    ui.label(
+                        egui::RichText::new(t("dialog.name"))
+                            .size(12.0)
+                            .color(crate::theme::MUTED),
+                    );
                     ui.add(
                         egui::TextEdit::singleline(&mut self.name)
                             .desired_width(300.0)
@@ -590,7 +612,11 @@ impl FileDialog {
                     );
                 });
                 if let Some(err) = &self.error {
-                    ui.label(egui::RichText::new(err).size(11.5).color(crate::theme::DANGER));
+                    ui.label(
+                        egui::RichText::new(err)
+                            .size(11.5)
+                            .color(crate::theme::DANGER),
+                    );
                 }
                 ui.add_space(4.0);
                 ui.horizontal(|ui| {
@@ -602,7 +628,9 @@ impl FileDialog {
                     if ui
                         .add(
                             egui::Button::new(
-                                egui::RichText::new(label).size(13.0).color(egui::Color32::from_rgb(0x0d, 0x27, 0x21)),
+                                egui::RichText::new(label)
+                                    .size(13.0)
+                                    .color(egui::Color32::from_rgb(0x0d, 0x27, 0x21)),
                             )
                             .fill(crate::theme::ACCENT)
                             .stroke(egui::Stroke::NONE)
@@ -677,27 +705,67 @@ mod tests {
     fn decode(rec: &[u8]) -> (i32, i32) {
         let (b0, b1, b2) = (rec[0], rec[1], rec[2]);
         let mut x = 0i32;
-        if b0 & 0x01 != 0 { x += 1; }
-        if b0 & 0x02 != 0 { x -= 1; }
-        if b1 & 0x01 != 0 { x += 3; }
-        if b1 & 0x02 != 0 { x -= 3; }
-        if b0 & 0x04 != 0 { x += 9; }
-        if b0 & 0x08 != 0 { x -= 9; }
-        if b1 & 0x04 != 0 { x += 27; }
-        if b1 & 0x08 != 0 { x -= 27; }
-        if b2 & 0x04 != 0 { x += 81; }
-        if b2 & 0x08 != 0 { x -= 81; }
+        if b0 & 0x01 != 0 {
+            x += 1;
+        }
+        if b0 & 0x02 != 0 {
+            x -= 1;
+        }
+        if b1 & 0x01 != 0 {
+            x += 3;
+        }
+        if b1 & 0x02 != 0 {
+            x -= 3;
+        }
+        if b0 & 0x04 != 0 {
+            x += 9;
+        }
+        if b0 & 0x08 != 0 {
+            x -= 9;
+        }
+        if b1 & 0x04 != 0 {
+            x += 27;
+        }
+        if b1 & 0x08 != 0 {
+            x -= 27;
+        }
+        if b2 & 0x04 != 0 {
+            x += 81;
+        }
+        if b2 & 0x08 != 0 {
+            x -= 81;
+        }
         let mut y = 0i32;
-        if b0 & 0x80 != 0 { y += 1; }
-        if b0 & 0x40 != 0 { y -= 1; }
-        if b1 & 0x80 != 0 { y += 3; }
-        if b1 & 0x40 != 0 { y -= 3; }
-        if b0 & 0x20 != 0 { y += 9; }
-        if b0 & 0x10 != 0 { y -= 9; }
-        if b1 & 0x20 != 0 { y += 27; }
-        if b1 & 0x10 != 0 { y -= 27; }
-        if b2 & 0x20 != 0 { y += 81; }
-        if b2 & 0x10 != 0 { y -= 81; }
+        if b0 & 0x80 != 0 {
+            y += 1;
+        }
+        if b0 & 0x40 != 0 {
+            y -= 1;
+        }
+        if b1 & 0x80 != 0 {
+            y += 3;
+        }
+        if b1 & 0x40 != 0 {
+            y -= 3;
+        }
+        if b0 & 0x20 != 0 {
+            y += 9;
+        }
+        if b0 & 0x10 != 0 {
+            y -= 9;
+        }
+        if b1 & 0x20 != 0 {
+            y += 27;
+        }
+        if b1 & 0x10 != 0 {
+            y -= 27;
+        }
+        if b2 & 0x20 != 0 {
+            y += 81;
+        }
+        if b2 & 0x10 != 0 {
+            y -= 81;
+        }
         (x, y)
     }
 
@@ -742,7 +810,11 @@ mod tests {
                 last = (x, y);
             }
         }
-        assert_eq!(read.last(), want.last(), "decoded DST must finish on the last stitch");
+        assert_eq!(
+            read.last(),
+            want.last(),
+            "decoded DST must finish on the last stitch"
+        );
         // Splitting a long move into several records inserts intermediate
         // points; every planned point must still be visited in order.
         let mut i = 0;
@@ -847,7 +919,10 @@ mod tests {
         fs::write(&f, &bytes).unwrap();
         let p = import_dst(&f).unwrap();
         assert_eq!(p.objects.len(), 1);
-        assert!(p.objects[0].path.len() >= 3, "the stitches after 0x...F3 must be read");
+        assert!(
+            p.objects[0].path.len() >= 3,
+            "the stitches after 0x...F3 must be read"
+        );
     }
 
     #[test]

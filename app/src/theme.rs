@@ -29,9 +29,9 @@ pub fn apply(ctx: &egui::Context) {
     v.faint_bg_color = PANEL2;
     v.override_text_color = Some(TEXT);
     v.selection.bg_fill = ACCENT_DIM;
-    v.selection.stroke = Stroke::new(1.0, ACCENT);
+    v.selection.stroke = Stroke::new(1.0_f32, ACCENT);
     v.hyperlink_color = BLUE;
-    v.window_stroke = Stroke::new(1.0, LINE);
+    v.window_stroke = Stroke::new(1.0_f32, LINE);
     v.window_shadow = egui::epaint::Shadow {
         offset: egui::vec2(0.0, 8.0),
         blur: 26.0,
@@ -46,17 +46,17 @@ pub fn apply(ctx: &egui::Context) {
         &mut v.widgets.open,
     ] {
         w.rounding = Rounding::same(6.0);
-        w.bg_stroke = Stroke::new(1.0, LINE);
+        w.bg_stroke = Stroke::new(1.0_f32, LINE);
     }
     v.widgets.inactive.bg_fill = PANEL2;
     v.widgets.inactive.weak_bg_fill = PANEL2;
     v.widgets.hovered.bg_fill = Color32::from_rgb(0x2b, 0x32, 0x3c);
     v.widgets.hovered.weak_bg_fill = Color32::from_rgb(0x2b, 0x32, 0x3c);
-    v.widgets.hovered.bg_stroke = Stroke::new(1.0, Color32::from_rgb(0x45, 0x4e, 0x5b));
+    v.widgets.hovered.bg_stroke = Stroke::new(1.0_f32, Color32::from_rgb(0x45, 0x4e, 0x5b));
     v.widgets.active.bg_fill = Color32::from_rgb(0x33, 0x3b, 0x47);
     v.widgets.active.weak_bg_fill = Color32::from_rgb(0x33, 0x3b, 0x47);
-    v.widgets.active.bg_stroke = Stroke::new(1.0, ACCENT_DIM);
-    v.widgets.noninteractive.bg_stroke = Stroke::new(1.0, LINE_SOFT);
+    v.widgets.active.bg_stroke = Stroke::new(1.0_f32, ACCENT_DIM);
+    v.widgets.noninteractive.bg_stroke = Stroke::new(1.0_f32, LINE_SOFT);
     style.visuals = v;
 
     style.spacing.item_spacing = Vec2::new(7.0, 6.0);
@@ -78,7 +78,7 @@ pub fn card(ui: &mut Ui, fill: Color32, add: impl FnOnce(&mut Ui)) {
     egui::Frame::none()
         .fill(fill)
         .rounding(Rounding::same(8.0))
-        .stroke(Stroke::new(1.0, LINE_SOFT))
+        .stroke(Stroke::new(1.0_f32, LINE_SOFT))
         .inner_margin(egui::Margin::symmetric(10.0, 9.0))
         .show(ui, |ui| {
             ui.set_width(ui.available_width());
@@ -89,7 +89,11 @@ pub fn card(ui: &mut Ui, fill: Color32, add: impl FnOnce(&mut Ui)) {
 pub fn section(ui: &mut Ui, title: &str) {
     ui.add_space(4.0);
     ui.horizontal(|ui| {
-        ui.label(egui::RichText::new(title.to_uppercase()).size(10.5).color(MUTED));
+        ui.label(
+            egui::RichText::new(title.to_uppercase())
+                .size(10.5)
+                .color(MUTED),
+        );
     });
     ui.add_space(1.0);
 }
@@ -97,13 +101,22 @@ pub fn section(ui: &mut Ui, title: &str) {
 #[allow(dead_code)]
 pub fn chip(ui: &mut Ui, text: &str, dot: Color32, fg: Color32) {
     let font = FontId::proportional(11.0);
-    let galley = ui.painter().layout_no_wrap(text.to_string(), font.clone(), fg);
+    let galley = ui
+        .painter()
+        .layout_no_wrap(text.to_string(), font.clone(), fg);
     let pad = Vec2::new(9.0, 4.0);
-    let size = Vec2::new(galley.size().x + pad.x * 2.0 + 12.0, galley.size().y + pad.y * 2.0);
+    let size = Vec2::new(
+        galley.size().x + pad.x * 2.0 + 12.0,
+        galley.size().y + pad.y * 2.0,
+    );
     let (rect, _) = ui.allocate_exact_size(size, Sense::hover());
     let p = ui.painter();
-    p.rect_filled(rect, Rounding::same(9.0), Color32::from_rgb(0x20, 0x26, 0x2d));
-    p.rect_stroke(rect, Rounding::same(9.0), Stroke::new(1.0, LINE_SOFT));
+    p.rect_filled(
+        rect,
+        Rounding::same(9.0),
+        Color32::from_rgb(0x20, 0x26, 0x2d),
+    );
+    p.rect_stroke(rect, Rounding::same(9.0), Stroke::new(1.0_f32, LINE_SOFT));
     let cy = rect.center().y;
     p.circle_filled(egui::pos2(rect.left() + pad.x + 2.0, cy), 2.6, dot);
     p.text(
@@ -156,7 +169,14 @@ pub enum Icon {
 
 pub fn icon_button(ui: &mut Ui, icon: Icon, tip: &str, selected: bool, enabled: bool) -> Response {
     let size = Vec2::new(34.0, 30.0);
-    let (rect, resp) = ui.allocate_exact_size(size, if enabled { Sense::click() } else { Sense::hover() });
+    let (rect, resp) = ui.allocate_exact_size(
+        size,
+        if enabled {
+            Sense::click()
+        } else {
+            Sense::hover()
+        },
+    );
     let p = ui.painter();
     let hovered = resp.hovered() && enabled;
     let bg = if selected {
@@ -181,7 +201,7 @@ pub fn icon_button(ui: &mut Ui, icon: Icon, tip: &str, selected: bool, enabled: 
 }
 
 fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
-    let s = Stroke::new(1.5, c);
+    let s = Stroke::new(1.5_f32, c);
     let ctr = r.center();
     let w = r.width();
     let h = r.height();
@@ -220,33 +240,77 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
             let mut x = r.left();
             let mut up = true;
             while x < r.right() - 1.0 {
-                let y0 = if up { r.top() + h * 0.18 } else { r.bottom() - h * 0.18 };
-                let y1 = if up { r.bottom() - h * 0.18 } else { r.top() + h * 0.18 };
+                let y0 = if up {
+                    r.top() + h * 0.18
+                } else {
+                    r.bottom() - h * 0.18
+                };
+                let y1 = if up {
+                    r.bottom() - h * 0.18
+                } else {
+                    r.top() + h * 0.18
+                };
                 p.line_segment([egui::pos2(x, y0), egui::pos2(x + 3.0, y1)], s);
                 x += 4.0;
                 up = !up;
             }
             p.line_segment(
-                [egui::pos2(r.left(), r.top() + h * 0.18), egui::pos2(r.right(), r.top() + h * 0.18)],
-                Stroke::new(1.0, c.gamma_multiply(0.45)),
+                [
+                    egui::pos2(r.left(), r.top() + h * 0.18),
+                    egui::pos2(r.right(), r.top() + h * 0.18),
+                ],
+                Stroke::new(1.0_f32, c.gamma_multiply(0.45)),
             );
             p.line_segment(
-                [egui::pos2(r.left(), r.bottom() - h * 0.18), egui::pos2(r.right(), r.bottom() - h * 0.18)],
-                Stroke::new(1.0, c.gamma_multiply(0.45)),
+                [
+                    egui::pos2(r.left(), r.bottom() - h * 0.18),
+                    egui::pos2(r.right(), r.bottom() - h * 0.18),
+                ],
+                Stroke::new(1.0_f32, c.gamma_multiply(0.45)),
             );
         }
         Icon::Pan => {
-            p.line_segment([egui::pos2(ctr.x, r.top()), egui::pos2(ctr.x, r.bottom())], s);
-            p.line_segment([egui::pos2(r.left(), ctr.y), egui::pos2(r.right(), ctr.y)], s);
+            p.line_segment(
+                [egui::pos2(ctr.x, r.top()), egui::pos2(ctr.x, r.bottom())],
+                s,
+            );
+            p.line_segment(
+                [egui::pos2(r.left(), ctr.y), egui::pos2(r.right(), ctr.y)],
+                s,
+            );
             for (a, b) in [
-                (egui::pos2(ctr.x, r.top()), egui::pos2(ctr.x - 4.0, r.top() + 5.0)),
-                (egui::pos2(ctr.x, r.top()), egui::pos2(ctr.x + 4.0, r.top() + 5.0)),
-                (egui::pos2(ctr.x, r.bottom()), egui::pos2(ctr.x - 4.0, r.bottom() - 5.0)),
-                (egui::pos2(ctr.x, r.bottom()), egui::pos2(ctr.x + 4.0, r.bottom() - 5.0)),
-                (egui::pos2(r.left(), ctr.y), egui::pos2(r.left() + 5.0, ctr.y - 4.0)),
-                (egui::pos2(r.left(), ctr.y), egui::pos2(r.left() + 5.0, ctr.y + 4.0)),
-                (egui::pos2(r.right(), ctr.y), egui::pos2(r.right() - 5.0, ctr.y - 4.0)),
-                (egui::pos2(r.right(), ctr.y), egui::pos2(r.right() - 5.0, ctr.y + 4.0)),
+                (
+                    egui::pos2(ctr.x, r.top()),
+                    egui::pos2(ctr.x - 4.0, r.top() + 5.0),
+                ),
+                (
+                    egui::pos2(ctr.x, r.top()),
+                    egui::pos2(ctr.x + 4.0, r.top() + 5.0),
+                ),
+                (
+                    egui::pos2(ctr.x, r.bottom()),
+                    egui::pos2(ctr.x - 4.0, r.bottom() - 5.0),
+                ),
+                (
+                    egui::pos2(ctr.x, r.bottom()),
+                    egui::pos2(ctr.x + 4.0, r.bottom() - 5.0),
+                ),
+                (
+                    egui::pos2(r.left(), ctr.y),
+                    egui::pos2(r.left() + 5.0, ctr.y - 4.0),
+                ),
+                (
+                    egui::pos2(r.left(), ctr.y),
+                    egui::pos2(r.left() + 5.0, ctr.y + 4.0),
+                ),
+                (
+                    egui::pos2(r.right(), ctr.y),
+                    egui::pos2(r.right() - 5.0, ctr.y - 4.0),
+                ),
+                (
+                    egui::pos2(r.right(), ctr.y),
+                    egui::pos2(r.right() - 5.0, ctr.y + 4.0),
+                ),
             ] {
                 p.line_segment([a, b], s);
             }
@@ -263,18 +327,28 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
                 p.line_segment([corner, egui::pos2(corner.x + k * dx, corner.y)], s);
                 p.line_segment([corner, egui::pos2(corner.x, corner.y + k * dy)], s);
             }
-            p.rect_stroke(Rect::from_center_size(ctr, Vec2::new(w * 0.26, h * 0.2)), Rounding::same(1.0), Stroke::new(1.0, c.gamma_multiply(0.6)));
+            p.rect_stroke(
+                Rect::from_center_size(ctr, Vec2::new(w * 0.26, h * 0.2)),
+                Rounding::same(1.0),
+                Stroke::new(1.0_f32, c.gamma_multiply(0.6)),
+            );
         }
         Icon::Grid => {
             for i in 1..4 {
                 let t = i as f32 / 4.0;
                 p.line_segment(
-                    [egui::pos2(r.left() + w * t, r.top()), egui::pos2(r.left() + w * t, r.bottom())],
-                    Stroke::new(1.0, c.gamma_multiply(0.8)),
+                    [
+                        egui::pos2(r.left() + w * t, r.top()),
+                        egui::pos2(r.left() + w * t, r.bottom()),
+                    ],
+                    Stroke::new(1.0_f32, c.gamma_multiply(0.8)),
                 );
                 p.line_segment(
-                    [egui::pos2(r.left(), r.top() + h * t), egui::pos2(r.right(), r.top() + h * t)],
-                    Stroke::new(1.0, c.gamma_multiply(0.8)),
+                    [
+                        egui::pos2(r.left(), r.top() + h * t),
+                        egui::pos2(r.right(), r.top() + h * t),
+                    ],
+                    Stroke::new(1.0_f32, c.gamma_multiply(0.8)),
                 );
             }
         }
@@ -286,23 +360,57 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
             p.rect_stroke(body, Rounding::same(1.0), s);
             for i in 0..=6 {
                 let x = body.left() + body.width() * i as f32 / 6.0;
-                let len = if i % 3 == 0 { body.height() * 0.62 } else { body.height() * 0.36 };
+                let len = if i % 3 == 0 {
+                    body.height() * 0.62
+                } else {
+                    body.height() * 0.36
+                };
                 p.line_segment(
                     [egui::pos2(x, body.top()), egui::pos2(x, body.top() + len)],
-                    Stroke::new(1.0, c),
+                    Stroke::new(1.0_f32, c),
                 );
             }
         }
         Icon::Needle => {
-            p.line_segment([egui::pos2(r.left() + w * 0.1, r.bottom()), egui::pos2(r.right() - 2.0, r.top() + 2.0)], s);
+            p.line_segment(
+                [
+                    egui::pos2(r.left() + w * 0.1, r.bottom()),
+                    egui::pos2(r.right() - 2.0, r.top() + 2.0),
+                ],
+                s,
+            );
             p.circle_filled(egui::pos2(r.right() - 2.0, r.top() + 2.0), 2.0, c);
-            p.line_segment([egui::pos2(r.left() + w * 0.6, r.bottom() - 3.0), egui::pos2(r.left() + w * 0.9, r.bottom() - h * 0.55)], Stroke::new(1.0, c.gamma_multiply(0.6)));
+            p.line_segment(
+                [
+                    egui::pos2(r.left() + w * 0.6, r.bottom() - 3.0),
+                    egui::pos2(r.left() + w * 0.9, r.bottom() - h * 0.55),
+                ],
+                Stroke::new(1.0_f32, c.gamma_multiply(0.6)),
+            );
         }
         Icon::Key => {
             p.circle_stroke(egui::pos2(r.left() + w * 0.22, ctr.y), w * 0.18, s);
-            p.line_segment([egui::pos2(r.left() + w * 0.4, ctr.y), egui::pos2(r.right(), ctr.y)], s);
-            p.line_segment([egui::pos2(r.right() - 4.0, ctr.y), egui::pos2(r.right() - 4.0, ctr.y + 5.0)], s);
-            p.line_segment([egui::pos2(r.right() - 9.0, ctr.y), egui::pos2(r.right() - 9.0, ctr.y + 4.0)], s);
+            p.line_segment(
+                [
+                    egui::pos2(r.left() + w * 0.4, ctr.y),
+                    egui::pos2(r.right(), ctr.y),
+                ],
+                s,
+            );
+            p.line_segment(
+                [
+                    egui::pos2(r.right() - 4.0, ctr.y),
+                    egui::pos2(r.right() - 4.0, ctr.y + 5.0),
+                ],
+                s,
+            );
+            p.line_segment(
+                [
+                    egui::pos2(r.right() - 9.0, ctr.y),
+                    egui::pos2(r.right() - 9.0, ctr.y + 4.0),
+                ],
+                s,
+            );
         }
         Icon::Shield => {
             let pts = vec![
@@ -316,7 +424,11 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
             p.add(egui::Shape::closed_line(pts, s));
         }
         Icon::Save => {
-            p.rect_stroke(Rect::from_center_size(ctr, Vec2::new(w * 0.78, h * 0.78)), Rounding::same(2.0), s);
+            p.rect_stroke(
+                Rect::from_center_size(ctr, Vec2::new(w * 0.78, h * 0.78)),
+                Rounding::same(2.0),
+                s,
+            );
             p.rect_filled(
                 Rect::from_min_size(
                     egui::pos2(ctr.x - w * 0.22, r.top() + h * 0.11),
@@ -331,7 +443,7 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
                     Vec2::new(w * 0.52, h * 0.3),
                 ),
                 Rounding::same(1.0),
-                Stroke::new(1.2, c),
+                Stroke::new(1.2_f32, c),
             );
         }
         Icon::Open => {
@@ -354,8 +466,14 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
             ));
         }
         Icon::Plus => {
-            p.line_segment([egui::pos2(ctr.x, r.top()), egui::pos2(ctr.x, r.bottom())], s);
-            p.line_segment([egui::pos2(r.left(), ctr.y), egui::pos2(r.right(), ctr.y)], s);
+            p.line_segment(
+                [egui::pos2(ctr.x, r.top()), egui::pos2(ctr.x, r.bottom())],
+                s,
+            );
+            p.line_segment(
+                [egui::pos2(r.left(), ctr.y), egui::pos2(r.right(), ctr.y)],
+                s,
+            );
         }
         Icon::Undo => {
             let pts = vec![
@@ -365,8 +483,20 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
                 egui::pos2(r.right() - 1.0, r.bottom() - h * 0.1),
             ];
             p.add(egui::Shape::line(pts, s));
-            p.line_segment([egui::pos2(r.left(), ctr.y), egui::pos2(r.left() + 5.0, ctr.y - 4.0)], s);
-            p.line_segment([egui::pos2(r.left(), ctr.y), egui::pos2(r.left() + 5.0, ctr.y + 4.0)], s);
+            p.line_segment(
+                [
+                    egui::pos2(r.left(), ctr.y),
+                    egui::pos2(r.left() + 5.0, ctr.y - 4.0),
+                ],
+                s,
+            );
+            p.line_segment(
+                [
+                    egui::pos2(r.left(), ctr.y),
+                    egui::pos2(r.left() + 5.0, ctr.y + 4.0),
+                ],
+                s,
+            );
         }
         Icon::Redo => {
             let pts = vec![
@@ -376,8 +506,20 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
                 egui::pos2(r.left() + 1.0, r.bottom() - h * 0.1),
             ];
             p.add(egui::Shape::line(pts, s));
-            p.line_segment([egui::pos2(r.right(), ctr.y), egui::pos2(r.right() - 5.0, ctr.y - 4.0)], s);
-            p.line_segment([egui::pos2(r.right(), ctr.y), egui::pos2(r.right() - 5.0, ctr.y + 4.0)], s);
+            p.line_segment(
+                [
+                    egui::pos2(r.right(), ctr.y),
+                    egui::pos2(r.right() - 5.0, ctr.y - 4.0),
+                ],
+                s,
+            );
+            p.line_segment(
+                [
+                    egui::pos2(r.right(), ctr.y),
+                    egui::pos2(r.right() - 5.0, ctr.y + 4.0),
+                ],
+                s,
+            );
         }
         Icon::Trash => {
             p.rect_stroke(
@@ -388,8 +530,20 @@ fn draw_icon(p: &egui::Painter, r: Rect, icon: Icon, c: Color32) {
                 Rounding::same(1.5),
                 s,
             );
-            p.line_segment([egui::pos2(r.left(), r.top() + h * 0.14), egui::pos2(r.right(), r.top() + h * 0.14)], s);
-            p.line_segment([egui::pos2(ctr.x - w * 0.16, r.top() + h * 0.14), egui::pos2(ctr.x - w * 0.16, r.top())], s);
+            p.line_segment(
+                [
+                    egui::pos2(r.left(), r.top() + h * 0.14),
+                    egui::pos2(r.right(), r.top() + h * 0.14),
+                ],
+                s,
+            );
+            p.line_segment(
+                [
+                    egui::pos2(ctr.x - w * 0.16, r.top() + h * 0.14),
+                    egui::pos2(ctr.x - w * 0.16, r.top()),
+                ],
+                s,
+            );
         }
     }
 }
@@ -400,10 +554,14 @@ pub fn segmented(ui: &mut Ui, value: &mut usize, labels: &[&str]) -> bool {
     ui.horizontal(|ui| {
         for (i, l) in labels.iter().enumerate() {
             let sel = *value == i;
-            let txt = egui::RichText::new(*l).size(11.5).color(if sel { Color32::from_rgb(0x0f, 0x2a, 0x24) } else { MUTED });
+            let txt = egui::RichText::new(*l).size(11.5).color(if sel {
+                Color32::from_rgb(0x0f, 0x2a, 0x24)
+            } else {
+                MUTED
+            });
             let btn = egui::Button::new(txt)
                 .fill(if sel { ACCENT } else { PANEL2 })
-                .stroke(Stroke::new(1.0, if sel { ACCENT } else { LINE }))
+                .stroke(Stroke::new(1.0_f32, if sel { ACCENT } else { LINE }))
                 .rounding(Rounding::same(5.0))
                 .min_size(Vec2::new(0.0, 22.0));
             if ui.add(btn).clicked() && !sel {

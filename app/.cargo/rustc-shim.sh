@@ -34,10 +34,9 @@ app_dir=$shim_dir/..
 note=
 [ -d . ] || note="invalid cwd"
 
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin${PATH:+:$PATH}
-export PATH
 [ -n "${HOME:-}" ] || HOME=/home/zital
-export HOME
+PATH=$HOME/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin${PATH:+:$PATH}
+export PATH HOME
 
 if ! cd "$app_dir" 2>/dev/null; then
     note="${note:+$note, }no app folder at $app_dir"
@@ -54,13 +53,17 @@ fi
 
 real_rustc=/home/zital/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc
 if [ ! -x "$real_rustc" ]; then
-    for d in /home/zital/.cargo/bin /usr/local/bin /usr/bin; do
+    real_rustc=
+    for d in "$HOME/.cargo/bin" /home/zital/.cargo/bin /usr/local/bin /usr/bin; do
         if [ -x "$d/rustc" ]; then
             real_rustc=$d/rustc
             break
         fi
     done
 fi
-[ -x "$real_rustc" ] || { printf 'rustc-shim: no rustc found\n' >&2; exit 127; }
+if [ -z "$real_rustc" ]; then
+    real_rustc=$(command -v rustc 2>/dev/null) || real_rustc=
+fi
+[ -n "$real_rustc" ] && [ -x "$real_rustc" ] || { printf 'rustc-shim: no rustc found\n' >&2; exit 127; }
 
 exec "$real_rustc" "$@"
