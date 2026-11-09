@@ -1,0 +1,49 @@
+{
+  "id": "ev_f36f48108cfe5fbff28a1038ebd642b4e882a98246602464622baf3579c0d615",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 6,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Maximum Stitch Length:"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10068136",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Maximum Stitch Length:"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"Maximum Stitch Length:\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

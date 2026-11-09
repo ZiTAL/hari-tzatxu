@@ -1,0 +1,39 @@
+{
+  "id": "ev_5d51f9ec87ab0485b22f8476564f8ee1fbdad6c6996448add1af559cb6a16e8a",
+  "subject": {
+    "kind": "pe",
+    "sha256": "b4caa53001e4f16687f473e93d483f46b8a8649ba09663acfce7bc29b4992cc7",
+    "name": "REVERT.EXE"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Default"
+  },
+  "result": {
+    "functions": 0,
+    "imports": 0,
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 functions and 0 imports match \"Default\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

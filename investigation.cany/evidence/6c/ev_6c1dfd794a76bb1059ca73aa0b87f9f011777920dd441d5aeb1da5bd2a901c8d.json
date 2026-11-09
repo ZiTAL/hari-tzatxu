@@ -1,0 +1,60 @@
+{
+  "id": "ev_6c1dfd794a76bb1059ca73aa0b87f9f011777920dd441d5aeb1da5bd2a901c8d",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_address_show",
+  "params": {
+    "address": "0x100022d6"
+  },
+  "result": {
+    "address": "0x100022d6",
+    "bookmarks": {
+      "reason": "not bookmarked",
+      "remediation": "Bookmark it with native_bookmark_add.",
+      "state": "unavailable"
+    },
+    "comment": {
+      "reason": "no comment here",
+      "remediation": "Add one with native_comment_write.",
+      "state": "unavailable"
+    },
+    "function": {
+      "reason": "not inside any discovered function",
+      "remediation": "Run native_functions_list or native_functions_search to find nearby functions.",
+      "state": "unavailable"
+    },
+    "inline_comment": {
+      "reason": "no inline comment here",
+      "remediation": "Add one with native_inline_comment_write.",
+      "state": "unavailable"
+    },
+    "name": {
+      "reason": "no name at this address",
+      "remediation": "Give it one with native_name_set.",
+      "state": "unavailable"
+    }
+  },
+  "summary": "Context for 0x100022d6.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x100022d6"
+    }
+  ],
+  "links": []
+}

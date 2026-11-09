@@ -1,0 +1,74 @@
+{
+  "id": "ev_ebbcf008a329d94875da6964819519c049ef55463871943a4599b46d83d3f948",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "fit"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x100601a0",
+        "references": [],
+        "section": ".rsrc",
+        "text": "To Fit Text, use"
+      },
+      {
+        "address": "0x100641f0",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Scale Motifs to fit Grid"
+      },
+      {
+        "address": "0x10064240",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Clip Motifs to fit Shape"
+      },
+      {
+        "address": "0x1007a2c4",
+        "references": [],
+        "section": ".rsrc",
+        "text": "OneRowDon'tFit"
+      },
+      {
+        "address": "0x1007a300",
+        "references": [],
+        "section": ".rsrc",
+        "text": "OneRowDoFit"
+      }
+    ],
+    "total": 24
+  },
+  "summary": "24 strings match \"fit\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 5,
+    "total": 24,
+    "next_offset": 5
+  },
+  "locations": [],
+  "links": []
+}

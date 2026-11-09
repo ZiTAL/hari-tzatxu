@@ -1,0 +1,49 @@
+{
+  "id": "ev_8da43fd3f2626ed586815b19e76bfb365cd24dbd6b4fda439e82319dea5f87b8",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 4,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Hoop is"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x100ba2c0",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Janome/Elna/Kenmore (*.JEF+)sThe selected hoop is not supported on the target machine.\nPlease select a different hoop before writing the design."
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"Hoop is\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

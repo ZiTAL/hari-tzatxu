@@ -1,0 +1,45 @@
+{
+  "id": "ev_0bbd40b44e4cd82fd56e0b70813749dc71558618914eb048acf04063352e1622",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10018390"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10018390",
+    "function": "GetDesignStitchCriteria",
+    "pseudo_code": "\n/* public: class StitchCriteria __thiscall DesignDocument::GetDesignStitchCriteria(bool)const  */\n\nundefined4 __thiscall DesignDocument::GetDesignStitchCriteria(DesignDocument *this,bool param_1)\n\n{\n  bool bVar1;\n  int iVar2;\n  undefined4 uVar3;\n  undefined3 in_stack_00000005;\n  undefined4 in_stack_00000008;\n  \n                    /* 0x18390  1385\n                       ?GetDesignStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@_N@Z */\n  uVar3 = 0;\n  iVar2 = FUN_10095ee0();\n  if ((iVar2 == 0) || (iVar2 != 1)) {\n    bVar1 = false;\n  }\n  else {\n    bVar1 = true;\n  }\n  if (bVar1) {\n    iVar2 = FUN_104163d0(1,0x99);\n    if (iVar2 != 0) {\n      uVar3 = *(undefined4 *)(iVar2 + 8);\n    }\n  }\n  FUN_10018310(_param_1,in_stack_00000008,uVar3,bVar1);\n  return _param_1;\n}\n\n",
+    "signature": "undefined4 __thiscall DesignDocument::GetDesignStitchCriteria(DesignDocument *this,bool param_1);"
+  },
+  "summary": "Pseudo-C for GetDesignStitchCriteria from the Deep engine (32 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10018390"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

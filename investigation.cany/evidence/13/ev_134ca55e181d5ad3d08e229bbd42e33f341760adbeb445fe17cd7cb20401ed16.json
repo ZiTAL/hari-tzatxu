@@ -1,0 +1,62 @@
+{
+  "id": "ev_134ca55e181d5ad3d08e229bbd42e33f341760adbeb445fe17cd7cb20401ed16",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Stitch"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1000b14d",
+        "references": [],
+        "section": ".rdata",
+        "text": "?GetStitchesString@DesignGradeUtilities@@YA?AVString@@ABW4DesignSourceGroup@@ABW4DesignCondition@@@Z"
+      },
+      {
+        "address": "0x10059476",
+        "references": [],
+        "section": ".rsrc",
+        "text": "&About Stitch Manager..."
+      },
+      {
+        "address": "0x1005a326",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Maximum Stitch:"
+      }
+    ],
+    "total": 328
+  },
+  "summary": "328 strings match \"Stitch\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 328,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

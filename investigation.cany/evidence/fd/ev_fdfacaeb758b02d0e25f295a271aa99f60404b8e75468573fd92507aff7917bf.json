@@ -1,0 +1,45 @@
+{
+  "id": "ev_fdfacaeb758b02d0e25f295a271aa99f60404b8e75468573fd92507aff7917bf",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0xafe280"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0xafe280",
+    "function": "entry",
+    "pseudo_code": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nvoid entry(void)\n\n{\n  int iVar1;\n  undefined4 *puVar2;\n  undefined4 *puVar3;\n  \n  DAT_00afeef4 = &stack0xffffffd0;\n  DAT_00afe53c = (int)&DAT_00afe518 - DAT_00afe53c;\n  if (DAT_00afeef0 == (code *)0x0) {\n    DAT_00afe4f8 = GetModuleHandleA(s_kernel32_00afeedc);\n    DAT_00afe4fc = GetModuleHandleA(s_user32_00afeee8);\n    _DAT_00afe500 = GetProcAddress_exref;\n    _DAT_00afe504 = MessageBoxA_exref;\n    _DAT_00afe508 = 0;\n    _DAT_00afe50c = 0;\n    DAT_00afeef0 = (code *)(DAT_00afe53c + _DAT_00afe510);\n    FUN_00afe479(DAT_00afe53c + DAT_00afe540,DAT_00afe548,DAT_00afe518);\n    FUN_00afe366();\n    puVar2 = &DAT_00afe4f8;\n    puVar3 = (undefined4 *)PTR_DAT_00afe520;\n    for (iVar1 = 6; iVar1 != 0; iVar1 = iVar1 + -1) {\n      *puVar3 = *puVar2;\n      puVar2 = puVar2 + 1;\n      puVar3 = puVar3 + 1;\n    }\n    (*DAT_00afeef0)(DAT_00afeef4);\n  }\n  else {\n    DAT_00afeef4 = &stack0xffffffd0;\n    (*DAT_00afeef0)(&stack0xffffffd0);\n  }\n  return;\n}\n\n",
+    "signature": "void entry(void);"
+  },
+  "summary": "Pseudo-C for entry from the Deep engine (38 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0xafe280"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

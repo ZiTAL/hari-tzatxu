@@ -1,0 +1,62 @@
+{
+  "id": "ev_9273a1f6904225c05d76cfb7666e6352e47c0139961a829a9cd9464c710815df",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Default"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10066526",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Save as defaults"
+      },
+      {
+        "address": "0x10066562",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Defaults"
+      },
+      {
+        "address": "0x100666fa",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Default Letter Spacing:"
+      }
+    ],
+    "total": 12
+  },
+  "summary": "12 strings match \"Default\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 12,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

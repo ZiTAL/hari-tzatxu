@@ -1,0 +1,45 @@
+{
+  "id": "ev_5723be7205449e3140c9c5bd7a9ff9b3ae78ab35f9553a66d767039d5facc0b8",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x1009bd90"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x1009bd90",
+    "function": "CreateUserDefinedHoopPrototype",
+    "pseudo_code": "\n/* public: void __thiscall HoopLibrary::CreateUserDefinedHoopPrototype(class DataItem &)const  */\n\nvoid __thiscall HoopLibrary::CreateUserDefinedHoopPrototype(HoopLibrary *this,DataItem *param_1)\n\n{\n  undefined4 uVar1;\n  undefined1 local_178 [364];\n  void *local_c;\n  undefined1 *puStack_8;\n  int local_4;\n  \n                    /* 0x9bd90  1007\n                       ?CreateUserDefinedHoopPrototype@HoopLibrary@@QBEXAAVDataItem@@@Z */\n  local_4 = 0xffffffff;\n  puStack_8 = &LAB_104be523;\n  local_c = ExceptionList;\n  ExceptionList = &local_c;\n  FUN_10404b10(0x9c8,0,0);\n  local_4 = 0;\n  FUN_10405180(0x9ca,&DAT_10691120,1,0);\n  local_4._0_1_ = 1;\n  FUN_10405180(0x9cb,&DAT_10691120,1,0);\n  local_4._0_1_ = 2;\n  FUN_10404b10(0x9cc,0,0);\n  local_4._0_1_ = 3;\n  FUN_10404b10(0x9cd,0,0);\n  local_4._0_1_ = 4;\n  FUN_10404b10(0x7d1,0,0);\n  local_4._0_1_ = 5;\n  FUN_10404b10(0x9d0,3,0);\n  local_4._0_1_ = 6;\n  FUN_10404b10(0x9de,0,0);\n  local_4._0_1_ = 7;\n  FUN_10404b10(0x9df,0,0);\n  local_4._0_1_ = 8;\n  FUN_10404b10(0x9c9,1,0);\n  local_4._0_1_ = 9;\n  FUN_10404b10(0x9e2,0,0);\n  local_4._0_1_ = 10;\n  FUN_10404b10(0x9e3,2,0);\n  local_4._0_1_ = 0xb;\n  uVar1 = FUN_10405c90(0x9c7,local_178,0xc,0);\n  local_4._0_1_ = 0xc;\n  FUN_10405500(uVar1);\n  local_4._0_1_ = 0xb;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 10;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 9;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 8;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 7;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 6;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 5;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 4;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 3;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 2;\n  thunk_FUN_104052a0();\n  local_4._0_1_ = 1;\n  thunk_FUN_104052a0();\n  local_4 = (uint)local_4._1_3_ << 8;\n  thunk_FUN_104052a0();\n  local_4 = 0xffffffff;\n  thunk_FUN_104052a0();\n  ExceptionList = local_c;\n  return;\n}\n\n",
+    "signature": "void __thiscall HoopLibrary::CreateUserDefinedHoopPrototype(HoopLibrary *this,DataItem *param_1);"
+  },
+  "summary": "Pseudo-C for CreateUserDefinedHoopPrototype from the Deep engine (75 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1009bd90"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

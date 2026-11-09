@@ -1,0 +1,45 @@
+{
+  "id": "ev_e8d92f3bff1edf3b440f0a78c4c9dd3c705537180626743f47498cc56a780c6d",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10002330"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10002330",
+    "function": "FUN_10002330",
+    "pseudo_code": "\nvoid FUN_10002330(void)\n\n{\n  void *local_10;\n  undefined1 *puStack_c;\n  undefined4 local_8;\n  \n  puStack_c = &LAB_1007b020;\n  local_10 = ExceptionList;\n  local_8 = 0;\n  ExceptionList = &local_10;\n  FUN_100026e0();\n  FUN_10001ec0();\n  ExceptionList = local_10;\n  return;\n}\n\n",
+    "signature": "void FUN_10002330(void);"
+  },
+  "summary": "Pseudo-C for FUN_10002330 from the Deep engine (18 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10002330"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ev_2b163d205d095eae3268f8719b6506bde6e02152d213336916f4a63fc9355c4b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 12,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "MinStitch"
+  },
+  "result": {
+    "functions": 1,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x10028a00",
+        "demangled": null,
+        "kind": "function",
+        "name": "?RunMinStitchFilter@DesignDocument@@QAEKXZ",
+        "size": 853
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 functions and 0 imports match \"MinStitch\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

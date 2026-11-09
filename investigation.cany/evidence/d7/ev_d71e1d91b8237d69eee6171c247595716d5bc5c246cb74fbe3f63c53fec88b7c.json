@@ -1,0 +1,116 @@
+{
+  "id": "ev_d71e1d91b8237d69eee6171c247595716d5bc5c246cb74fbe3f63c53fec88b7c",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_sections_list",
+  "params": {},
+  "result": {
+    "sections": [
+      {
+        "end": "0x94e07a",
+        "entropy": 7.99997091293335,
+        "exec": true,
+        "file_offset": 4096,
+        "file_size": 5558394,
+        "kind": "code",
+        "name": ".text",
+        "read": true,
+        "segment": null,
+        "size": 5558394,
+        "start": "0x401000",
+        "write": false
+      },
+      {
+        "end": "0x94f030",
+        "entropy": 4.959962368011475,
+        "exec": true,
+        "file_offset": 5566464,
+        "file_size": 48,
+        "kind": "code",
+        "name": "CONST",
+        "read": true,
+        "segment": null,
+        "size": 48,
+        "start": "0x94f000",
+        "write": false
+      },
+      {
+        "end": "0x9e80da",
+        "entropy": 7.999669551849365,
+        "exec": false,
+        "file_offset": 5570560,
+        "file_size": 622810,
+        "kind": "rodata",
+        "name": ".rdata",
+        "read": true,
+        "segment": null,
+        "size": 622810,
+        "start": "0x950000",
+        "write": false
+      },
+      {
+        "end": "0xafc170",
+        "entropy": 7.999149322509766,
+        "exec": false,
+        "file_offset": 6197248,
+        "file_size": 192512,
+        "kind": "data",
+        "name": ".data",
+        "read": true,
+        "segment": null,
+        "size": 1126768,
+        "start": "0x9e9000",
+        "write": true
+      },
+      {
+        "end": "0xafd2f0",
+        "entropy": 5.170948028564453,
+        "exec": false,
+        "file_offset": 6389760,
+        "file_size": 752,
+        "kind": "rodata",
+        "name": ".rsrc",
+        "read": true,
+        "segment": null,
+        "size": 752,
+        "start": "0xafd000",
+        "write": false
+      },
+      {
+        "end": "0xc2d7fe",
+        "entropy": 7.996586799621582,
+        "exec": true,
+        "file_offset": 6393856,
+        "file_size": 1243134,
+        "kind": "code",
+        "name": ".protect",
+        "read": true,
+        "segment": null,
+        "size": 1243134,
+        "start": "0xafe000",
+        "write": true
+      }
+    ],
+    "segments": []
+  },
+  "summary": "0 segments and 6 sections.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 6,
+    "total": 6
+  },
+  "locations": [],
+  "links": []
+}

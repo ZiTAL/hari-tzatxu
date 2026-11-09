@@ -1,0 +1,62 @@
+{
+  "id": "ev_bad97326499613e5acbdce830ec4dfe4cc9de2da4c511395a67e9b5777f82245",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Hoop"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10007120",
+        "references": [],
+        "section": ".rdata",
+        "text": "Hoop ST (126 x 110)"
+      },
+      {
+        "address": "0x10007224",
+        "references": [],
+        "section": ".rdata",
+        "text": "Hoop RE (140 x 200)"
+      },
+      {
+        "address": "0x10007328",
+        "references": [],
+        "section": ".rdata",
+        "text": "Hoop SQ (200 x 200)"
+      }
+    ],
+    "total": 82
+  },
+  "summary": "82 strings match \"Hoop\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 82,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ev_23016f3640c4f26669954a8c23b5b455e82f2b287f766a77ce5425f0cd294594",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Stitch"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10694880",
+        "references": [
+          {
+            "from": "0x10161d18",
+            "function": "sub_10161140"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Turnfill stitched outside patch, fixed by %d refinement steps."
+      },
+      {
+        "address": "0x10697fec",
+        "references": [
+          {
+            "from": "0x1031dd9c",
+            "function": "sub_1031dd10"
+          },
+          {
+            "from": "0x1031ddba",
+            "function": "sub_1031dd10"
+          }
+        ],
+        "section": ".rdata",
+        "text": "!!!: Wrong Last Stitch Store Index\n"
+      },
+      {
+        "address": "0x106e5d64",
+        "references": [],
+        "section": ".rdata",
+        "text": "?FindFurthestPointInRange@ApproxStitchCurve@@EAENABVGeoCurveSegmentIter@@HHAAHAAVLongPoint@@@Z"
+      }
+    ],
+    "total": 499
+  },
+  "summary": "499 strings match \"Stitch\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 499,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ev_6a608685d34fb64d449cd1bdf509b5ffbb1aa6723fb849a057d43aea33ef1cf4",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 10,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "DFL"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1007d2d4",
+        "references": [],
+        "section": ".rdata",
+        "text": "\\DEFAULTS.DFL"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"DFL\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

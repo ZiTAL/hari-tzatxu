@@ -1,0 +1,42 @@
+{
+  "id": "ev_3174f6160908520afd4e503dcca368fba383b97fc40b906bd5a04ba6d92de28f",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Speed:"
+  },
+  "result": {
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 strings match \"Speed:\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ev_7ef5b3c71dff211c5b9be7c52ad49f3f3ba3b3305483f24dc32c90a586f97886",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "http://"
+  },
+  "result": {
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 strings match \"http://\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

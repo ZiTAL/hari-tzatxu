@@ -1,0 +1,45 @@
+{
+  "id": "ev_d4458f8d90f3131f5a663450457621751ac1674c3df312d0c733d0917bbdfbec",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x1009b810"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x1009b810",
+    "function": "GetMatchingHoop",
+    "pseudo_code": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* public: class DataItem const * __thiscall HoopLibrary::GetMatchingHoop(unsigned\n   int,double,double)const  */\n\nDataItem * __thiscall\nHoopLibrary::GetMatchingHoop(HoopLibrary *this,uint param_1,double param_2,double param_3)\n\n{\n  char cVar1;\n  int iVar2;\n  int iVar3;\n  uint uVar4;\n  int iVar5;\n  uint local_20;\n  undefined4 local_18;\n  undefined4 uStack_14;\n  undefined4 local_10;\n  undefined4 uStack_c;\n  \n                    /* 0x9b810  1502  ?GetMatchingHoop@HoopLibrary@@QBEPBVDataItem@@INN@Z */\n  iVar2 = FUN_1009b720(param_1);\n  iVar5 = 0;\n  if ((iVar2 != 0) && (local_20 = 0, *(int *)(iVar2 + 0xc) != 0)) {\n    do {\n      if (*(int *)(iVar2 + 8) == 6) {\n        iVar3 = *(int *)(iVar2 + 0x10);\n      }\n      else {\n        iVar3 = 0;\n      }\n      local_18 = 0;\n      uStack_14 = 0;\n      local_10 = 0;\n      uStack_c = 0;\n      cVar1 = FUN_10404fc0(0x9cc,&local_18,0,0);\n      if ((((cVar1 != '\\0') && (cVar1 = FUN_10404fc0(0x9cd,&local_10,0,0), cVar1 != '\\0')) &&\n          (uVar4 = FUN_104b6100(),\n          (double)(int)((uVar4 ^ (int)uVar4 >> 0x1f) - ((int)uVar4 >> 0x1f)) < _DAT_106916e0)) &&\n         (uVar4 = FUN_104b6100(),\n         (double)(int)((uVar4 ^ (int)uVar4 >> 0x1f) - ((int)uVar4 >> 0x1f)) < _DAT_106916e0)) {\n        return (DataItem *)(iVar5 + iVar3);\n      }\n      local_20 = local_20 + 1;\n      iVar5 = iVar5 + 0x1c;\n    } while (local_20 < *(uint *)(iVar2 + 0xc));\n  }\n  return (DataItem *)0x0;\n}\n\n",
+    "signature": "DataItem * __thiscall HoopLibrary::GetMatchingHoop(HoopLibrary *this,uint param_1,double param_2,double param_3);"
+  },
+  "summary": "Pseudo-C for GetMatchingHoop from the Deep engine (50 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1009b810"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

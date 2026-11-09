@@ -1,0 +1,48 @@
+{
+  "id": "ev_862aed50745e1974b454f80689d0650fa43b43dc887697216537932d79a58506",
+  "subject": {
+    "kind": "pe",
+    "sha256": "faabe3e689f5f07c59eb283be2e797db4c7b233bb2b4888691641fe9c4320eb3",
+    "name": "IMPORT.DLL"
+  },
+  "operation": "native_xrefs_list",
+  "params": {
+    "address": "0x10370848",
+    "limit": 20,
+    "offset": 0
+  },
+  "result": {
+    "address": "0x10370848",
+    "name": null,
+    "references_from": [],
+    "references_to": [],
+    "total_to": 0
+  },
+  "summary": "0x10370848 is referenced from 0 places and refers to 0.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "static_references",
+      "message": "references made through computed pointers at run time are not seen"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10370848"
+    }
+  ],
+  "links": []
+}

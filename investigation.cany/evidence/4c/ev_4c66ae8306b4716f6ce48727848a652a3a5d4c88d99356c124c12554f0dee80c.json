@@ -1,0 +1,61 @@
+{
+  "id": "ev_4c66ae8306b4716f6ce48727848a652a3a5d4c88d99356c124c12554f0dee80c",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 15,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "SetStitch"
+  },
+  "result": {
+    "functions": 3,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x100a0750",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetStitchStore@PhysicalMachine@@QAEXPAVStitchStore@@@Z",
+        "size": 13
+      },
+      {
+        "address": "0x1016ce80",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetStitchLinesEx@TurningFillGroup@@QAEXABV?$SimpleIndexedList@UStitchLineEx@@@@@Z",
+        "size": 59
+      },
+      {
+        "address": "0x103e05d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetStitchStore@StitchOrder@@AAEXPAVStitchStore@@@Z",
+        "size": 634
+      }
+    ],
+    "total": 3
+  },
+  "summary": "3 functions and 0 imports match \"SetStitch\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [],
+  "links": []
+}

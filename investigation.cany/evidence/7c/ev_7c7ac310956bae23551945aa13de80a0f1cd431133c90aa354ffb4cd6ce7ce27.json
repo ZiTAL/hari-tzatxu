@@ -1,0 +1,55 @@
+{
+  "id": "ev_7c7ac310956bae23551945aa13de80a0f1cd431133c90aa354ffb4cd6ce7ce27",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Speed:"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1007b634",
+        "references": [],
+        "section": ".rsrc",
+        "text": " Speed:              (s/s)"
+      },
+      {
+        "address": "0x100b60ec",
+        "references": [],
+        "section": ".rsrc",
+        "text": " Speed: %5d (s/s) "
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 strings match \"Speed:\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

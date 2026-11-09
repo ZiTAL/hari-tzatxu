@@ -1,0 +1,612 @@
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:06:09Z","tool":"project_pins_list","ts":1794096369}
+{"caller":"ui","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:06:09Z","tool":"project_pins_list","ts":1794096369}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:08:16Z","tool":"project_pins_list","ts":1794096496}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:09:10Z","tool":"project_pins_list","ts":1794096550}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:09:18Z","tool":"project_pins_list","ts":1794096558}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:09:26Z","tool":"project_pins_list","ts":1794096566}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:09:37Z","tool":"project_pins_list","ts":1794096577}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:09:42Z","tool":"project_pins_list","ts":1794096582}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:09:53Z","tool":"project_pins_list","ts":1794096593}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:10:46Z","tool":"project_pins_list","ts":1794096646}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:10:46Z","tool":"project_pins_list","ts":1794096646}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:10:51Z","tool":"project_pins_list","ts":1794096651}
+{"caller":"ui","duration_ms":3,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:12:50Z","tool":"project_pins_list","ts":1794096770}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:22:48Z","tool":"project_pins_list","ts":1794097368}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:24:04Z","tool":"project_pins_list","ts":1794097444}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:39:56Z","tool":"project_pins_list","ts":1794098396}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:41:43Z","tool":"project_pins_list","ts":1794098503}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T00:48:58Z","tool":"project_pins_list","ts":1794098938}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:11:52Z","tool":"project_pins_list","ts":1794125512}
+{"caller":"ui","duration_ms":2000,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T08:11:54Z","tool":"project_play","ts":1794125514}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:12:55Z","tool":"project_pins_list","ts":1794125575}
+{"caller":"ui","duration_ms":8,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:13:17Z","tool":"project_pins_list","ts":1794125597}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:13:34Z","tool":"project_pins_list","ts":1794125614}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:13:34Z","tool":"project_pins_list","ts":1794125614}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:13:43Z","tool":"project_pins_list","ts":1794125623}
+{"caller":"ui","duration_ms":551,"error":"Hermes Agent can't be kept to only reading here, so it isn't asked questions about a build.","error_code":"program_failed","kind":"tool_call","ok":false,"params":{"project":"/home/zital/Documents/Craft Anything/janome","question":"can you tell me the technology that you use to build it?"},"time":"2026-11-08T08:13:47Z","tool":"rebuild_question_ask","ts":1794125627}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:13:56Z","tool":"project_pins_list","ts":1794125636}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:14:14Z","tool":"project_pins_list","ts":1794125654}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:14:14Z","tool":"project_pins_list","ts":1794125654}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:14:18Z","tool":"project_pins_list","ts":1794125658}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T08:14:19Z","tool":"project_pins_list","ts":1794125659}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:38:51Z","tool":"project_pins_list","ts":1794137931}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:38:51Z","tool":"project_pins_list","ts":1794137931}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:39:08Z","tool":"project_pins_list","ts":1794137948}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:39:08Z","tool":"project_pins_list","ts":1794137948}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:39:09Z","tool":"project_pins_list","ts":1794137949}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:39:10Z","tool":"project_pins_list","ts":1794137950}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:41:38Z","tool":"project_pins_list","ts":1794138098}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:41:40Z","tool":"project_pins_list","ts":1794138100}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:43:25Z","tool":"project_pins_list","ts":1794138205}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:43:26Z","tool":"project_pins_list","ts":1794138206}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:47:50Z","tool":"project_pins_list","ts":1794138470}
+{"caller":"ui","duration_ms":551,"error":"Hermes Agent can't be kept to only reading here, so it isn't asked questions about a build.","error_code":"program_failed","kind":"tool_call","ok":false,"params":{"project":"/home/zital/Documents/Craft Anything/janome","question":"can you tell me the technology that you use to build it?"},"time":"2026-11-08T11:47:59Z","tool":"rebuild_question_ask","ts":1794138479}
+{"caller":"ui","duration_ms":3,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:48:15Z","tool":"project_pins_list","ts":1794138495}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:49:30Z","tool":"project_pins_list","ts":1794138570}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:49:32Z","tool":"project_pins_list","ts":1794138572}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:51:09Z","tool":"project_pins_list","ts":1794138669}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:51:30Z","tool":"project_pins_list","ts":1794138690}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:51:34Z","tool":"project_pins_list","ts":1794138694}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:55:31Z","tool":"project_pins_list","ts":1794138931}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:56:28Z","tool":"project_pins_list","ts":1794138988}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T11:58:55Z","tool":"project_pins_list","ts":1794139135}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:06:46Z","tool":"project_pins_list","ts":1794139606}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:07:00Z","tool":"project_pins_list","ts":1794139620}
+{"caller":"ui","duration_ms":2000,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T12:07:02Z","tool":"project_play","ts":1794139622}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:00Z","tool":"project_pins_list","ts":1794139680}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:10Z","tool":"project_pins_list","ts":1794139690}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:12Z","tool":"project_pins_list","ts":1794139692}
+{"caller":"ui","duration_ms":2001,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T12:08:17Z","tool":"project_play","ts":1794139697}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:26Z","tool":"project_pins_list","ts":1794139706}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:26Z","tool":"project_pins_list","ts":1794139706}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:33Z","tool":"project_pins_list","ts":1794139713}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:34Z","tool":"project_pins_list","ts":1794139714}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:34Z","tool":"project_pins_list","ts":1794139714}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:53Z","tool":"project_pins_list","ts":1794139733}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:56Z","tool":"project_pins_list","ts":1794139736}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:08:56Z","tool":"project_pins_list","ts":1794139736}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:02Z","tool":"project_pins_list","ts":1794139742}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:04Z","tool":"project_pins_list","ts":1794139744}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:04Z","tool":"project_pins_list","ts":1794139744}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:14Z","tool":"project_pins_list","ts":1794139754}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:15Z","tool":"project_pins_list","ts":1794139755}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:15Z","tool":"project_pins_list","ts":1794139755}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:24Z","tool":"project_pins_list","ts":1794139764}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:30Z","tool":"project_pins_list","ts":1794139770}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:30Z","tool":"project_pins_list","ts":1794139770}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:37Z","tool":"project_pins_list","ts":1794139777}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:39Z","tool":"project_pins_list","ts":1794139779}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:39Z","tool":"project_pins_list","ts":1794139779}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:43Z","tool":"project_pins_list","ts":1794139783}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:44Z","tool":"project_pins_list","ts":1794139784}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:44Z","tool":"project_pins_list","ts":1794139784}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:45Z","tool":"project_pins_list","ts":1794139785}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:46Z","tool":"project_pins_list","ts":1794139786}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:09:46Z","tool":"project_pins_list","ts":1794139786}
+{"caller":"ui","duration_ms":8,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:10:08Z","tool":"project_pins_list","ts":1794139808}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:36:40Z","tool":"project_pins_list","ts":1794141400}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:38:34Z","tool":"project_pins_list","ts":1794141514}
+{"caller":"ui","duration_ms":2001,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T12:38:36Z","tool":"project_play","ts":1794141516}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:39:11Z","tool":"project_pins_list","ts":1794141551}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:39:11Z","tool":"project_pins_list","ts":1794141551}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:39:32Z","tool":"project_pins_list","ts":1794141572}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:39:32Z","tool":"project_pins_list","ts":1794141572}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:39:32Z","tool":"project_pins_list","ts":1794141572}
+{"caller":"ui","duration_ms":3,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:40:17Z","tool":"project_pins_list","ts":1794141617}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:46:34Z","tool":"project_pins_list","ts":1794141994}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:46:34Z","tool":"project_pins_list","ts":1794141994}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:46:36Z","tool":"project_pins_list","ts":1794141996}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:46:36Z","tool":"project_pins_list","ts":1794141996}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:46:38Z","tool":"project_pins_list","ts":1794141998}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:46:38Z","tool":"project_pins_list","ts":1794141998}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:47:48Z","tool":"project_pins_list","ts":1794142068}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:47:48Z","tool":"project_pins_list","ts":1794142068}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:47:59Z","tool":"project_pins_list","ts":1794142079}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:47:59Z","tool":"project_pins_list","ts":1794142079}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:48:17Z","tool":"project_pins_list","ts":1794142097}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:48:17Z","tool":"project_pins_list","ts":1794142097}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:48:20Z","tool":"project_pins_list","ts":1794142100}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:48:20Z","tool":"project_pins_list","ts":1794142100}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:48:40Z","tool":"project_pins_list","ts":1794142120}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:48:40Z","tool":"project_pins_list","ts":1794142120}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:17Z","tool":"project_pins_list","ts":1794142157}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:17Z","tool":"project_pins_list","ts":1794142157}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:20Z","tool":"project_pins_list","ts":1794142160}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:20Z","tool":"project_pins_list","ts":1794142160}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:22Z","tool":"project_pins_list","ts":1794142162}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:22Z","tool":"project_pins_list","ts":1794142162}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:24Z","tool":"project_pins_list","ts":1794142164}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:49:24Z","tool":"project_pins_list","ts":1794142164}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:50:11Z","tool":"project_pins_list","ts":1794142211}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:50:11Z","tool":"project_pins_list","ts":1794142211}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:50:31Z","tool":"project_pins_list","ts":1794142231}
+{"caller":"ui","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:50:32Z","tool":"project_pins_list","ts":1794142232}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:50:33Z","tool":"project_pins_list","ts":1794142233}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:51:10Z","tool":"project_pins_list","ts":1794142270}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:51:11Z","tool":"project_pins_list","ts":1794142271}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:51:15Z","tool":"project_pins_list","ts":1794142275}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:51:29Z","tool":"project_pins_list","ts":1794142289}
+{"caller":"ui","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T12:51:29Z","tool":"project_pins_list","ts":1794142289}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T13:52:42Z","tool":"project_play","ts":1794145962}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T13:52:52Z","tool":"project_pins_list","ts":1794145972}
+{"caller":"ui","duration_ms":2000,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T13:52:54Z","tool":"project_play","ts":1794145974}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T13:53:37Z","tool":"project_pins_list","ts":1794146017}
+{"caller":"ui","duration_ms":5,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T13:53:41Z","tool":"project_open_folder","ts":1794146021}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:00:01Z","tool":"project_pins_list","ts":1794146401}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:00:40Z","tool":"project_pins_list","ts":1794146440}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:00:40Z","tool":"project_pins_list","ts":1794146440}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:02:15Z","tool":"project_pins_list","ts":1794146535}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:02:42Z","tool":"project_pins_list","ts":1794146562}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:03:27Z","tool":"project_pins_list","ts":1794146607}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:03:27Z","tool":"project_pins_list","ts":1794146607}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:03:52Z","tool":"project_pins_list","ts":1794146632}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:03:52Z","tool":"project_pins_list","ts":1794146632}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:03:52Z","tool":"project_pins_list","ts":1794146632}
+{"caller":"ui","duration_ms":3,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:03:55Z","tool":"project_pins_list","ts":1794146635}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:06:18Z","tool":"project_pins_list","ts":1794146778}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:07:02Z","tool":"project_pins_list","ts":1794146822}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:07:40Z","tool":"project_pins_list","ts":1794146860}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:07:47Z","tool":"project_pins_list","ts":1794146867}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:10:20Z","tool":"project_pins_list","ts":1794147020}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:20:53Z","tool":"project_pins_list","ts":1794147653}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:23:05Z","tool":"project_pins_list","ts":1794147785}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:23:25Z","tool":"project_pins_list","ts":1794147805}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:24:10Z","tool":"project_pins_list","ts":1794147850}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:24:16Z","tool":"project_pins_list","ts":1794147856}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:24:16Z","tool":"project_pins_list","ts":1794147856}
+{"caller":"ui","duration_ms":2001,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T14:24:59Z","tool":"project_play","ts":1794147899}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:25:20Z","tool":"project_pins_list","ts":1794147920}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:25:20Z","tool":"project_pins_list","ts":1794147920}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:25:35Z","tool":"project_pins_list","ts":1794147935}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:25:35Z","tool":"project_pins_list","ts":1794147935}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:25:35Z","tool":"project_pins_list","ts":1794147935}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:25:54Z","tool":"project_pins_list","ts":1794147954}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:28:57Z","tool":"project_pins_list","ts":1794148137}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:31:22Z","tool":"project_pins_list","ts":1794148282}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:32:44Z","tool":"project_pins_list","ts":1794148364}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:33:27Z","tool":"project_pins_list","ts":1794148407}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:33:39Z","tool":"project_pins_list","ts":1794148419}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:33:43Z","tool":"project_pins_list","ts":1794148423}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:35:06Z","tool":"project_pins_list","ts":1794148506}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:35:37Z","tool":"project_pins_list","ts":1794148537}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:37:42Z","tool":"project_pins_list","ts":1794148662}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:37:56Z","tool":"project_pins_list","ts":1794148676}
+{"caller":"ui","duration_ms":2001,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T14:37:58Z","tool":"project_play","ts":1794148678}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:38:51Z","tool":"project_pins_list","ts":1794148731}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:38:51Z","tool":"project_pins_list","ts":1794148731}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:39:28Z","tool":"project_pins_list","ts":1794148768}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:39:28Z","tool":"project_pins_list","ts":1794148768}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:39:28Z","tool":"project_pins_list","ts":1794148768}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:40:05Z","tool":"project_pins_list","ts":1794148805}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:40:05Z","tool":"project_pins_list","ts":1794148805}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:40:05Z","tool":"project_pins_list","ts":1794148805}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:40:40Z","tool":"project_pins_list","ts":1794148840}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:40:40Z","tool":"project_pins_list","ts":1794148840}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:40:40Z","tool":"project_pins_list","ts":1794148840}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:41:00Z","tool":"project_pins_list","ts":1794148860}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:41:00Z","tool":"project_pins_list","ts":1794148860}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:41:00Z","tool":"project_pins_list","ts":1794148860}
+{"caller":"ui","duration_ms":8,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:41:04Z","tool":"project_pins_list","ts":1794148864}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:41:08Z","tool":"project_pins_list","ts":1794148868}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:49:39Z","tool":"project_pins_list","ts":1794149379}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:54:09Z","tool":"project_pins_list","ts":1794149649}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:54:14Z","tool":"project_pins_list","ts":1794149654}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T14:54:14Z","tool":"project_play","ts":1794149654}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:54:33Z","tool":"project_pins_list","ts":1794149673}
+{"caller":"ui","duration_ms":2001,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T14:54:37Z","tool":"project_play","ts":1794149677}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:55:52Z","tool":"project_pins_list","ts":1794149752}
+{"caller":"ui","duration_ms":2000,"kind":"tool_call","ok":true,"params":{"project":"/home/zital/Documents/Craft Anything/janome"},"time":"2026-11-08T14:56:10Z","tool":"project_play","ts":1794149770}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:58:01Z","tool":"project_pins_list","ts":1794149881}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:58:07Z","tool":"project_pins_list","ts":1794149887}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:58:10Z","tool":"project_pins_list","ts":1794149890}
+{"caller":"ui","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T14:58:26Z","tool":"project_pins_list","ts":1794149906}
+{"caller":"cli","duration_ms":16,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T18:33:07Z","tool":"core_target_open","ts":1794162787}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:33:13Z","tool":"core_session_show","ts":1794162793}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T18:33:18Z","tool":"core_target_open","ts":1794162798}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_9277dcc886784d415d64de9ac90f21cc7f2a5376963fc286e79392aaca5d2cd7","kind":"tool_call","ok":true,"params":{"limit":60,"pattern":"stitch"},"time":"2026-11-08T18:33:18Z","tool":"native_strings_find","ts":1794162798}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:33:18Z","tool":"core_target_close","ts":1794162798}
+{"caller":"cli","duration_ms":0,"error":"This looks inside the original (its code, files or page source), which Clean room never does.","error_code":"feature_missing","kind":"tool_call","ok":false,"params":{"limit":40,"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T18:33:30Z","tool":"native_library_calls_list","ts":1794162810}
+{"caller":"cli","duration_ms":15,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T18:33:39Z","tool":"core_target_open","ts":1794162819}
+{"caller":"cli","duration_ms":3,"evidence_id":"ev_d71e1d91b8237d69eee6171c247595716d5bc5c246cb74fbe3f63c53fec88b7c","kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:33:39Z","tool":"native_sections_list","ts":1794162819}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:33:39Z","tool":"core_target_close","ts":1794162819}
+{"caller":"cli","duration_ms":22,"evidence_id":"ev_a86a082b973c8ac2c2144e9384570eb1e889b2825b6eea141787f70750939386","kind":"tool_call","ok":true,"params":{"limit":40,"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T18:33:39Z","tool":"native_library_calls_list","ts":1794162819}
+{"caller":"cli","duration_ms":12,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:35:35Z","tool":"core_target_open","ts":1794162935}
+{"caller":"cli","duration_ms":1397,"evidence_id":"ev_6478e0006f5dc34879dd4c12c2b67cf4dcd5967f8aae656dca183304acb0a672","kind":"tool_call","ok":true,"params":{"limit":40,"pattern":"StitchCriteria"},"time":"2026-11-08T18:35:36Z","tool":"native_functions_search","ts":1794162936}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:35:36Z","tool":"core_target_close","ts":1794162936}
+{"caller":"cli","duration_ms":13,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:35:44Z","tool":"core_target_open","ts":1794162944}
+{"caller":"cli","duration_ms":162364,"evidence_id":"ev_9e43ff6c645590c41530f0598f2cc6e9c859927480ec7c25edebcc9ef9b6106a","kind":"tool_call","ok":true,"params":{"function":"0x101dd4a0"},"time":"2026-11-08T18:38:26Z","tool":"native_function_pseudocode","ts":1794163106}
+{"caller":"cli","duration_ms":66,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:38:26Z","tool":"core_target_close","ts":1794163106}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:38:33Z","tool":"core_target_open","ts":1794163113}
+{"caller":"cli","duration_ms":1399,"evidence_id":"ev_7528916350bf1db2e1ac904e333dc554d858130bba56b2f1771ab6e4137c162e","kind":"tool_call","ok":true,"params":{"limit":20,"pattern":"FixLargeStitchLength"},"time":"2026-11-08T18:38:35Z","tool":"native_functions_search","ts":1794163115}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:38:35Z","tool":"core_target_close","ts":1794163115}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:38:35Z","tool":"core_target_open","ts":1794163115}
+{"caller":"cli","duration_ms":1396,"evidence_id":"ev_a3e1110f0e2cc17ebb70f6d4de3cc61224c0a183d26d8300553e661939716125","kind":"tool_call","ok":true,"params":{"limit":20,"pattern":"GetBestFittingHoop"},"time":"2026-11-08T18:38:36Z","tool":"native_functions_search","ts":1794163116}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:38:36Z","tool":"core_target_close","ts":1794163116}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:38:36Z","tool":"core_target_open","ts":1794163116}
+{"caller":"cli","duration_ms":1400,"evidence_id":"ev_a1e258f8d09d9e3f4a030c3180b9f0294edd4b65f69b6d12a8c65157a24b2340","kind":"tool_call","ok":true,"params":{"limit":20,"pattern":"GetSplitNumber"},"time":"2026-11-08T18:38:38Z","tool":"native_functions_search","ts":1794163118}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:38:38Z","tool":"core_target_close","ts":1794163118}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:38:43Z","tool":"core_target_open","ts":1794163123}
+{"caller":"cli","duration_ms":6690,"evidence_id":"ev_35acca05a3de4965bb8fd00be0a140031da5fef42e76cfc0394958f05816841f","kind":"tool_call","ok":true,"params":{"function":"0x1022a3b0"},"time":"2026-11-08T18:38:50Z","tool":"native_function_pseudocode","ts":1794163130}
+{"caller":"cli","duration_ms":62,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:38:50Z","tool":"core_target_close","ts":1794163130}
+{"caller":"cli","duration_ms":10,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:38:50Z","tool":"core_target_open","ts":1794163130}
+{"caller":"cli","duration_ms":6550,"evidence_id":"ev_7e7d6cf22288ab83df2fef44b71b080f6670a0e0253e8a8740fbee9016573ac7","kind":"tool_call","ok":true,"params":{"function":"0x1009ba60"},"time":"2026-11-08T18:38:57Z","tool":"native_function_pseudocode","ts":1794163137}
+{"caller":"cli","duration_ms":61,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:38:57Z","tool":"core_target_close","ts":1794163137}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:38:57Z","tool":"core_target_open","ts":1794163137}
+{"caller":"cli","duration_ms":6596,"evidence_id":"ev_76d93554581ee9c0fd1f5260f99a91b71e71c563a6d62d7d811af899523da4aa","kind":"tool_call","ok":true,"params":{"function":"0x100a1510"},"time":"2026-11-08T18:39:03Z","tool":"native_function_pseudocode","ts":1794163143}
+{"caller":"cli","duration_ms":63,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:39:03Z","tool":"core_target_close","ts":1794163143}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:39:04Z","tool":"core_target_open","ts":1794163144}
+{"caller":"cli","duration_ms":6598,"evidence_id":"ev_d2088df014c173ece44248d4ddd36ec714a1d38031b93edff7296cb279a48734","kind":"tool_call","ok":true,"params":{"function":"0x103e1f80"},"time":"2026-11-08T18:39:10Z","tool":"native_function_pseudocode","ts":1794163150}
+{"caller":"cli","duration_ms":63,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:39:10Z","tool":"core_target_close","ts":1794163150}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:39:15Z","tool":"core_target_open","ts":1794163155}
+{"caller":"cli","duration_ms":1402,"evidence_id":"ev_4bea7d83a3082d617ef4e65668f5a841bd75377469cb894d0da0751253942146","kind":"tool_call","ok":true,"params":{"limit":60,"pattern":"Speed"},"time":"2026-11-08T18:39:16Z","tool":"native_functions_search","ts":1794163156}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:39:17Z","tool":"core_target_close","ts":1794163157}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:39:41Z","tool":"core_target_open","ts":1794163181}
+{"caller":"cli","duration_ms":1398,"evidence_id":"ev_3f77278f085d11be9f7f4c668488b0bfb3276abc186af28d56b2cc1cf1b28cf3","kind":"tool_call","ok":true,"params":{"function":"0x1009ba60"},"time":"2026-11-08T18:39:43Z","tool":"native_function_callers_list","ts":1794163183}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:39:43Z","tool":"core_target_close","ts":1794163183}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T18:40:06Z","tool":"core_target_open","ts":1794163206}
+{"caller":"cli","duration_ms":5667,"evidence_id":"ev_1f2a61f6d49136524f9cc4f631d104d31b0b8c41c775418c954ff787f5f988d8","kind":"tool_call","ok":true,"params":{"limit":40,"pattern":"Default"},"time":"2026-11-08T18:40:12Z","tool":"native_functions_search","ts":1794163212}
+{"caller":"cli","duration_ms":22,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:40:12Z","tool":"core_target_close","ts":1794163212}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T18:40:16Z","tool":"core_target_open","ts":1794163216}
+{"caller":"cli","duration_ms":31028,"evidence_id":"ev_bc1dd89961eea13c913d4f87da78c92aab68952eed0a56c6c11affd120eca553","kind":"tool_call","ok":true,"params":{"function":"0x10002210"},"time":"2026-11-08T18:40:47Z","tool":"native_function_pseudocode","ts":1794163247}
+{"caller":"cli","duration_ms":29,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:40:47Z","tool":"core_target_close","ts":1794163247}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T18:40:47Z","tool":"core_target_open","ts":1794163247}
+{"caller":"cli","duration_ms":10582,"evidence_id":"ev_d8e2e799c5ab00dd0d3603590a5d209085644736ff32437a222f12203826882e","kind":"tool_call","ok":true,"params":{"function":"0x10005be0"},"time":"2026-11-08T18:40:57Z","tool":"native_function_pseudocode","ts":1794163257}
+{"caller":"cli","duration_ms":27,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:40:57Z","tool":"core_target_close","ts":1794163257}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T18:41:03Z","tool":"core_target_open","ts":1794163263}
+{"caller":"cli","duration_ms":493,"evidence_id":"ev_98b9680770c741f4fdd5ba5e24f34cd40f6228fcc19c02a3dff3b6533628bf40","kind":"tool_call","ok":true,"params":{"limit":30,"pattern":"Dst"},"time":"2026-11-08T18:41:03Z","tool":"native_functions_search","ts":1794163263}
+{"caller":"cli","duration_ms":20,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:41:03Z","tool":"core_target_close","ts":1794163263}
+{"caller":"cli","duration_ms":4,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T18:41:03Z","tool":"core_target_open","ts":1794163263}
+{"caller":"cli","duration_ms":491,"evidence_id":"ev_60ed05818d54c856e3eaa4b463f66db212d7707b0e68624dfcef5a5517aadae8","kind":"tool_call","ok":true,"params":{"limit":30,"pattern":"DST"},"time":"2026-11-08T18:41:04Z","tool":"native_functions_search","ts":1794163264}
+{"caller":"cli","duration_ms":19,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:41:04Z","tool":"core_target_close","ts":1794163264}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T18:41:09Z","tool":"core_target_open","ts":1794163269}
+{"caller":"cli","duration_ms":491,"evidence_id":"ev_9420df97c14ea426031342e0e8a3fbd8efe6c3bdce0dc1a0c4bb09c73d5819b3","kind":"tool_call","ok":true,"params":{"limit":20,"pattern":"SaveStitch"},"time":"2026-11-08T18:41:09Z","tool":"native_functions_search","ts":1794163269}
+{"caller":"cli","duration_ms":19,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:41:09Z","tool":"core_target_close","ts":1794163269}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T18:41:09Z","tool":"core_target_open","ts":1794163269}
+{"caller":"cli","duration_ms":83148,"evidence_id":"ev_0abfed5413b35ba32551bba3dfb460868ee11045f1a4c56536470db65a44aa14","kind":"tool_call","ok":true,"params":{"function":"0x1002ddc0"},"time":"2026-11-08T18:42:32Z","tool":"native_function_pseudocode","ts":1794163352}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:42:32Z","tool":"core_target_close","ts":1794163352}
+{"caller":"cli","duration_ms":4,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T18:42:37Z","tool":"core_target_open","ts":1794163357}
+{"caller":"cli","duration_ms":5745,"evidence_id":"ev_1d8503e29823122a1763af92270e8b507991f6eba553187dafa9ccf4eea672c0","kind":"tool_call","ok":true,"params":{"function":"0x1002dba0"},"time":"2026-11-08T18:42:42Z","tool":"native_function_pseudocode","ts":1794163362}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:42:43Z","tool":"core_target_close","ts":1794163363}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T18:43:01Z","tool":"core_target_open","ts":1794163381}
+{"caller":"cli","duration_ms":1398,"evidence_id":"ev_c0153ffe532cb969f2c256719968e36dd62c175892e924136586064f468f5978","kind":"tool_call","ok":true,"params":{"limit":30,"pattern":"FillStyle@@"},"time":"2026-11-08T18:43:02Z","tool":"native_functions_search","ts":1794163382}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:43:02Z","tool":"core_target_close","ts":1794163382}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T18:43:20Z","tool":"core_target_open","ts":1794163400}
+{"caller":"cli","duration_ms":16,"evidence_id":"ev_ec69ee4655dc9aaa32bcb89bc5e409b3c3c447f8c2511b1e8bea4124ae50e343","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"GetHoopDisplayName"},"time":"2026-11-08T18:43:20Z","tool":"native_functions_search","ts":1794163400}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:43:20Z","tool":"core_target_close","ts":1794163400}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T18:43:20Z","tool":"core_target_open","ts":1794163400}
+{"caller":"cli","duration_ms":15799,"error":"No function named or at 0x100089c0","error_code":"bad_input","kind":"tool_call","ok":false,"params":{"function":"0x100089c0"},"time":"2026-11-08T18:43:36Z","tool":"native_function_pseudocode","ts":1794163416}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:43:36Z","tool":"core_target_close","ts":1794163416}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T18:43:41Z","tool":"core_target_open","ts":1794163421}
+{"caller":"cli","duration_ms":5181,"evidence_id":"ev_9d35e36f7d942fa3b2d32b0f48a0158e43bdfd1c9e6e5d0e05a8dce367f2296a","kind":"tool_call","ok":true,"params":{"function":"0x100027c0"},"time":"2026-11-08T18:43:46Z","tool":"native_function_pseudocode","ts":1794163426}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:43:46Z","tool":"core_target_close","ts":1794163426}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T18:44:12Z","tool":"core_target_open","ts":1794163452}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_bff4355cde16d0a83b9cd7cf58236eafc4ab8d3597a0ab84ce6f87ef7cf3b121","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"GetMeasurementSystem"},"time":"2026-11-08T18:44:12Z","tool":"native_functions_search","ts":1794163452}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:44:12Z","tool":"core_target_close","ts":1794163452}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T18:44:15Z","tool":"core_target_open","ts":1794163455}
+{"caller":"cli","duration_ms":4925,"error":"No function named or at 0x10007104","error_code":"bad_input","kind":"tool_call","ok":false,"params":{"function":"0x10007104"},"time":"2026-11-08T18:44:20Z","tool":"native_function_pseudocode","ts":1794163460}
+{"caller":"cli","duration_ms":3,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:44:20Z","tool":"core_target_close","ts":1794163460}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/zital/.wine/drive_c/Program Files (x86)/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T18:44:32Z","tool":"core_target_open","ts":1794163472}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_7173f5491cfc65d89b1a6b9b407c5ccd08dc2f864c6578f58aafe12863380a71","kind":"tool_call","ok":true,"params":{"limit":20,"pattern":"Hoop"},"time":"2026-11-08T18:44:32Z","tool":"native_functions_search","ts":1794163472}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T18:44:32Z","tool":"core_target_close","ts":1794163472}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:24Z","tool":"core_session_show","ts":1794166584}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:26Z","tool":"core_target_open","ts":1794166586}
+{"caller":"cli","duration_ms":15,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:30Z","tool":"core_target_open","ts":1794166590}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_8eac6144f6609b37b8e8655d1610776c841eeb5027bf782773474cc311cb92dc","kind":"tool_call","ok":true,"params":{"limit":15,"pattern":"Hoop"},"time":"2026-11-08T19:36:30Z","tool":"native_strings_find","ts":1794166590}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:30Z","tool":"core_target_close","ts":1794166590}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:31Z","tool":"core_session_show","ts":1794166591}
+{"caller":"cli","duration_ms":15,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_8b1e4fbe280d79da6948c6cedf36e3d7d06d228092fdb85243b9bd8e2cca5a32","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Janome"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":15,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_ae741a30192d4880408502d7cee3628da11a4bced30d9edcd66306513bfdd0d7","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"JANOME"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":63,"evidence_id":"ev_7ef5b3c71dff211c5b9be7c52ad49f3f3ba3b3305483f24dc32c90a586f97886","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"http://"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_469175a0ff07a5e70b377d89895aa995c1ee9f95dfe40f9d35a471fb5edf175c","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Update"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_78b68b9cf932a759b62f51664c305aeaa11f5bf217c8b2e4362871ac2e9b905b","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"stitch"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":13,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_e903c5058a2b378b6f6e0fb2fd36a195f52d14cf187859ea511aef345d0272ae","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"DST"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_e4656452bd311294865b0234532d6d2be26ab16d977687914ecc0d821f639da0","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"mm"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":13,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:42Z","tool":"core_target_open","ts":1794166602}
+{"caller":"cli","duration_ms":63,"evidence_id":"ev_98e3786327eec7d7a26887c5c0e238f461b80f1f15a0d6c43b6c35df688295ad","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Hoop B"},"time":"2026-11-08T19:36:42Z","tool":"native_strings_find","ts":1794166602}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:42Z","tool":"core_target_close","ts":1794166602}
+{"caller":"cli","duration_ms":14,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:36:48Z","tool":"core_target_open","ts":1794166608}
+{"caller":"cli","duration_ms":62,"evidence_id":"ev_4c93d841170f254fd89c3234353049ebac8b029ed9fff0f4d0db483ce2d7bf67","kind":"tool_call","ok":true,"params":{"limit":18,"pattern":"mm"},"time":"2026-11-08T19:36:48Z","tool":"native_strings_find","ts":1794166608}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:36:48Z","tool":"core_target_close","ts":1794166608}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:37:28Z","tool":"core_target_open","ts":1794166648}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_bad97326499613e5acbdce830ec4dfe4cc9de2da4c511395a67e9b5777f82245","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Hoop"},"time":"2026-11-08T19:37:28Z","tool":"native_strings_find","ts":1794166648}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:28Z","tool":"core_target_close","ts":1794166648}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:37:28Z","tool":"core_target_open","ts":1794166648}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_134ca55e181d5ad3d08e229bbd42e33f341760adbeb445fe17cd7cb20401ed16","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Stitch"},"time":"2026-11-08T19:37:28Z","tool":"native_strings_find","ts":1794166648}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:28Z","tool":"core_target_close","ts":1794166648}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:37:28Z","tool":"core_target_open","ts":1794166648}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_9273a1f6904225c05d76cfb7666e6352e47c0139961a829a9cd9464c710815df","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Default"},"time":"2026-11-08T19:37:28Z","tool":"native_strings_find","ts":1794166648}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:28Z","tool":"core_target_close","ts":1794166648}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:37:28Z","tool":"core_target_open","ts":1794166648}
+{"caller":"cli","duration_ms":1394,"evidence_id":"ev_d0c54298448794919112f85a7dc4410d1ba5bb78dac80ebe09860bef103e408c","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Hoop"},"time":"2026-11-08T19:37:29Z","tool":"native_strings_find","ts":1794166649}
+{"caller":"cli","duration_ms":64,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:30Z","tool":"core_target_close","ts":1794166650}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:37:30Z","tool":"core_target_open","ts":1794166650}
+{"caller":"cli","duration_ms":1394,"evidence_id":"ev_23016f3640c4f26669954a8c23b5b455e82f2b287f766a77ce5425f0cd294594","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Stitch"},"time":"2026-11-08T19:37:31Z","tool":"native_strings_find","ts":1794166651}
+{"caller":"cli","duration_ms":61,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:31Z","tool":"core_target_close","ts":1794166651}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:37:31Z","tool":"core_target_open","ts":1794166651}
+{"caller":"cli","duration_ms":1286,"evidence_id":"ev_cfe14628612f754ad996349059adff662e5a430d701f8e543fbf4c7d3ab803a3","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Default"},"time":"2026-11-08T19:37:32Z","tool":"native_strings_find","ts":1794166652}
+{"caller":"cli","duration_ms":56,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:32Z","tool":"core_target_close","ts":1794166652}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:37:32Z","tool":"core_target_open","ts":1794166652}
+{"caller":"cli","duration_ms":5488,"evidence_id":"ev_e6df01e8ff3a18fb04986de8da094a04e521561607c57c2bfbd12486b6614229","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Hoop"},"time":"2026-11-08T19:37:38Z","tool":"native_strings_find","ts":1794166658}
+{"caller":"cli","duration_ms":22,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:38Z","tool":"core_target_close","ts":1794166658}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:37:38Z","tool":"core_target_open","ts":1794166658}
+{"caller":"cli","duration_ms":5479,"evidence_id":"ev_17ed5dde3085ba641e41ae5dbe024c88baa9e24882e81f260f89f975fc155156","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Stitch"},"time":"2026-11-08T19:37:43Z","tool":"native_strings_find","ts":1794166663}
+{"caller":"cli","duration_ms":22,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:43Z","tool":"core_target_close","ts":1794166663}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:37:43Z","tool":"core_target_open","ts":1794166663}
+{"caller":"cli","duration_ms":5504,"evidence_id":"ev_dc660a35fe92e7bfe78f14ae89723b4ea583f1524ac9c684648e852536cd9e18","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Default"},"time":"2026-11-08T19:37:49Z","tool":"native_strings_find","ts":1794166669}
+{"caller":"cli","duration_ms":25,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:49Z","tool":"core_target_close","ts":1794166669}
+{"caller":"cli","duration_ms":4,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:37:49Z","tool":"core_target_open","ts":1794166669}
+{"caller":"cli","duration_ms":483,"evidence_id":"ev_613b7b1deaf6175207c77a58218f22f149cc49519f5a18b84ad571f7098fd5ca","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Hoop"},"time":"2026-11-08T19:37:49Z","tool":"native_strings_find","ts":1794166669}
+{"caller":"cli","duration_ms":19,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:50Z","tool":"core_target_close","ts":1794166670}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:37:50Z","tool":"core_target_open","ts":1794166670}
+{"caller":"cli","duration_ms":493,"evidence_id":"ev_32a16b03f5f08d5da2504b6ebb1800df32398f5b225ef447f7f5edc4ae567d8e","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Stitch"},"time":"2026-11-08T19:37:50Z","tool":"native_strings_find","ts":1794166670}
+{"caller":"cli","duration_ms":19,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:50Z","tool":"core_target_close","ts":1794166670}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:37:50Z","tool":"core_target_open","ts":1794166670}
+{"caller":"cli","duration_ms":490,"evidence_id":"ev_048db1fd7cc6e232f23f8a7b1660875521aa6144e5b86272961e29ea27e3a8df","kind":"tool_call","ok":true,"params":{"limit":3,"pattern":"Default"},"time":"2026-11-08T19:37:51Z","tool":"native_strings_find","ts":1794166671}
+{"caller":"cli","duration_ms":19,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:37:51Z","tool":"core_target_close","ts":1794166671}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_ebbcf008a329d94875da6964819519c049ef55463871943a4599b46d83d3f948","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"fit"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_41e6da95d7f3eaf7930f6cfc582f72353e694a2d0f65df3e2670e1c73cf9da9a","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"too large"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_cec2c6477bb8a3c0fe15455c4dec382de94d2d75d47617afda4cd41bee7ab90e","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Stitch length"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_fbce189d2a2194538c4386a5c85e289cbc50d637b1033c7aecf928f05c16010b","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"density"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_dcebca5677c2ae388b59357b254f800c9f6cc9047fe3127b712909c5f68c151b","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"speed"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_f9655c5e4a0a053415fcbf9a7cb01d816a79ae2202ae50ec382654fda2eb88b7","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"SPM"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:02Z","tool":"core_target_open","ts":1794166682}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_704070f5f0551db7bd7a82284cf7fb1e0cf2d2c333442f738bab5dcd9bb54ae4","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"per minute"},"time":"2026-11-08T19:38:02Z","tool":"native_strings_find","ts":1794166682}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:02Z","tool":"core_target_close","ts":1794166682}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:09Z","tool":"core_target_open","ts":1794166689}
+{"caller":"cli","duration_ms":5202,"evidence_id":"ev_78df0df84a2ed9a479691f26d5c830eec97221f2ad3b8b1745380f7edded1770","kind":"tool_call","ok":true,"params":{"function":"0x10002700"},"time":"2026-11-08T19:38:15Z","tool":"native_function_pseudocode","ts":1794166695}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:15Z","tool":"core_target_close","ts":1794166695}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:18Z","tool":"core_target_open","ts":1794166698}
+{"caller":"cli","duration_ms":5175,"evidence_id":"ev_9d35e36f7d942fa3b2d32b0f48a0158e43bdfd1c9e6e5d0e05a8dce367f2296a","kind":"tool_call","ok":true,"params":{"function":"0x100027c0"},"time":"2026-11-08T19:38:24Z","tool":"native_function_pseudocode","ts":1794166704}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:24Z","tool":"core_target_close","ts":1794166704}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:38:24Z","tool":"core_target_open","ts":1794166704}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_c1881fdb39ff05c65583e396704aabb26fa6595ea99e6a3bc1d7da4d42e257e5","kind":"tool_call","ok":true,"params":{"limit":10,"pattern":"Stitch Length:"},"time":"2026-11-08T19:38:24Z","tool":"native_strings_find","ts":1794166704}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:24Z","tool":"core_target_close","ts":1794166704}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:38:28Z","tool":"core_target_open","ts":1794166708}
+{"caller":"cli","duration_ms":1390,"evidence_id":"ev_c123abef04b4e4c0652b8efb2771ec777f4f3ef3f950bba3e7ea55caadd63c30","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"StitchCriteria"},"time":"2026-11-08T19:38:29Z","tool":"native_functions_search","ts":1794166709}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:29Z","tool":"core_target_close","ts":1794166709}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:38:29Z","tool":"core_target_open","ts":1794166709}
+{"caller":"cli","duration_ms":1400,"evidence_id":"ev_a80cfa521033dcfc08232e40e6460b9fe336d73d43f54181dc1239eb232e5932","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"FillStyle"},"time":"2026-11-08T19:38:31Z","tool":"native_functions_search","ts":1794166711}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:31Z","tool":"core_target_close","ts":1794166711}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:38:31Z","tool":"core_target_open","ts":1794166711}
+{"caller":"cli","duration_ms":1345,"evidence_id":"ev_996152acba22620c43f03663bd283c2aa9fd30aa3ba292f01487bf7810b60c3e","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"Density"},"time":"2026-11-08T19:38:32Z","tool":"native_functions_search","ts":1794166712}
+{"caller":"cli","duration_ms":56,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:32Z","tool":"core_target_close","ts":1794166712}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:38:32Z","tool":"core_target_open","ts":1794166712}
+{"caller":"cli","duration_ms":1406,"evidence_id":"ev_0ec276c347c53e3ac8de9f88758f5be51138bdbe110ed542696bb772a387304c","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"StitchLength"},"time":"2026-11-08T19:38:33Z","tool":"native_functions_search","ts":1794166713}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:34Z","tool":"core_target_close","ts":1794166714}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:38:34Z","tool":"core_target_open","ts":1794166714}
+{"caller":"cli","duration_ms":5611,"evidence_id":"ev_d815c42a01f717e92506893b019ba7032d8df12879d95ed9f5f6701c0757cc00","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"StitchCriteria"},"time":"2026-11-08T19:38:39Z","tool":"native_functions_search","ts":1794166719}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:39Z","tool":"core_target_close","ts":1794166719}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:38:39Z","tool":"core_target_open","ts":1794166719}
+{"caller":"cli","duration_ms":5507,"evidence_id":"ev_f08b6cdb46a8c15abc106fb3476fb8410276ecc8a95b563da4a55efcec76be61","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"FillStyle"},"time":"2026-11-08T19:38:45Z","tool":"native_functions_search","ts":1794166725}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:45Z","tool":"core_target_close","ts":1794166725}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:38:45Z","tool":"core_target_open","ts":1794166725}
+{"caller":"cli","duration_ms":5805,"evidence_id":"ev_dd0e30239123c218d6f5e9ef2745b93d05a6f6d2f1c385091282c2df5f450fbf","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"Density"},"time":"2026-11-08T19:38:51Z","tool":"native_functions_search","ts":1794166731}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:51Z","tool":"core_target_close","ts":1794166731}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:38:51Z","tool":"core_target_open","ts":1794166731}
+{"caller":"cli","duration_ms":5607,"evidence_id":"ev_e7b4c89cc5226db3b6d77d677db626af09474bb00d86eb67338bc5a93a489a92","kind":"tool_call","ok":true,"params":{"limit":8,"pattern":"StitchLength"},"time":"2026-11-08T19:38:56Z","tool":"native_functions_search","ts":1794166736}
+{"caller":"cli","duration_ms":25,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:38:56Z","tool":"core_target_close","ts":1794166736}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:00Z","tool":"core_target_open","ts":1794166740}
+{"caller":"cli","duration_ms":1386,"evidence_id":"ev_7332ddbd5171f6f9f6560398842ef110d086d17d0a40f8739178df896c71afb2","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"StitchCriteria"},"time":"2026-11-08T19:39:01Z","tool":"native_functions_search","ts":1794166741}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:01Z","tool":"core_target_close","ts":1794166741}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:04Z","tool":"core_target_open","ts":1794166744}
+{"caller":"cli","duration_ms":1400,"evidence_id":"ev_9afd2b71c6594019c59643536bf99919782f52903a25502ae12daa8182f921eb","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"StitchCriteria"},"time":"2026-11-08T19:39:05Z","tool":"native_functions_search","ts":1794166745}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:05Z","tool":"core_target_close","ts":1794166745}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:05Z","tool":"core_target_open","ts":1794166745}
+{"caller":"cli","duration_ms":1352,"evidence_id":"ev_e643f57dd9fcbc0cfeffe6b7ec0d1f5579b6c2941178c04dc9b1bc68250d9ed2","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"FillStyle"},"time":"2026-11-08T19:39:07Z","tool":"native_functions_search","ts":1794166747}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:07Z","tool":"core_target_close","ts":1794166747}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:07Z","tool":"core_target_open","ts":1794166747}
+{"caller":"cli","duration_ms":1397,"evidence_id":"ev_535432f596ba2be1a45347c4663a805eb8ed3b03269ae60cdff25a46f8023b30","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"Density"},"time":"2026-11-08T19:39:08Z","tool":"native_functions_search","ts":1794166748}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:08Z","tool":"core_target_close","ts":1794166748}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:08Z","tool":"core_target_open","ts":1794166748}
+{"caller":"cli","duration_ms":1385,"evidence_id":"ev_011342f8dca2421ba5a23f85773e0802ad7df251083907f7f740a3c70d8bfe90","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"StitchLength"},"time":"2026-11-08T19:39:10Z","tool":"native_functions_search","ts":1794166750}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:10Z","tool":"core_target_close","ts":1794166750}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:14Z","tool":"core_target_open","ts":1794166754}
+{"caller":"cli","duration_ms":6905,"evidence_id":"ev_0bbd40b44e4cd82fd56e0b70813749dc71558618914eb048acf04063352e1622","kind":"tool_call","ok":true,"params":{"function":"0x10018390"},"time":"2026-11-08T19:39:21Z","tool":"native_function_pseudocode","ts":1794166761}
+{"caller":"cli","duration_ms":64,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:21Z","tool":"core_target_close","ts":1794166761}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:21Z","tool":"core_target_open","ts":1794166761}
+{"caller":"cli","duration_ms":6830,"evidence_id":"ev_57231dd87ae49e7e81c6f7572951d4ab36d36ecb8121c68f08dfb172d446f778","kind":"tool_call","ok":true,"params":{"function":"0x10018400"},"time":"2026-11-08T19:39:27Z","tool":"native_function_pseudocode","ts":1794166767}
+{"caller":"cli","duration_ms":66,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:28Z","tool":"core_target_close","ts":1794166768}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:31Z","tool":"core_target_open","ts":1794166771}
+{"caller":"cli","duration_ms":6839,"evidence_id":"ev_d2088df014c173ece44248d4ddd36ec714a1d38031b93edff7296cb279a48734","kind":"tool_call","ok":true,"params":{"function":"0x103e1f80"},"time":"2026-11-08T19:39:38Z","tool":"native_function_pseudocode","ts":1794166778}
+{"caller":"cli","duration_ms":66,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:38Z","tool":"core_target_close","ts":1794166778}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:41Z","tool":"core_target_open","ts":1794166781}
+{"caller":"cli","duration_ms":6698,"evidence_id":"ev_9e43ff6c645590c41530f0598f2cc6e9c859927480ec7c25edebcc9ef9b6106a","kind":"tool_call","ok":true,"params":{"function":"0x101dd4a0"},"time":"2026-11-08T19:39:48Z","tool":"native_function_pseudocode","ts":1794166788}
+{"caller":"cli","duration_ms":65,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:48Z","tool":"core_target_close","ts":1794166788}
+{"caller":"cli","duration_ms":10,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:39:48Z","tool":"core_target_open","ts":1794166788}
+{"caller":"cli","duration_ms":6200,"evidence_id":"ev_35acca05a3de4965bb8fd00be0a140031da5fef42e76cfc0394958f05816841f","kind":"tool_call","ok":true,"params":{"function":"0x1022a3b0"},"time":"2026-11-08T19:39:54Z","tool":"native_function_pseudocode","ts":1794166794}
+{"caller":"cli","duration_ms":67,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:39:54Z","tool":"core_target_close","ts":1794166794}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:40:01Z","tool":"core_target_open","ts":1794166801}
+{"caller":"cli","duration_ms":11000,"evidence_id":"ev_d8e2e799c5ab00dd0d3603590a5d209085644736ff32437a222f12203826882e","kind":"tool_call","ok":true,"params":{"function":"0x10005be0"},"time":"2026-11-08T19:40:12Z","tool":"native_function_pseudocode","ts":1794166812}
+{"caller":"cli","duration_ms":27,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:12Z","tool":"core_target_close","ts":1794166812}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:40:12Z","tool":"core_target_open","ts":1794166812}
+{"caller":"cli","duration_ms":10726,"evidence_id":"ev_bc1dd89961eea13c913d4f87da78c92aab68952eed0a56c6c11affd120eca553","kind":"tool_call","ok":true,"params":{"function":"0x10002210"},"time":"2026-11-08T19:40:23Z","tool":"native_function_pseudocode","ts":1794166823}
+{"caller":"cli","duration_ms":32,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:23Z","tool":"core_target_close","ts":1794166823}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:40:31Z","tool":"core_target_open","ts":1794166831}
+{"caller":"cli","duration_ms":492,"evidence_id":"ev_0cdd0f2842b53dc3d44efc8e12093434d92ae26821f37ece01bb48bec63f4e3e","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"factory.autost"},"time":"2026-11-08T19:40:31Z","tool":"native_strings_find","ts":1794166831}
+{"caller":"cli","duration_ms":20,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:31Z","tool":"core_target_close","ts":1794166831}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/REVERT.EXE"},"time":"2026-11-08T19:40:31Z","tool":"core_target_open","ts":1794166831}
+{"caller":"cli","duration_ms":2,"evidence_id":"ev_8e5c4be967e9e6972955d2ffdc26d72025e035c092c975185de45e667bf75091","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"DEFAULTS.DFL"},"time":"2026-11-08T19:40:31Z","tool":"native_strings_find","ts":1794166831}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:31Z","tool":"core_target_close","ts":1794166831}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:40:34Z","tool":"core_target_open","ts":1794166834}
+{"caller":"cli","duration_ms":494,"evidence_id":"ev_862aed50745e1974b454f80689d0650fa43b43dc887697216537932d79a58506","kind":"tool_call","ok":true,"params":{"address":"0x10370848","limit":20},"time":"2026-11-08T19:40:34Z","tool":"native_xrefs_list","ts":1794166834}
+{"caller":"cli","duration_ms":20,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:34Z","tool":"core_target_close","ts":1794166834}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/REVERT.EXE"},"time":"2026-11-08T19:40:35Z","tool":"core_target_open","ts":1794166835}
+{"caller":"cli","duration_ms":2,"evidence_id":"ev_3b3fa294ff14ab251e1e738a9fd22d24d23cfd95858debf48e45499c7362cb64","kind":"tool_call","ok":true,"params":{"address":"0x4053e8","limit":20},"time":"2026-11-08T19:40:35Z","tool":"native_xrefs_list","ts":1794166835}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:35Z","tool":"core_target_close","ts":1794166835}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/REVERT.EXE"},"time":"2026-11-08T19:40:42Z","tool":"core_target_open","ts":1794166842}
+{"caller":"cli","duration_ms":2,"evidence_id":"ev_7868e222f074d786eb15d83c0aba66ea21a1f4e6f21acbc96d52b6f1819a254c","kind":"tool_call","ok":true,"params":{"address":"0x4053e8"},"time":"2026-11-08T19:40:42Z","tool":"native_address_show","ts":1794166842}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:42Z","tool":"core_target_close","ts":1794166842}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/REVERT.EXE"},"time":"2026-11-08T19:40:42Z","tool":"core_target_open","ts":1794166842}
+{"caller":"cli","duration_ms":2,"evidence_id":"ev_5d51f9ec87ab0485b22f8476564f8ee1fbdad6c6996448add1af559cb6a16e8a","kind":"tool_call","ok":true,"params":{"limit":20,"pattern":"Default"},"time":"2026-11-08T19:40:42Z","tool":"native_functions_search","ts":1794166842}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:42Z","tool":"core_target_close","ts":1794166842}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/REVERT.EXE"},"time":"2026-11-08T19:40:48Z","tool":"core_target_open","ts":1794166848}
+{"caller":"cli","duration_ms":2,"evidence_id":"ev_07125408e0eff92351f7817dbdb0ea97ae5814345c217bad08a19be1bb75d988","kind":"tool_call","ok":true,"params":{"address":"0x40162e"},"time":"2026-11-08T19:40:48Z","tool":"native_address_show","ts":1794166848}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:40:48Z","tool":"core_target_close","ts":1794166848}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:40:56Z","tool":"core_target_open","ts":1794166856}
+{"caller":"cli","duration_ms":6754,"evidence_id":"ev_7e7d6cf22288ab83df2fef44b71b080f6670a0e0253e8a8740fbee9016573ac7","kind":"tool_call","ok":true,"params":{"function":"0x1009ba60"},"time":"2026-11-08T19:41:03Z","tool":"native_function_pseudocode","ts":1794166863}
+{"caller":"cli","duration_ms":66,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:03Z","tool":"core_target_close","ts":1794166863}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:41:09Z","tool":"core_target_open","ts":1794166869}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_5dbc7a9f095fe841f5fbf5477b49a5e537c5b896a5d4a67a49626b554e091cca","kind":"tool_call","ok":true,"params":{"limit":200,"pattern":"Hoop"},"time":"2026-11-08T19:41:09Z","tool":"native_strings_find","ts":1794166869}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:09Z","tool":"core_target_close","ts":1794166869}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:15Z","tool":"core_target_open","ts":1794166875}
+{"caller":"cli","duration_ms":1404,"evidence_id":"ev_362765027432edf1ebe25dea5c7fe10c580457e20ccbeebc3f76e8561cf32510","kind":"tool_call","ok":true,"params":{"limit":15,"pattern":"??0StitchCriteria"},"time":"2026-11-08T19:41:16Z","tool":"native_functions_search","ts":1794166876}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:16Z","tool":"core_target_close","ts":1794166876}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:16Z","tool":"core_target_open","ts":1794166876}
+{"caller":"cli","duration_ms":1419,"evidence_id":"ev_06474be4e349741bd39a99319e1f21d65a5219ad4145627bb11c89af7884442a","kind":"tool_call","ok":true,"params":{"limit":15,"pattern":"StitchCriteria@@QAE"},"time":"2026-11-08T19:41:18Z","tool":"native_functions_search","ts":1794166878}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:18Z","tool":"core_target_close","ts":1794166878}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:18Z","tool":"core_target_open","ts":1794166878}
+{"caller":"cli","duration_ms":1342,"evidence_id":"ev_4c66ae8306b4716f6ce48727848a652a3a5d4c88d99356c124c12554f0dee80c","kind":"tool_call","ok":true,"params":{"limit":15,"pattern":"SetStitch"},"time":"2026-11-08T19:41:19Z","tool":"native_functions_search","ts":1794166879}
+{"caller":"cli","duration_ms":62,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:19Z","tool":"core_target_close","ts":1794166879}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:19Z","tool":"core_target_open","ts":1794166879}
+{"caller":"cli","duration_ms":1413,"evidence_id":"ev_4934d28ebff005a743377b3c3eb742c003226eb74bdb6ee2dc9c8fb2a10693a3","kind":"tool_call","ok":true,"params":{"limit":15,"pattern":"MaxStitch"},"time":"2026-11-08T19:41:21Z","tool":"native_functions_search","ts":1794166881}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:21Z","tool":"core_target_close","ts":1794166881}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:24Z","tool":"core_target_open","ts":1794166884}
+{"caller":"cli","duration_ms":1403,"evidence_id":"ev_011342f8dca2421ba5a23f85773e0802ad7df251083907f7f740a3c70d8bfe90","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"StitchLength"},"time":"2026-11-08T19:41:25Z","tool":"native_functions_search","ts":1794166885}
+{"caller":"cli","duration_ms":61,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:25Z","tool":"core_target_close","ts":1794166885}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:25Z","tool":"core_target_open","ts":1794166885}
+{"caller":"cli","duration_ms":1404,"evidence_id":"ev_a3ba5a668875c4fa840e01a5139a0b84a1b2d47fe3cd6b022384d6f390f2295e","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"JumpStitch"},"time":"2026-11-08T19:41:27Z","tool":"native_functions_search","ts":1794166887}
+{"caller":"cli","duration_ms":61,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:27Z","tool":"core_target_close","ts":1794166887}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:27Z","tool":"core_target_open","ts":1794166887}
+{"caller":"cli","duration_ms":1376,"evidence_id":"ev_ac93c526a8ba4d659f9c9d21753d4e0b6a120e1b803f4f73e636493de35ea59f","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"MaxJump"},"time":"2026-11-08T19:41:28Z","tool":"native_functions_search","ts":1794166888}
+{"caller":"cli","duration_ms":58,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:28Z","tool":"core_target_close","ts":1794166888}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:28Z","tool":"core_target_open","ts":1794166888}
+{"caller":"cli","duration_ms":1416,"evidence_id":"ev_2b163d205d095eae3268f8719b6506bde6e02152d213336916f4a63fc9355c4b","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"MinStitch"},"time":"2026-11-08T19:41:30Z","tool":"native_functions_search","ts":1794166890}
+{"caller":"cli","duration_ms":61,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:30Z","tool":"core_target_close","ts":1794166890}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:41:30Z","tool":"core_target_open","ts":1794166890}
+{"caller":"cli","duration_ms":1297,"evidence_id":"ev_ad9123f4feba092f1eefda89cfe2136f14a7a74a939702ebd1b299d558482386","kind":"tool_call","ok":true,"params":{"limit":12,"pattern":"ShortStitch"},"time":"2026-11-08T19:41:31Z","tool":"native_functions_search","ts":1794166891}
+{"caller":"cli","duration_ms":58,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:31Z","tool":"core_target_close","ts":1794166891}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:41:38Z","tool":"core_target_open","ts":1794166898}
+{"caller":"cli","duration_ms":16,"evidence_id":"ev_5dbc7a9f095fe841f5fbf5477b49a5e537c5b896a5d4a67a49626b554e091cca","kind":"tool_call","ok":true,"params":{"limit":200,"pattern":"Hoop"},"time":"2026-11-08T19:41:38Z","tool":"native_strings_find","ts":1794166898}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:38Z","tool":"core_target_close","ts":1794166898}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:41:43Z","tool":"core_target_open","ts":1794166903}
+{"caller":"cli","duration_ms":5818,"evidence_id":"ev_0abfed5413b35ba32551bba3dfb460868ee11045f1a4c56536470db65a44aa14","kind":"tool_call","ok":true,"params":{"function":"0x1002ddc0"},"time":"2026-11-08T19:41:48Z","tool":"native_function_pseudocode","ts":1794166908}
+{"caller":"cli","duration_ms":25,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:48Z","tool":"core_target_close","ts":1794166908}
+{"caller":"cli","duration_ms":5,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/IMPORT.DLL"},"time":"2026-11-08T19:41:54Z","tool":"core_target_open","ts":1794166914}
+{"caller":"cli","duration_ms":5756,"evidence_id":"ev_1d8503e29823122a1763af92270e8b507991f6eba553187dafa9ccf4eea672c0","kind":"tool_call","ok":true,"params":{"function":"0x1002dba0"},"time":"2026-11-08T19:41:59Z","tool":"native_function_pseudocode","ts":1794166919}
+{"caller":"cli","duration_ms":24,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:41:59Z","tool":"core_target_close","ts":1794166919}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:42:20Z","tool":"core_target_open","ts":1794166940}
+{"caller":"cli","duration_ms":5676,"evidence_id":"ev_6a608685d34fb64d449cd1bdf509b5ffbb1aa6723fb849a057d43aea33ef1cf4","kind":"tool_call","ok":true,"params":{"limit":10,"pattern":"DFL"},"time":"2026-11-08T19:42:25Z","tool":"native_strings_find","ts":1794166945}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:42:25Z","tool":"core_target_close","ts":1794166945}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMERGE.EXE"},"time":"2026-11-08T19:42:25Z","tool":"core_target_open","ts":1794166945}
+{"caller":"cli","duration_ms":6218,"evidence_id":"ev_db6b6b6678d218a79116c865e0636d290f3d946f45f33677e1e7c5c72e1dead2","kind":"tool_call","ok":true,"params":{"limit":10,"pattern":"DFL"},"time":"2026-11-08T19:42:32Z","tool":"native_strings_find","ts":1794166952}
+{"caller":"cli","duration_ms":25,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:42:32Z","tool":"core_target_close","ts":1794166952}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:42:38Z","tool":"core_target_open","ts":1794166958}
+{"caller":"cli","duration_ms":5876,"evidence_id":"ev_6c1dfd794a76bb1059ca73aa0b87f9f011777920dd441d5aeb1da5bd2a901c8d","kind":"tool_call","ok":true,"params":{"address":"0x100022d6"},"time":"2026-11-08T19:42:44Z","tool":"native_address_show","ts":1794166964}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:42:44Z","tool":"core_target_close","ts":1794166964}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:42:48Z","tool":"core_target_open","ts":1794166968}
+{"caller":"cli","duration_ms":5735,"evidence_id":"ev_91deb79f548e7f968263066296823219ef5f1e93301475ccd8ce02ba10f331b3","kind":"tool_call","ok":true,"params":{"limit":40,"offset":0},"time":"2026-11-08T19:42:54Z","tool":"native_functions_list","ts":1794166974}
+{"caller":"cli","duration_ms":23,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:42:54Z","tool":"core_target_close","ts":1794166974}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:42:59Z","tool":"core_target_open","ts":1794166979}
+{"caller":"cli","duration_ms":10904,"evidence_id":"ev_ac93c06cfd79ed66e76e9851245f54e4bf8368c2a7759c800514c585852d7ab3","kind":"tool_call","ok":true,"params":{"function":"0x10002090"},"time":"2026-11-08T19:43:10Z","tool":"native_function_pseudocode","ts":1794166990}
+{"caller":"cli","duration_ms":25,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:10Z","tool":"core_target_close","ts":1794166990}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:43:10Z","tool":"core_target_open","ts":1794166990}
+{"caller":"cli","duration_ms":10929,"evidence_id":"ev_7b8155bb48de8cace2b0a1cf60234ed250e926748289fd0008135e9c048e311b","kind":"tool_call","ok":true,"params":{"function":"0x10002140"},"time":"2026-11-08T19:43:21Z","tool":"native_function_pseudocode","ts":1794167001}
+{"caller":"cli","duration_ms":27,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:21Z","tool":"core_target_close","ts":1794167001}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/DEFMGR.DLL"},"time":"2026-11-08T19:43:21Z","tool":"core_target_open","ts":1794167001}
+{"caller":"cli","duration_ms":10754,"evidence_id":"ev_e8d92f3bff1edf3b440f0a78c4c9dd3c705537180626743f47498cc56a780c6d","kind":"tool_call","ok":true,"params":{"function":"0x10002330"},"time":"2026-11-08T19:43:32Z","tool":"native_function_pseudocode","ts":1794167012}
+{"caller":"cli","duration_ms":28,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:32Z","tool":"core_target_close","ts":1794167012}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:43:44Z","tool":"core_target_open","ts":1794167024}
+{"caller":"cli","duration_ms":1405,"evidence_id":"ev_3174f6160908520afd4e503dcca368fba383b97fc40b906bd5a04ba6d92de28f","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Speed:"},"time":"2026-11-08T19:43:46Z","tool":"native_strings_find","ts":1794167026}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:46Z","tool":"core_target_close","ts":1794167026}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:43:46Z","tool":"core_target_open","ts":1794167026}
+{"caller":"cli","duration_ms":1310,"evidence_id":"ev_2d177c18ed6e7276471e3e5f781f4465580688399a7da2c39e402b3dbcae28ad","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Stitch Speed"},"time":"2026-11-08T19:43:47Z","tool":"native_strings_find","ts":1794167027}
+{"caller":"cli","duration_ms":58,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:47Z","tool":"core_target_close","ts":1794167027}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:43:47Z","tool":"core_target_open","ts":1794167027}
+{"caller":"cli","duration_ms":1392,"evidence_id":"ev_7d564bd665e8f119b0b6e2c067d1fbddf54e02038d500613ffa1046bfc2f6816","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Max Speed"},"time":"2026-11-08T19:43:49Z","tool":"native_strings_find","ts":1794167029}
+{"caller":"cli","duration_ms":59,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:49Z","tool":"core_target_close","ts":1794167029}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:43:49Z","tool":"core_target_open","ts":1794167029}
+{"caller":"cli","duration_ms":15,"evidence_id":"ev_7c7ac310956bae23551945aa13de80a0f1cd431133c90aa354ffb4cd6ce7ce27","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Speed:"},"time":"2026-11-08T19:43:49Z","tool":"native_strings_find","ts":1794167029}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:49Z","tool":"core_target_close","ts":1794167029}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:43:49Z","tool":"core_target_open","ts":1794167029}
+{"caller":"cli","duration_ms":15,"evidence_id":"ev_ee2f1579af83c71f0d6678e6d7dcb72607778b8130d5a1beacab5fc55a263d30","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Stitch Speed"},"time":"2026-11-08T19:43:49Z","tool":"native_strings_find","ts":1794167029}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:49Z","tool":"core_target_close","ts":1794167029}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:43:49Z","tool":"core_target_open","ts":1794167029}
+{"caller":"cli","duration_ms":15,"evidence_id":"ev_e829dbf8201de05b88e149381e7be262c20a0870897f7e1358e45b55e9fce5a4","kind":"tool_call","ok":true,"params":{"limit":5,"pattern":"Max Speed"},"time":"2026-11-08T19:43:49Z","tool":"native_strings_find","ts":1794167029}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:43:49Z","tool":"core_target_close","ts":1794167029}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:44:21Z","tool":"core_target_open","ts":1794167061}
+{"caller":"cli","duration_ms":5202,"evidence_id":"ev_8519588eca9776f9519c29703a8447eb6e02335262c375f4c503f72cbb57fc50","kind":"tool_call","ok":true,"params":{"function":"0x10002640"},"time":"2026-11-08T19:44:26Z","tool":"native_function_pseudocode","ts":1794167066}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:44:26Z","tool":"core_target_close","ts":1794167066}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:44:26Z","tool":"core_target_open","ts":1794167066}
+{"caller":"cli","duration_ms":5317,"evidence_id":"ev_3c534922defecd998ddde05df8812d187c42d7aac43d8417e95e09bb8a8d5b8b","kind":"tool_call","ok":true,"params":{"function":"0x100024c0"},"time":"2026-11-08T19:44:32Z","tool":"native_function_pseudocode","ts":1794167072}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:44:32Z","tool":"core_target_close","ts":1794167072}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:44:44Z","tool":"core_target_open","ts":1794167084}
+{"caller":"cli","duration_ms":6763,"evidence_id":"ev_98868a392ca19c6371b82734fee94cf296f5cf78f142c699ab5cae2b8c3d426d","kind":"tool_call","ok":true,"params":{"function":"0x10018310"},"time":"2026-11-08T19:44:50Z","tool":"native_function_pseudocode","ts":1794167090}
+{"caller":"cli","duration_ms":65,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:44:51Z","tool":"core_target_close","ts":1794167091}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:45:07Z","tool":"core_target_open","ts":1794167107}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_610c50e408257b3f01342f9bb23263f3027863409e6d5868abe2d1807eba9685","kind":"tool_call","ok":true,"params":{"limit":6,"pattern":"Stitch Density:"},"time":"2026-11-08T19:45:07Z","tool":"native_strings_find","ts":1794167107}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:07Z","tool":"core_target_close","ts":1794167107}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:45:07Z","tool":"core_target_open","ts":1794167107}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_f36f48108cfe5fbff28a1038ebd642b4e882a98246602464622baf3579c0d615","kind":"tool_call","ok":true,"params":{"limit":6,"pattern":"Maximum Stitch Length:"},"time":"2026-11-08T19:45:07Z","tool":"native_strings_find","ts":1794167107}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:07Z","tool":"core_target_close","ts":1794167107}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:45:07Z","tool":"core_target_open","ts":1794167107}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_3dea4a28480f490f0083f4550a360ecafbdf0093dbed3302af3db3c87a65f21e","kind":"tool_call","ok":true,"params":{"limit":6,"pattern":"Run Stitch Length:"},"time":"2026-11-08T19:45:07Z","tool":"native_strings_find","ts":1794167107}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:07Z","tool":"core_target_close","ts":1794167107}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:45:07Z","tool":"core_target_open","ts":1794167107}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_e8e7f8da076139988d56cc3b6e0958a91191afdfb1804f21c9a8bab6c5ec5b2b","kind":"tool_call","ok":true,"params":{"limit":6,"pattern":"Speed:"},"time":"2026-11-08T19:45:07Z","tool":"native_strings_find","ts":1794167107}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:07Z","tool":"core_target_close","ts":1794167107}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:45:32Z","tool":"core_target_open","ts":1794167132}
+{"caller":"cli","duration_ms":1408,"evidence_id":"ev_5574845b7c6728d533f2d186de119027b65b9ec5754348c3551ee5366e9d969a","kind":"tool_call","ok":true,"params":{"limit":10,"pattern":"HoopLibrary"},"time":"2026-11-08T19:45:33Z","tool":"native_functions_search","ts":1794167133}
+{"caller":"cli","duration_ms":60,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:33Z","tool":"core_target_close","ts":1794167133}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:45:33Z","tool":"core_target_open","ts":1794167133}
+{"caller":"cli","duration_ms":1315,"evidence_id":"ev_4ae6bcbf338aa0c4e86bbac5458fafce6491e8ed837399d16bf434f68a48f4da","kind":"tool_call","ok":true,"params":{"limit":10,"pattern":"HoopItem"},"time":"2026-11-08T19:45:35Z","tool":"native_functions_search","ts":1794167135}
+{"caller":"cli","duration_ms":58,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:35Z","tool":"core_target_close","ts":1794167135}
+{"caller":"cli","duration_ms":9,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:45:35Z","tool":"core_target_open","ts":1794167135}
+{"caller":"cli","duration_ms":1277,"evidence_id":"ev_accc4535fa8926be7bcbd6677c2d4358c1cd63d887039a50eade532e514de616","kind":"tool_call","ok":true,"params":{"limit":10,"pattern":"HoopSize"},"time":"2026-11-08T19:45:36Z","tool":"native_functions_search","ts":1794167136}
+{"caller":"cli","duration_ms":58,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:36Z","tool":"core_target_close","ts":1794167136}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:45:40Z","tool":"core_target_open","ts":1794167140}
+{"caller":"cli","duration_ms":6751,"evidence_id":"ev_5723be7205449e3140c9c5bd7a9ff9b3ae78ab35f9553a66d767039d5facc0b8","kind":"tool_call","ok":true,"params":{"function":"0x1009bd90"},"time":"2026-11-08T19:45:47Z","tool":"native_function_pseudocode","ts":1794167147}
+{"caller":"cli","duration_ms":63,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:47Z","tool":"core_target_close","ts":1794167147}
+{"caller":"cli","duration_ms":8,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/MOD1.DLL"},"time":"2026-11-08T19:45:47Z","tool":"core_target_open","ts":1794167147}
+{"caller":"cli","duration_ms":6619,"evidence_id":"ev_d4458f8d90f3131f5a663450457621751ac1674c3df312d0c733d0917bbdfbec","kind":"tool_call","ok":true,"params":{"function":"0x1009b810"},"time":"2026-11-08T19:45:53Z","tool":"native_function_pseudocode","ts":1794167153}
+{"caller":"cli","duration_ms":70,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:45:54Z","tool":"core_target_close","ts":1794167154}
+{"caller":"cli","duration_ms":11,"kind":"tool_call","ok":true,"params":{"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:48:47Z","tool":"core_target_open","ts":1794167327}
+{"caller":"cli","duration_ms":16437,"evidence_id":"ev_fdfacaeb758b02d0e25f295a271aa99f60404b8e75468573fd92507aff7917bf","kind":"tool_call","ok":true,"params":{"function":"0xafe280"},"time":"2026-11-08T19:49:03Z","tool":"native_function_pseudocode","ts":1794167343}
+{"caller":"cli","duration_ms":2,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:49:03Z","tool":"core_target_close","ts":1794167343}
+{"caller":"cli","duration_ms":19,"evidence_id":"ev_67c7e035019ea1750db22786b23d2cb47c44920e673026bf928ebbbf4e440541","kind":"tool_call","ok":true,"params":{"limit":1,"path":"/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"},"time":"2026-11-08T19:49:03Z","tool":"native_library_calls_list","ts":1794167343}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_d45de69c6543e0a760027908a0a50f2568696c2b3320882b3df3aef3fcd7b29b","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"larger hoop"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_8d48c19ccafa74dbfe7d89382a21e87c7d9d53f184f49a231234e78a6dd5d79d","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"too small"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_3a5dda83561e455484f1352b591cf8aa6fd97734b6b1b78b5471f4a53afeb9cc","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"does not fit"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_7bd267a1778c68b1f803bacaf73fd2960d345d4a0c90bf070a9d8c1219daae72","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"doesn't fit"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_b6a60c80e24e7c7883c802b2012816d0be1bcd6f68f6b6af405cf161a7c776d4","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"will not fit"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_8da43fd3f2626ed586815b19e76bfb365cd24dbd6b4fda439e82319dea5f87b8","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"Hoop is"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}
+{"caller":"cli","duration_ms":1,"kind":"tool_call","ok":true,"params":{"path":"/home/projects/janome/DigitizerPro/BIN/RESOURCE.DLL"},"time":"2026-11-08T19:50:47Z","tool":"core_target_open","ts":1794167447}
+{"caller":"cli","duration_ms":17,"evidence_id":"ev_53dc31e960261e1a246c701fa4d72023c60b7e4204b37e4718e3e3e6f433207e","kind":"tool_call","ok":true,"params":{"limit":4,"pattern":"hoop size"},"time":"2026-11-08T19:50:47Z","tool":"native_strings_find","ts":1794167447}
+{"caller":"cli","duration_ms":0,"kind":"tool_call","ok":true,"params":{},"time":"2026-11-08T19:50:47Z","tool":"core_target_close","ts":1794167447}

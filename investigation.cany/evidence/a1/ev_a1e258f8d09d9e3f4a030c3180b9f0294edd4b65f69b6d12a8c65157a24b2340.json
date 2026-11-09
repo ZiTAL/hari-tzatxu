@@ -1,0 +1,54 @@
+{
+  "id": "ev_a1e258f8d09d9e3f4a030c3180b9f0294edd4b65f69b6d12a8c65157a24b2340",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "GetSplitNumber"
+  },
+  "result": {
+    "functions": 2,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x100a1510",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetSplitNumber@PhysicalMachine@@IBEHABVLongVect@@ABVStitchCriteria@@_N@Z",
+        "size": 105
+      },
+      {
+        "address": "0x103e21b0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetSplitNumber@StitchGenerationCriteria@@QBEHABVLongVect@@@Z",
+        "size": 250
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 functions and 0 imports match \"GetSplitNumber\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

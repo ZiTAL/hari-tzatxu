@@ -1,0 +1,27 @@
+# Everything here is absolute on purpose: `cargo build` is run by tools that
+# start it from another folder, often with a PATH that holds only the Rust
+# tools. Each setting fixes one failure seen when the build was checked:
+#
+# - rustc: cargo normally runs the compiler from the folder the build was
+#   started in. Craft Anything starts the build in a folder it can remove
+#   straight away, and rustc then refuses to run:
+#     error: failed to run `rustc` to learn about target-specific information
+#       error: Current directory is invalid: No such file or directory
+#   The shim steps into app/ first (it lives one level down, so a moved or
+#   copied project still works), puts a normal PATH back and only then starts
+#   the real compiler. It uses shell built-ins only, because the stripped PATH
+#   has no dirname, pwd or sleep.
+# - target-dir: always build in app/target, whatever folder cargo is started
+#   from (a copy of the project, the project folder above, ...).
+# - linker: point the link step at the C compiler by absolute path instead of
+#   relying on PATH lookup, which made it fail with "linker `cc` not found".
+[build]
+rustc = "/home/zital/Documents/Craft Anything/janome/app/.cargo/rustc-shim.sh"
+rustdoc = "/home/zital/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustdoc"
+target-dir = "/home/zital/Documents/Craft Anything/janome/app/target"
+
+[target.x86_64-unknown-linux-gnu]
+linker = "/usr/bin/cc"
+
+[target.aarch64-unknown-linux-gnu]
+linker = "/usr/bin/cc"

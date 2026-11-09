@@ -1,0 +1,74 @@
+{
+  "id": "ev_dcebca5677c2ae388b59357b254f800c9f6cc9047fe3127b712909c5f68c151b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "speed"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1005abba",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Boring Auto Speed Changes:"
+      },
+      {
+        "address": "0x1005ac76",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Speed"
+      },
+      {
+        "address": "0x1006c1ca",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Speed"
+      },
+      {
+        "address": "0x100705a2",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Speed"
+      },
+      {
+        "address": "0x100736be",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Boring Auto Speed Changes:"
+      }
+    ],
+    "total": 14
+  },
+  "summary": "14 strings match \"speed\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 5,
+    "total": 14,
+    "next_offset": 5
+  },
+  "locations": [],
+  "links": []
+}

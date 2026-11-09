@@ -1,0 +1,45 @@
+{
+  "id": "ev_bc1dd89961eea13c913d4f87da78c92aab68952eed0a56c6c11affd120eca553",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10002210"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10002210",
+    "function": "GetGlobalDefaultData",
+    "pseudo_code": "\n/* bool __cdecl GetGlobalDefaultData(unsigned int,class DataItem &) */\n\nbool __cdecl GetGlobalDefaultData(uint param_1,DataItem *param_2)\n\n{\n  undefined1 uVar1;\n  \n                    /* 0x2210  15  ?GetGlobalDefaultData@@YA_NIAAVDataItem@@@Z */\n  uVar1 = FUN_10002090(param_1,param_2);\n  return (bool)uVar1;\n}\n\n",
+    "signature": "bool __cdecl GetGlobalDefaultData(uint param_1,DataItem *param_2);"
+  },
+  "summary": "Pseudo-C for GetGlobalDefaultData from the Deep engine (13 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10002210"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

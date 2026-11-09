@@ -1,0 +1,215 @@
+{
+  "id": "ev_6478e0006f5dc34879dd4c12c2b67cf4dcd5967f8aae656dca183304acb0a672",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 40,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "StitchCriteria"
+  },
+  "result": {
+    "functions": 25,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x10018390",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetDesignStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@_N@Z",
+        "size": 98
+      },
+      {
+        "address": "0x10018400",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetObjectStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@PBVEmbroideryObject@@@Z",
+        "size": 167
+      },
+      {
+        "address": "0x100a1510",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetSplitNumber@PhysicalMachine@@IBEHABVLongVect@@ABVStitchCriteria@@_N@Z",
+        "size": 105
+      },
+      {
+        "address": "0x100a15f0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CheckTrimmingProperties@PhysicalMachine@@IAE_NABVStitchCriteria@@_NI@Z",
+        "size": 85
+      },
+      {
+        "address": "0x100cd140",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@Applique@@UBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 3195
+      },
+      {
+        "address": "0x10100c80",
+        "demangled": null,
+        "kind": "function",
+        "name": "?PostGenerateStitches@ComplexFillGroup@@MAE_NAAVSequenceUnitList@@AAVTemporarySegmentShrPtrList@@ABVStitchCriteria@@@Z",
+        "size": 6083
+      },
+      {
+        "address": "0x10109350",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@AlphaText@@IBEJABVStitchCriteria@@PBVFillStyle@@@Z",
+        "size": 5
+      },
+      {
+        "address": "0x1010a2d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryCurveNetwork@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 4437
+      },
+      {
+        "address": "0x1010f9a0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryCurve@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 1681
+      },
+      {
+        "address": "0x10114ff0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryGroup@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 162
+      },
+      {
+        "address": "0x1011d910",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GenerateStitches@EmbroideryObject@@QAEIAAVTemporarySegmentShrPtrList@@ABVStitchCriteria@@@Z",
+        "size": 670
+      },
+      {
+        "address": "0x1011dbf0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?PostGenerateStitches@EmbroideryObject@@MAE_NAAVSequenceUnitList@@AAVTemporarySegmentShrPtrList@@ABVStitchCriteria@@@Z",
+        "size": 72
+      },
+      {
+        "address": "0x1012ad90",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryPatch@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 7412
+      },
+      {
+        "address": "0x101302c0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryPatchLike@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 68
+      },
+      {
+        "address": "0x1013b970",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@FillGroup@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 7132
+      },
+      {
+        "address": "0x1014a520",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@ManualObject@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 41
+      },
+      {
+        "address": "0x101be200",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@ConnectorFill@@UBE?AVStitchCriteria@@XZ",
+        "size": 104
+      },
+      {
+        "address": "0x101dd4a0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@FillStyle@@UBE?AVStitchCriteria@@XZ",
+        "size": 75
+      },
+      {
+        "address": "0x101efa40",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateStitchDensityGivenRes@PhotoFillDynamic@@UBENABVStitchCriteria@@ABVGeoRect@@ABVLongPoint@@@Z",
+        "size": 287
+      },
+      {
+        "address": "0x101efb60",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateStitchDensityGivenRes@PhotoFillPredefined@@UBENABVStitchCriteria@@ABVGeoRect@@ABVLongPoint@@@Z",
+        "size": 2060
+      },
+      {
+        "address": "0x102056c0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@RunFill@@UBE?AVStitchCriteria@@XZ",
+        "size": 85
+      },
+      {
+        "address": "0x1022a670",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@CoilFill@@UBE?AVStitchCriteria@@XZ",
+        "size": 88
+      },
+      {
+        "address": "0x1022cc40",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@BackStitchFill@@UBE?AVStitchCriteria@@XZ",
+        "size": 17
+      },
+      {
+        "address": "0x10247b60",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@StemStitchFill@@MBE?AVStitchCriteria@@XZ",
+        "size": 17
+      },
+      {
+        "address": "0x103e1f80",
+        "demangled": null,
+        "kind": "function",
+        "name": "??0StitchGenerationCriteria@@QAE@ABVStitchCriteria@@0@Z",
+        "size": 274
+      }
+    ],
+    "total": 25
+  },
+  "summary": "25 functions and 0 imports match \"StitchCriteria\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 25,
+    "total": 25
+  },
+  "locations": [],
+  "links": []
+}

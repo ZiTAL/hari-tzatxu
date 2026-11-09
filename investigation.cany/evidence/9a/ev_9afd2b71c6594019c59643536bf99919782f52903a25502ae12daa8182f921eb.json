@@ -1,0 +1,125 @@
+{
+  "id": "ev_9afd2b71c6594019c59643536bf99919782f52903a25502ae12daa8182f921eb",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 12,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "StitchCriteria"
+  },
+  "result": {
+    "functions": 25,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x10018390",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetDesignStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@_N@Z",
+        "size": 98
+      },
+      {
+        "address": "0x10018400",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetObjectStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@PBVEmbroideryObject@@@Z",
+        "size": 167
+      },
+      {
+        "address": "0x100a1510",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetSplitNumber@PhysicalMachine@@IBEHABVLongVect@@ABVStitchCriteria@@_N@Z",
+        "size": 105
+      },
+      {
+        "address": "0x100a15f0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CheckTrimmingProperties@PhysicalMachine@@IAE_NABVStitchCriteria@@_NI@Z",
+        "size": 85
+      },
+      {
+        "address": "0x100cd140",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@Applique@@UBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 3195
+      },
+      {
+        "address": "0x10100c80",
+        "demangled": null,
+        "kind": "function",
+        "name": "?PostGenerateStitches@ComplexFillGroup@@MAE_NAAVSequenceUnitList@@AAVTemporarySegmentShrPtrList@@ABVStitchCriteria@@@Z",
+        "size": 6083
+      },
+      {
+        "address": "0x10109350",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@AlphaText@@IBEJABVStitchCriteria@@PBVFillStyle@@@Z",
+        "size": 5
+      },
+      {
+        "address": "0x1010a2d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryCurveNetwork@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 4437
+      },
+      {
+        "address": "0x1010f9a0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryCurve@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 1681
+      },
+      {
+        "address": "0x10114ff0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@EmbroideryGroup@@MBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 162
+      },
+      {
+        "address": "0x1011d910",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GenerateStitches@EmbroideryObject@@QAEIAAVTemporarySegmentShrPtrList@@ABVStitchCriteria@@@Z",
+        "size": 670
+      },
+      {
+        "address": "0x1011dbf0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?PostGenerateStitches@EmbroideryObject@@MAE_NAAVSequenceUnitList@@AAVTemporarySegmentShrPtrList@@ABVStitchCriteria@@@Z",
+        "size": 72
+      }
+    ],
+    "total": 25
+  },
+  "summary": "25 functions and 0 imports match \"StitchCriteria\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "partial",
+    "examined": 12,
+    "total": 25,
+    "next_offset": 12
+  },
+  "locations": [],
+  "links": []
+}

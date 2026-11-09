@@ -1,0 +1,151 @@
+{
+  "id": "ev_4c93d841170f254fd89c3234353049ebac8b029ed9fff0f4d0db483ce2d7bf67",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 18,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "mm"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x95b619",
+        "references": [],
+        "section": ".rdata",
+        "text": "MM<1"
+      },
+      {
+        "address": "0x95c1cd",
+        "references": [],
+        "section": ".rdata",
+        "text": "E,MM,۰"
+      },
+      {
+        "address": "0x961790",
+        "references": [],
+        "section": ".rdata",
+        "text": "MMSA"
+      },
+      {
+        "address": "0x96b208",
+        "references": [],
+        "section": ".rdata",
+        "text": "+OMm"
+      },
+      {
+        "address": "0x97e06e",
+        "references": [],
+        "section": ".rdata",
+        "text": "1|MM"
+      },
+      {
+        "address": "0x98ac2d",
+        "references": [],
+        "section": ".rdata",
+        "text": ":rmMK"
+      },
+      {
+        "address": "0x9a47c2",
+        "references": [],
+        "section": ".rdata",
+        "text": "N2Mm"
+      },
+      {
+        "address": "0x9a7d34",
+        "references": [],
+        "section": ".rdata",
+        "text": "MM\"!`"
+      },
+      {
+        "address": "0x9b825b",
+        "references": [],
+        "section": ".rdata",
+        "text": "N]mM%"
+      },
+      {
+        "address": "0x9bdaa2",
+        "references": [],
+        "section": ".rdata",
+        "text": "Mmg$l"
+      },
+      {
+        "address": "0x9d16ec",
+        "references": [],
+        "section": ".rdata",
+        "text": "zp(Wmm"
+      },
+      {
+        "address": "0x9d57e9",
+        "references": [],
+        "section": ".rdata",
+        "text": "mmE~`]"
+      },
+      {
+        "address": "0x9e4cf7",
+        "references": [],
+        "section": ".rdata",
+        "text": "hMmF"
+      },
+      {
+        "address": "0x9e5849",
+        "references": [],
+        "section": ".rdata",
+        "text": "^\nMm;"
+      },
+      {
+        "address": "0x9f03d4",
+        "references": [],
+        "section": ".data",
+        "text": "MM9q"
+      },
+      {
+        "address": "0x9f5bd8",
+        "references": [],
+        "section": ".data",
+        "text": "~mmtqv"
+      },
+      {
+        "address": "0xa06515",
+        "references": [],
+        "section": ".data",
+        "text": "\"mM^}"
+      },
+      {
+        "address": "0xafd060",
+        "references": [],
+        "section": ".rsrc",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?> \r\n<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"> \r\n\t<assemblyIdentity \r\n\t\tversion=\"1.0.0.0\" \r\n\t\tprocessorArchitecture=\"X86\" \r\n\t\tname=\"Wilcom International Pty Ltd.Wilcom\" \r\n\t\ttype=\"win32\"\r\n\t/> \t\r\n\t<description>Wilcom Embroidery System Software.</description> \r\n\t<dependency> \r\n\t\t<dependentAssembly> \r\n\t\t\t<assemblyIdentity \r\n\t\t\t\ttype=\"win32\" \r\n\t\t\t\tname=\"Microsoft.Windows.Common-Controls\" \r\n\t\t\t\tversion=\"6.0.0.0\" \r\n\t\t\t\tprocessorArchitecture=\"X86\" \r\n\t\t\t\tpublicKeyToken=\"6595b64144ccf1df\" \r\n\t\t\t\tlanguage=\"*\" \r\n\t\t\t/> \r\n\t\t</dependentAssembly> \r\n\t</dependency> \r\n</assembly> \r\n"
+      }
+    ],
+    "total": 18
+  },
+  "summary": "18 strings match \"mm\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 18,
+    "total": 18
+  },
+  "locations": [],
+  "links": []
+}

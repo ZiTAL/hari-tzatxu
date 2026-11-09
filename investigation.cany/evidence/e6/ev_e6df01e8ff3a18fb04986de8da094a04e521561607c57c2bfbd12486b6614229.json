@@ -1,0 +1,42 @@
+{
+  "id": "ev_e6df01e8ff3a18fb04986de8da094a04e521561607c57c2bfbd12486b6614229",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Hoop"
+  },
+  "result": {
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 strings match \"Hoop\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

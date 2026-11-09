@@ -1,0 +1,45 @@
+{
+  "id": "ev_35acca05a3de4965bb8fd00be0a140031da5fef42e76cfc0394958f05816841f",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x1022a3b0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x1022a3b0",
+    "function": "FixLargeStitchLength",
+    "pseudo_code": "\n/* protected: virtual void __thiscall StraightFill::FixLargeStitchLength(void) */\n\nvoid __thiscall StraightFill::FixLargeStitchLength(StraightFill *this)\n\n{\n                    /* 0x22a3b0  1190  ?FixLargeStitchLength@StraightFill@@MAEXXZ */\n  *(undefined4 *)(this + 0x90) = 0x7fffffff;\n  return;\n}\n\n",
+    "signature": "void __thiscall StraightFill::FixLargeStitchLength(StraightFill *this);"
+  },
+  "summary": "Pseudo-C for FixLargeStitchLength from the Deep engine (11 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1022a3b0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ev_8519588eca9776f9519c29703a8447eb6e02335262c375f4c503f72cbb57fc50",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10002640"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10002640",
+    "function": "FUN_10002640",
+    "pseudo_code": "\nundefined4 * FUN_10002640(undefined4 param_1,int *param_2)\n\n{\n  uint uVar1;\n  uchar *_Str1;\n  int iVar2;\n  undefined4 *puVar3;\n  uchar *_Str2;\n  undefined4 *unaff_retaddr;\n  \n  FUN_100024c0();\n  uVar1 = (**(code **)(DAT_1000c360 + 8))(param_2);\n  if (uVar1 < DAT_1000c36c) {\n    _Str2 = (uchar *)*param_2;\n    if (_Str2 == (uchar *)0x0) {\n      _Str2 = \"\";\n    }\n    _Str1 = *(uchar **)(DAT_1000c364 + uVar1 * 4);\n    if (_Str1 == (uchar *)0x0) {\n      _Str1 = \"\";\n    }\n    iVar2 = _mbscmp(_Str1,_Str2);\n    if (iVar2 == 0) {\n      iVar2 = (**(code **)(DAT_1000c360 + 8))(param_2);\n      uRam00000000 = 0;\n      puVar3 = *(undefined4 **)(DAT_1000c370 + iVar2 * 4);\n      if (puVar3 == (undefined4 *)0x0) {\n        puVar3 = &DAT_10007118;\n      }\n      FUN_10004800(puVar3);\n      return (undefined4 *)0x0;\n    }\n  }\n  *unaff_retaddr = 0;\n  puVar3 = (undefined4 *)*param_2;\n  if (puVar3 == (undefined4 *)0x0) {\n    puVar3 = &DAT_10007118;\n  }\n  FUN_10004800(puVar3);\n  return unaff_retaddr;\n}\n\n",
+    "signature": "undefined4 * FUN_10002640(undefined4 param_1,int *param_2);"
+  },
+  "summary": "Pseudo-C for FUN_10002640 from the Deep engine (43 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10002640"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

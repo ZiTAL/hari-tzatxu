@@ -1,0 +1,173 @@
+{
+  "id": "ev_c0153ffe532cb969f2c256719968e36dd62c175892e924136586064f468f5978",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 30,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "FillStyle@@"
+  },
+  "result": {
+    "functions": 19,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x100014f0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CompareStyles@FillStyle@@UBE_NPAV1@PAVDataItem@@@Z",
+        "size": 5
+      },
+      {
+        "address": "0x10109350",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@AlphaText@@IBEJABVStitchCriteria@@PBVFillStyle@@@Z",
+        "size": 5
+      },
+      {
+        "address": "0x101a6850",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Connect@AutoSplitEffect@@UAEXABVRealPoint@@00W4ConnectDirection@SplitEffect@@PAVFillStyle@@PAVNeedlePointStore@@ABVStitchGenerationCriteria@@@Z",
+        "size": 164
+      },
+      {
+        "address": "0x101dd4a0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetStitchCriteria@FillStyle@@UBE?AVStitchCriteria@@XZ",
+        "size": 75
+      },
+      {
+        "address": "0x101dd4f0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?AddToStitchStore@FillStyle@@IBEXABVLongPoint@@PAVNeedlePointStore@@ABVStitchGenerationCriteria@@_N@Z",
+        "size": 201
+      },
+      {
+        "address": "0x101dd6d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CreateData@FillStyle@@UBE?AVDataItem@@XZ",
+        "size": 310
+      },
+      {
+        "address": "0x101dd810",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetEffect@FillStyle@@QBEPBVStitchEffect@@H@Z",
+        "size": 56
+      },
+      {
+        "address": "0x101dd850",
+        "demangled": null,
+        "kind": "function",
+        "name": "?RecognizeEffect@FillStyle@@MAE_NABV?$ShrPtr@VStitchEffect@@@@@Z",
+        "size": 27
+      },
+      {
+        "address": "0x101dd870",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Transform@FillStyle@@QAEXABVD2WarpTrans@@PAVNeedlePointStore@@1ABVStitchGenerationCriteria@@@Z",
+        "size": 423
+      },
+      {
+        "address": "0x101ddee0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?IsEffectOn@FillStyle@@QBE_NH@Z",
+        "size": 19
+      },
+      {
+        "address": "0x101de580",
+        "demangled": null,
+        "kind": "function",
+        "name": "?AddEffect@FillStyle@@QAE_NABV?$ShrPtr@VStitchEffect@@@@@Z",
+        "size": 75
+      },
+      {
+        "address": "0x101e04d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?RemoveEffect@FillStyle@@QAE_NH@Z",
+        "size": 190
+      },
+      {
+        "address": "0x101ee520",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Clone@PhotoFillPredefined@@UBEPAVFillStyle@@XZ",
+        "size": 108
+      },
+      {
+        "address": "0x101ef250",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Clone@PhotoFillSatin@@UBEPAVFillStyle@@XZ",
+        "size": 94
+      },
+      {
+        "address": "0x101ef970",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Clone@PhotoFillContour@@UBEPAVFillStyle@@XZ",
+        "size": 94
+      },
+      {
+        "address": "0x101f4640",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Clone@OFDelayedRun@@UBEPAVFillStyle@@XZ",
+        "size": 144
+      },
+      {
+        "address": "0x101f6330",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Clone@MotifFill@@UBEPAVFillStyle@@XZ",
+        "size": 96
+      },
+      {
+        "address": "0x10220ef0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Splitline@SplitEffect@@MAE?AVStitchPair@@ABV2@W4ConnectDirection@1@HHPAVFillStyle@@PAVNeedlePointStore@@ABVStitchGenerationCriteria@@@Z",
+        "size": 514
+      },
+      {
+        "address": "0x10239410",
+        "demangled": null,
+        "kind": "function",
+        "name": "?Connect@FlexiProgramSplitEffect@@UAEXABVRealPoint@@00W4ConnectDirection@SplitEffect@@PAVFillStyle@@PAVNeedlePointStore@@ABVStitchGenerationCriteria@@@Z",
+        "size": 136
+      }
+    ],
+    "total": 19
+  },
+  "summary": "19 functions and 0 imports match \"FillStyle@@\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 19,
+    "total": 19
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ev_3f77278f085d11be9f7f4c668488b0bfb3276abc186af28d56b2cc1cf1b28cf3",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_callers_list",
+  "params": {
+    "function": "0x1009ba60"
+  },
+  "result": {
+    "address_taken": 0,
+    "callers": [],
+    "entry": "0x1009ba60",
+    "function": "?GetBestFittingHoop@HoopLibrary@@QAEPBVDataItem@@INNN@Z"
+  },
+  "summary": "?GetBestFittingHoop@HoopLibrary@@QAEPBVDataItem@@INNN@Z is called from 0 places.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "direct_calls_only",
+      "message": "callers that reach it through function pointers are not listed (see address_taken)"
+    },
+    {
+      "code": "no_static_callers",
+      "message": "no direct callers found; it may be an entry point, a callback or only reached indirectly"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1009ba60"
+    }
+  ],
+  "links": []
+}

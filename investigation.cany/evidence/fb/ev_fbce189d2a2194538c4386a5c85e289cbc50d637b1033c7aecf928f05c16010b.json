@@ -1,0 +1,55 @@
+{
+  "id": "ev_fbce189d2a2194538c4386a5c85e289cbc50d637b1033c7aecf928f05c16010b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "density"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10087e7c",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Density:"
+      },
+      {
+        "address": "0x100897c6",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Density:"
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 strings match \"density\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

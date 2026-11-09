@@ -1,0 +1,96 @@
+{
+  "id": "ev_011342f8dca2421ba5a23f85773e0802ad7df251083907f7f740a3c70d8bfe90",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 12,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "StitchLength"
+  },
+  "result": {
+    "functions": 8,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x100027e0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetMaximumCapStitchLength@InputCLevel2@@QAEXN@Z",
+        "size": 23
+      },
+      {
+        "address": "0x10002800",
+        "demangled": null,
+        "kind": "function",
+        "name": "?MaximumCapStitchLength@InputCLevel2@@QAENXZ",
+        "size": 7
+      },
+      {
+        "address": "0x1011e710",
+        "demangled": null,
+        "kind": "function",
+        "name": "?MaximumCapStitchLength@InputALevel2@@QBENXZ",
+        "size": 4
+      },
+      {
+        "address": "0x1011e720",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetMaximumCapStitchLength@InputALevel2@@QAEXN@Z",
+        "size": 17
+      },
+      {
+        "address": "0x101f0b10",
+        "demangled": null,
+        "kind": "function",
+        "name": "?FixLargeStitchLength@OFDelayedRun@@MAEXXZ",
+        "size": 46
+      },
+      {
+        "address": "0x1022a3b0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?FixLargeStitchLength@StraightFill@@MAEXXZ",
+        "size": 11
+      },
+      {
+        "address": "0x103e2720",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetMinRadialStitchLength@StitchStore@@QBEXAAJABVFastNeedlePos@@1@Z",
+        "size": 403
+      },
+      {
+        "address": "0x103e28e0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetMaxRadialStitchLength@StitchStore@@QBEXAAJABVFastNeedlePos@@1@Z",
+        "size": 376
+      }
+    ],
+    "total": 8
+  },
+  "summary": "8 functions and 0 imports match \"StitchLength\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 8,
+    "total": 8
+  },
+  "locations": [],
+  "links": []
+}

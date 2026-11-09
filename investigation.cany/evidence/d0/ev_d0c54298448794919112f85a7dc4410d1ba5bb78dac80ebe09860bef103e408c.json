@@ -1,0 +1,62 @@
+{
+  "id": "ev_d0c54298448794919112f85a7dc4410d1ba5bb78dac80ebe09860bef103e408c",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Hoop"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x106f0564",
+        "references": [],
+        "section": ".rdata",
+        "text": "??0ChangeHoopAutoBehaviourTransaction@@QAE@V?$ShrPtr@VMObject@@@@H@Z"
+      },
+      {
+        "address": "0x106f19b9",
+        "references": [],
+        "section": ".rdata",
+        "text": "??0HoopPosition@@QAE@ABVDesignCurve@@@Z"
+      },
+      {
+        "address": "0x106f19e1",
+        "references": [],
+        "section": ".rdata",
+        "text": "??0HoopPosition@@QAE@XZ"
+      }
+    ],
+    "total": 116
+  },
+  "summary": "116 strings match \"Hoop\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 116,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

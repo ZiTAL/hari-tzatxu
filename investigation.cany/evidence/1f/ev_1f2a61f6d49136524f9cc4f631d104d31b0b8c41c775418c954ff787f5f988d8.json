@@ -1,0 +1,165 @@
+{
+  "id": "ev_1f2a61f6d49136524f9cc4f631d104d31b0b8c41c775418c954ff787f5f988d8",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 40,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Default"
+  },
+  "result": {
+    "functions": 17,
+    "imports": 1,
+    "matches": [
+      {
+        "address": "0x10002210",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetGlobalDefaultData@@YA_NIAAVDataItem@@@Z",
+        "size": 22
+      },
+      {
+        "address": "0x10002230",
+        "demangled": null,
+        "kind": "function",
+        "name": "?PutGlobalDefaultData@@YA_NIABVDataItem@@@Z",
+        "size": 22
+      },
+      {
+        "address": "0x10002380",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SaveGlobalDefaults@@YAXXZ",
+        "size": 11
+      },
+      {
+        "address": "0x10003780",
+        "demangled": null,
+        "kind": "function",
+        "name": "?ValidateSaveDefaultFormat@FormatManager@@SA_NABVDataItem@@AAV2@@Z",
+        "size": 450
+      },
+      {
+        "address": "0x10004970",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SaveFormatAsDefault@FormatManager@@SAXABVDataItem@@@Z",
+        "size": 599
+      },
+      {
+        "address": "0x10004bd0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?RemoveDefaultFormatByUniqId@FormatManager@@SA_NABVDataItem@@@Z",
+        "size": 224
+      },
+      {
+        "address": "0x10004f30",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetFileName@MMGDefaults@@SAABVWideString@@XZ",
+        "size": 6
+      },
+      {
+        "address": "0x10005000",
+        "demangled": null,
+        "kind": "function",
+        "name": "?NoMoreTransactions@MMGDefaults@@CAXXZ",
+        "size": 8
+      },
+      {
+        "address": "0x10005760",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetMachineUnitsUniqueIds@MMGDefaults@@SA_NAAVDataItem@@@Z",
+        "size": 166
+      },
+      {
+        "address": "0x10005810",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetNextMachineUnitUniqueId@MMGDefaults@@SA_NAAVDataItem@@@Z",
+        "size": 207
+      },
+      {
+        "address": "0x100058e0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetCompleteDocument@MMGDefaults@@SA_NAAVDataItem@@@Z",
+        "size": 47
+      },
+      {
+        "address": "0x10005ba0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?StoreCompleteDocument@MMGDefaults@@CA_NABVDataItem@@@Z",
+        "size": 57
+      },
+      {
+        "address": "0x10005be0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetDefaultData@MMGDefaults@@SA_NHAAVDataItem@@@Z",
+        "size": 74
+      },
+      {
+        "address": "0x10005c30",
+        "demangled": null,
+        "kind": "function",
+        "name": "?RemoveMachineUnit@MMGDefaults@@SA_NABVMachineUnitId@@@Z",
+        "size": 464
+      },
+      {
+        "address": "0x10005e00",
+        "demangled": null,
+        "kind": "function",
+        "name": "?ModifyMachineUnit@MMGDefaults@@SA_NABVMachineUnitInfo@@@Z",
+        "size": 450
+      },
+      {
+        "address": "0x10005fd0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?AddMachineUnit@MMGDefaults@@SA_NABVMachineUnitInfo@@@Z",
+        "size": 506
+      },
+      {
+        "address": "0x100061d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?AddUniqueId@MMGDefaults@@SA_NABVMachineUnitInfo@@@Z",
+        "size": 525
+      },
+      {
+        "address": "0x1007d1b0",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?GetDefaultsPathW@@YAPBGXZ"
+      }
+    ],
+    "total": 18
+  },
+  "summary": "17 functions and 1 imports match \"Default\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 18,
+    "total": 18
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "ev_e4656452bd311294865b0234532d6d2be26ab16d977687914ecc0d821f639da0",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "mm"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x95b619",
+        "references": [],
+        "section": ".rdata",
+        "text": "MM<1"
+      },
+      {
+        "address": "0x95c1cd",
+        "references": [],
+        "section": ".rdata",
+        "text": "E,MM,۰"
+      },
+      {
+        "address": "0x961790",
+        "references": [],
+        "section": ".rdata",
+        "text": "MMSA"
+      }
+    ],
+    "total": 18
+  },
+  "summary": "18 strings match \"mm\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 18,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

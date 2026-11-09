@@ -1,0 +1,45 @@
+{
+  "id": "ev_76d93554581ee9c0fd1f5260f99a91b71e71c563a6d62d7d811af899523da4aa",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x100a1510"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x100a1510",
+    "function": "GetSplitNumber",
+    "pseudo_code": "\n/* protected: int __thiscall PhysicalMachine::GetSplitNumber(class LongVect const &,class\n   StitchCriteria const &,bool)const  */\n\nint __thiscall\nPhysicalMachine::GetSplitNumber\n          (PhysicalMachine *this,LongVect *param_1,StitchCriteria *param_2,bool param_3)\n\n{\n  int iVar1;\n  undefined3 in_stack_0000000d;\n  undefined4 local_58;\n  undefined4 local_54;\n  undefined4 local_50;\n  undefined4 local_4c;\n  undefined4 local_48;\n  undefined4 local_44;\n  undefined4 local_40;\n  undefined4 local_3c;\n  undefined4 local_38;\n  undefined1 local_34;\n  StitchGenerationCriteria local_30 [48];\n  \n                    /* 0xa1510  1626\n                       ?GetSplitNumber@PhysicalMachine@@IBEHABVLongVect@@ABVStitchCriteria@@_N@Z */\n  local_58 = 0;\n  local_54 = 0;\n  local_50 = 0;\n  local_4c = 0;\n  local_48 = 0;\n  local_44 = 0;\n  local_40 = 0;\n  local_3c = 0;\n  local_38 = 0;\n  local_34 = 0;\n  FUN_100959b0(&local_58,_param_3);\n  StitchGenerationCriteria::StitchGenerationCriteria(local_30,(StitchCriteria *)&local_58,param_2);\n  iVar1 = StitchGenerationCriteria::GetSplitNumber(local_30,param_1);\n  return iVar1;\n}\n\n",
+    "signature": "int __thiscall PhysicalMachine::GetSplitNumber(PhysicalMachine *this,LongVect *param_1,StitchCriteria *param_2,bool param_3);"
+  },
+  "summary": "Pseudo-C for GetSplitNumber from the Deep engine (41 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x100a1510"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

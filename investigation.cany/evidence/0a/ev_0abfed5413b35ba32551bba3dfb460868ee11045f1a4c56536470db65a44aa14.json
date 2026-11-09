@@ -1,0 +1,45 @@
+{
+  "id": "ev_0abfed5413b35ba32551bba3dfb460868ee11045f1a4c56536470db65a44aa14",
+  "subject": {
+    "kind": "pe",
+    "sha256": "faabe3e689f5f07c59eb283be2e797db4c7b233bb2b4888691641fe9c4320eb3",
+    "name": "IMPORT.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x1002ddc0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x1002ddc0",
+    "function": "LoadStitch",
+    "pseudo_code": "\n/* public: virtual enum StitchFormat::LoadStitchResult __thiscall DSTStitchFormat::LoadStitch(class\n   istream &,class LongVect &,class UIntIxList &,bool &) */\n\nLoadStitchResult __thiscall\nDSTStitchFormat::LoadStitch\n          (DSTStitchFormat *this,istream *param_1,LongVect *param_2,UIntIxList *param_3,\n          bool *param_4)\n\n{\n  istream *piVar1;\n  bool *pbVar2;\n  char cVar3;\n  byte bVar4;\n  \n                    /* 0x2ddc0  184\n                       ?LoadStitch@DSTStitchFormat@@UAE?AW4LoadStitchResult@StitchFormat@@AAVistream@@AAVLongVect@@AAVUIntIxList@@AA_N@Z\n                        */\n  piVar1 = param_1;\n  if ((*(uint *)(param_1 + *(int *)(*(int *)param_1 + 4) + 8) & 1) != 0) {\n    return 2;\n  }\n  if (*(uint *)(param_1 + *(int *)(*(int *)param_1 + 4) + 8) != 0) {\n    return 3;\n  }\n  istream::read(param_1,(char *)&param_1,3);\n  pbVar2 = param_4;\n  if (*(int *)(piVar1 + *(int *)(*(int *)piVar1 + 4) + 8) != 0) {\n    return 1;\n  }\n  bVar4 = param_1._2_1_;\n  *(undefined4 *)(param_3 + 8) = 0;\n  *param_4 = false;\n  if (((param_1._2_1_ == 0xf3) && ((char)param_1 == '\\0')) && (param_1._1_1_ == '\\0')) {\n    return 2;\n  }\n  *(undefined4 *)param_2 = 0;\n  *(undefined4 *)(param_2 + 4) = 0;\n  cVar3 = FUN_1002dba0(param_2,&param_1);\n  if (cVar3 == '\\0') {\n    return 1;\n  }\n  bVar4 = bVar4 & 0xc0;\n  if (bVar4 == 0x40) {\n    if (this[0xc] != (DSTStitchFormat)0x0) {\n      param_4 = (bool *)(uint)(byte)this[0xc];\n      FUN_1004ebf0(&param_4);\n    }\n  }\n  else {\n    if (bVar4 == 0x80) {\n      *pbVar2 = true;\n      return 0;\n    }\n    if ((bVar4 == 0xc0) && (this[0xb] != (DSTStitchFormat)0x0)) {\n      param_4 = (bool *)(uint)(byte)this[0xb];\n      FUN_1004ebf0(&param_4);\n      return 0;\n    }\n  }\n  return 0;\n}\n\n",
+    "signature": "LoadStitchResult __thiscall DSTStitchFormat::LoadStitch(DSTStitchFormat *this,istream *param_1,LongVect *param_2,UIntIxList *param_3,bool *param_4);"
+  },
+  "summary": "Pseudo-C for LoadStitch from the Deep engine (63 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1002ddc0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

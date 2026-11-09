@@ -1,0 +1,7 @@
+# Rust build output
+/target/
+/app/target/
+
+# Build shim log written at runtime
+.cargo/shim.log
+app/.cargo/shim.log

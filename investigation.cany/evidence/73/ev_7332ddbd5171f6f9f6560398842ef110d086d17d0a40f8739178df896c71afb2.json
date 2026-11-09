@@ -1,0 +1,76 @@
+{
+  "id": "ev_7332ddbd5171f6f9f6560398842ef110d086d17d0a40f8739178df896c71afb2",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "StitchCriteria"
+  },
+  "result": {
+    "functions": 25,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x10018390",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetDesignStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@_N@Z",
+        "size": 98
+      },
+      {
+        "address": "0x10018400",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetObjectStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@PBVEmbroideryObject@@@Z",
+        "size": 167
+      },
+      {
+        "address": "0x100a1510",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetSplitNumber@PhysicalMachine@@IBEHABVLongVect@@ABVStitchCriteria@@_N@Z",
+        "size": 105
+      },
+      {
+        "address": "0x100a15f0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CheckTrimmingProperties@PhysicalMachine@@IAE_NABVStitchCriteria@@_NI@Z",
+        "size": 85
+      },
+      {
+        "address": "0x100cd140",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateNumberOfStitches@Applique@@UBEJABVStitchCriteria@@PBVStitchingStyle@@@Z",
+        "size": 3195
+      }
+    ],
+    "total": 25
+  },
+  "summary": "25 functions and 0 imports match \"StitchCriteria\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "partial",
+    "examined": 5,
+    "total": 25,
+    "next_offset": 5
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ev_362765027432edf1ebe25dea5c7fe10c580457e20ccbeebc3f76e8561cf32510",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 15,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "??0StitchCriteria"
+  },
+  "result": {
+    "functions": 0,
+    "imports": 0,
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 functions and 0 imports match \"??0StitchCriteria\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

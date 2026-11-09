@@ -1,0 +1,104 @@
+{
+  "id": "ev_c1881fdb39ff05c65583e396704aabb26fa6595ea99e6a3bc1d7da4d42e257e5",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 10,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Stitch Length:"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1005de40",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Length:"
+      },
+      {
+        "address": "0x1005df0c",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Min Stitch length:"
+      },
+      {
+        "address": "0x10061ef0",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Length:"
+      },
+      {
+        "address": "0x10061fbc",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Min Stitch Length:"
+      },
+      {
+        "address": "0x1006335e",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Length:"
+      },
+      {
+        "address": "0x10063682",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Length:"
+      },
+      {
+        "address": "0x1006538a",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Length:"
+      },
+      {
+        "address": "0x10067c16",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Run Stitch Length:"
+      },
+      {
+        "address": "0x1006809a",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Stitch Length:"
+      },
+      {
+        "address": "0x10068136",
+        "references": [],
+        "section": ".rsrc",
+        "text": "Maximum Stitch Length:"
+      }
+    ],
+    "total": 21
+  },
+  "summary": "21 strings match \"Stitch Length:\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 10,
+    "total": 21,
+    "next_offset": 10
+  },
+  "locations": [],
+  "links": []
+}

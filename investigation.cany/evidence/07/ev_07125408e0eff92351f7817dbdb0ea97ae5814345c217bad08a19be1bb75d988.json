@@ -1,0 +1,60 @@
+{
+  "id": "ev_07125408e0eff92351f7817dbdb0ea97ae5814345c217bad08a19be1bb75d988",
+  "subject": {
+    "kind": "pe",
+    "sha256": "b4caa53001e4f16687f473e93d483f46b8a8649ba09663acfce7bc29b4992cc7",
+    "name": "REVERT.EXE"
+  },
+  "operation": "native_address_show",
+  "params": {
+    "address": "0x40162e"
+  },
+  "result": {
+    "address": "0x40162e",
+    "bookmarks": {
+      "reason": "not bookmarked",
+      "remediation": "Bookmark it with native_bookmark_add.",
+      "state": "unavailable"
+    },
+    "comment": {
+      "reason": "no comment here",
+      "remediation": "Add one with native_comment_write.",
+      "state": "unavailable"
+    },
+    "function": {
+      "reason": "not inside any discovered function",
+      "remediation": "Run native_functions_list or native_functions_search to find nearby functions.",
+      "state": "unavailable"
+    },
+    "inline_comment": {
+      "reason": "no inline comment here",
+      "remediation": "Add one with native_inline_comment_write.",
+      "state": "unavailable"
+    },
+    "name": {
+      "reason": "no name at this address",
+      "remediation": "Give it one with native_name_set.",
+      "state": "unavailable"
+    }
+  },
+  "summary": "Context for 0x40162e.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x40162e"
+    }
+  ],
+  "links": []
+}

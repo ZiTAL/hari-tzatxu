@@ -1,0 +1,47 @@
+{
+  "id": "ev_ec69ee4655dc9aaa32bcb89bc5e409b3c3c447f8c2511b1e8bea4124ae50e343",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "GetHoopDisplayName"
+  },
+  "result": {
+    "functions": 1,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x100027c0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetHoopDisplayName@@YA?AVString@@ABVDataItem@@@Z",
+        "size": 127
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 functions and 0 imports match \"GetHoopDisplayName\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ev_613b7b1deaf6175207c77a58218f22f149cc49519f5a18b84ad571f7098fd5ca",
+  "subject": {
+    "kind": "pe",
+    "sha256": "faabe3e689f5f07c59eb283be2e797db4c7b233bb2b4888691641fe9c4320eb3",
+    "name": "IMPORT.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Hoop"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10372ab0",
+        "references": [
+          {
+            "from": "0x100d4c5f",
+            "function": "sub_100d49e0"
+          },
+          {
+            "from": "0x1014825c",
+            "function": "sub_10147ff0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Hoop D (220 x 190) (Giga Hoop)"
+      },
+      {
+        "address": "0x10372ad0",
+        "references": [
+          {
+            "from": "0x100d4b98",
+            "function": "sub_100d49e0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Hoop MA (200 x 280)"
+      },
+      {
+        "address": "0x103730fc",
+        "references": [],
+        "section": ".rdata",
+        "text": "J8 No.7:MB Hoop (120 x 121)"
+      }
+    ],
+    "total": 115
+  },
+  "summary": "115 strings match \"Hoop\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 115,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

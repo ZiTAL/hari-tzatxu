@@ -1,0 +1,587 @@
+{
+  "id": "ev_a86a082b973c8ac2c2144e9384570eb1e889b2825b6eea141787f70750939386",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_library_calls_list",
+  "params": {
+    "contains": null,
+    "kind": null,
+    "limit": 40,
+    "offset": 0,
+    "path": "/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"
+  },
+  "result": {
+    "bound_modules": [],
+    "format": "pe",
+    "imports": [
+      {
+        "hint": 481,
+        "kind": "normal",
+        "library": "ADVAPI32.dll",
+        "name": "RegOpenKeyExA",
+        "slot": "0xc2d0dc"
+      },
+      {
+        "hint": 89,
+        "kind": "normal",
+        "library": "COMCTL32.dll",
+        "name": "_TrackMouseEvent",
+        "slot": "0xc2d0fc"
+      },
+      {
+        "hint": 24,
+        "kind": "normal",
+        "library": "Defmgr.dll",
+        "name": "?PutGlobalDefaultData@@YA_NIABVDataItem@@@Z",
+        "slot": "0xc2cf8c"
+      },
+      {
+        "hint": 316,
+        "kind": "normal",
+        "library": "Desview.dll",
+        "name": "?PrepareFunctionDisplayInfo@DesignViewPict@@QBEXAAVDataItem@@@Z",
+        "slot": "0xc2d00c"
+      },
+      {
+        "hint": 601,
+        "kind": "normal",
+        "library": "Dialog.dll",
+        "name": "?ShowMessageBox@@YAHPAVCWnd@@IIH@Z",
+        "slot": "0xc2cf7c"
+      },
+      {
+        "hint": 420,
+        "kind": "normal",
+        "library": "GDI32.dll",
+        "name": "GetRgnBox",
+        "slot": "0xc2d0cc"
+      },
+      {
+        "hint": 1363,
+        "kind": "normal",
+        "library": "Geometry.dll",
+        "name": "?GetRegion@ARSResultSet@@QAEAAVRegion@@H@Z",
+        "slot": "0xc2cfec"
+      },
+      {
+        "hint": 0,
+        "kind": "normal",
+        "library": "Hwrsetup.dll",
+        "name": "?PerformSetup@@YAHPAVCWnd@@@Z",
+        "slot": "0xc2cf9c"
+      },
+      {
+        "hint": 115,
+        "kind": "normal",
+        "library": "Image.dll",
+        "name": "?GetPixelsPerMeter@Dib@@QBE?AVIntegerPoint@@XZ",
+        "slot": "0xc2d04c"
+      },
+      {
+        "hint": 130,
+        "kind": "normal",
+        "library": "Import.dll",
+        "name": "?GetMachineDetails@JanomeFeedbackInterface@@QBEXAAVDataItem@@@Z",
+        "slot": "0xc2cfdc"
+      },
+      {
+        "hint": 27,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "CloseHandle",
+        "slot": "0xc136b0"
+      },
+      {
+        "hint": 52,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "CreateFileA",
+        "slot": "0xc136b8"
+      },
+      {
+        "hint": 71,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "CreateSemaphoreA",
+        "slot": "0xc1373c"
+      },
+      {
+        "hint": 85,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "DeleteCriticalSection",
+        "slot": "0xc136cc"
+      },
+      {
+        "hint": 92,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "DeviceIoControl",
+        "slot": "0xc136b4"
+      },
+      {
+        "hint": 102,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "EnterCriticalSection",
+        "slot": "0xc136c0"
+      },
+      {
+        "hint": 138,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "FileTimeToSystemTime",
+        "slot": "0xc136e4"
+      },
+      {
+        "hint": 144,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "FindClose",
+        "slot": "0xc13704"
+      },
+      {
+        "hint": 148,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "FindFirstFileA",
+        "slot": "0xc136fc"
+      },
+      {
+        "hint": 157,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "FindNextFileA",
+        "slot": "0xc13708"
+      },
+      {
+        "hint": 180,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "FreeLibrary",
+        "slot": "0xc13718"
+      },
+      {
+        "hint": 247,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetCurrentProcess",
+        "slot": "0xc136f4"
+      },
+      {
+        "hint": 248,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetCurrentProcessId",
+        "slot": "0xc1370c"
+      },
+      {
+        "hint": 265,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetEnvironmentVariableA",
+        "slot": "0xc13710"
+      },
+      {
+        "hint": 274,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetFileSize",
+        "slot": "0xc13720"
+      },
+      {
+        "hint": 282,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetLastError",
+        "slot": "0xc1372c"
+      },
+      {
+        "hint": 283,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetLocalTime",
+        "slot": "0xc13724"
+      },
+      {
+        "hint": 292,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetModuleFileNameA",
+        "slot": "0xc13700"
+      },
+      {
+        "hint": 294,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetModuleHandleA",
+        "slot": "0xafef40"
+      },
+      {
+        "hint": 294,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetModuleHandleA",
+        "slot": "0xc1371c"
+      },
+      {
+        "hint": 318,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetProcAddress",
+        "slot": "0xafef44"
+      },
+      {
+        "hint": 318,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetProcAddress",
+        "slot": "0xc136f0"
+      },
+      {
+        "hint": 349,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetSystemTime",
+        "slot": "0xc136e0"
+      },
+      {
+        "hint": 372,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "GetVersion",
+        "slot": "0xc136a0"
+      },
+      {
+        "hint": 426,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "InitializeCriticalSection",
+        "slot": "0xc136c8"
+      },
+      {
+        "hint": 449,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "LeaveCriticalSection",
+        "slot": "0xc136c4"
+      },
+      {
+        "hint": 450,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "LoadLibraryA",
+        "slot": "0xc13714"
+      },
+      {
+        "hint": 456,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "LocalAlloc",
+        "slot": "0xc136bc"
+      },
+      {
+        "hint": 460,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "LocalFree",
+        "slot": "0xc136ac"
+      },
+      {
+        "hint": 463,
+        "kind": "normal",
+        "library": "KERNEL32.dll",
+        "name": "LocalReAlloc",
+        "slot": "0xc13728"
+      }
+    ],
+    "libraries": [
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ADVAPI32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "COMCTL32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Defmgr.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Desview.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Dialog.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "GDI32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Geometry.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Hwrsetup.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Image.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Import.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 43,
+        "kinds": [
+          "normal"
+        ],
+        "name": "KERNEL32.dll"
+      },
+      {
+        "by_ordinal_only": 1,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MFC70.DLL"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MSVCI70.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MSVCP70.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MSVCR70.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "NG.dll"
+      },
+      {
+        "by_ordinal_only": 1,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "OLEAUT32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Oleintf.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Resource.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 2,
+        "kinds": [
+          "normal"
+        ],
+        "name": "SETUPAPI.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "SHELL32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "SHLWAPI.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 2,
+        "kinds": [
+          "normal"
+        ],
+        "name": "USER32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Versndll.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Wessys.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "controls.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ediskdll.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ezstitch.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "gdiplus.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "mod1.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ole32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "product.dll"
+      }
+    ],
+    "matching": 76,
+    "path": "/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE",
+    "total": 76
+  },
+  "summary": "76 imported function(s) from 32 libraries.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "partial",
+    "examined": 40,
+    "total": 76,
+    "next_offset": 40
+  },
+  "locations": [
+    {
+      "kind": "path",
+      "value": "/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

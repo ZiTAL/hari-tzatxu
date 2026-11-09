@@ -1,0 +1,62 @@
+{
+  "id": "ev_cfe14628612f754ad996349059adff662e5a430d701f8e543fbf4c7d3ab803a3",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Default"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x106e71c4",
+        "references": [],
+        "section": ".rdata",
+        "text": "?RestoreToDefaults@EasyStitchSequencerConnectorParameters@@QAEXXZ"
+      },
+      {
+        "address": "0x106f5583",
+        "references": [],
+        "section": ".rdata",
+        "text": "?AddDefaultData@DesignDocument@@QBEXAAVDataItem@@_N@Z"
+      },
+      {
+        "address": "0x106fa9ae",
+        "references": [],
+        "section": ".rdata",
+        "text": "?CreateDefaultEntry@SequinPalette@@QAEXHNVTColor@@@Z"
+      }
+    ],
+    "total": 24
+  },
+  "summary": "24 strings match \"Default\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 24,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

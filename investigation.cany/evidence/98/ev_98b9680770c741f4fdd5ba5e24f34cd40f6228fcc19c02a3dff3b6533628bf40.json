@@ -1,0 +1,225 @@
+{
+  "id": "ev_98b9680770c741f4fdd5ba5e24f34cd40f6228fcc19c02a3dff3b6533628bf40",
+  "subject": {
+    "kind": "pe",
+    "sha256": "faabe3e689f5f07c59eb283be2e797db4c7b233bb2b4888691641fe9c4320eb3",
+    "name": "IMPORT.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 30,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Dst"
+  },
+  "result": {
+    "functions": 4,
+    "imports": 33,
+    "matches": [
+      {
+        "address": "0x1002d750",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetEndOfTapeData@DSTStitchFormat@@QAEXXZ",
+        "size": 13
+      },
+      {
+        "address": "0x1002ddc0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?LoadStitch@DSTStitchFormat@@UAE?AW4LoadStitchResult@StitchFormat@@AAVistream@@AAVLongVect@@AAVUIntIxList@@AA_N@Z",
+        "size": 292
+      },
+      {
+        "address": "0x10074060",
+        "demangled": null,
+        "kind": "function",
+        "name": "?LoadStitch@ToyotaStitchFormat@@UAE?AW4LoadStitchResult@StitchFormat@@AAVistream@@AAVLongVect@@AAVUIntIxList@@AA_N@Z",
+        "size": 307
+      },
+      {
+        "address": "0x100e14d0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?WriteFixedString@PESFileUtilities@@YAXAAVostream@@ABVString@@H@Z",
+        "size": 177
+      },
+      {
+        "address": "0x1036ca40",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "??4RecordStreamRef@@QAEXABV0@@Z"
+      },
+      {
+        "address": "0x1036ca44",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?CreateRecord@RecordFile@@QAE?AVRecordStreamRef@@PBG@Z"
+      },
+      {
+        "address": "0x1036ca48",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "??0RecordStreamRef@@QAE@XZ"
+      },
+      {
+        "address": "0x1036ca4c",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?Close@RecordStreamRef@@QAEXXZ"
+      },
+      {
+        "address": "0x1036ca50",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?Write@RecordStreamRef@@UAEXPBXI@Z"
+      },
+      {
+        "address": "0x1036ca5c",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?Read@RecordStreamRef@@UAEIPAXI@Z"
+      },
+      {
+        "address": "0x1036cad8",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?OpenRecordForRead@RecordFile@@QAE?AVRecordStreamRef@@PBG@Z"
+      },
+      {
+        "address": "0x1036cadc",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "??1RecordStreamRef@@QAE@XZ"
+      },
+      {
+        "address": "0x1036cbc4",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?AppendStream@@YAXAAVOutFileStream@@AAVInFileStream@@@Z"
+      },
+      {
+        "address": "0x1036cd3c",
+        "kind": "import",
+        "library": "Wessys.dll",
+        "name": "?Size@RecordStreamRef@@QAEKXZ"
+      },
+      {
+        "address": "0x1036d168",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "?AddStitch@SimpleDesignDocument@@QAEXABVLongPoint@@_N@Z"
+      },
+      {
+        "address": "0x1036d1a4",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "?CollapseAllMacrosAndStates@EmbroideryMachine@@QAEXXZ"
+      },
+      {
+        "address": "0x1036d430",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "?IsAddedStitch@StitchMarker@@QBE_NXZ"
+      },
+      {
+        "address": "0x1036d438",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "?SetAddedStitch@StitchMarker@@QAEX_N@Z"
+      },
+      {
+        "address": "0x1036d68c",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "?GetStitchMarker@StitchMarkerList@@QAE?AVPSharedStitchMarker@@ABVNeedlePos@@@Z"
+      },
+      {
+        "address": "0x1036d6a4",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "??0AddStateRecordTransaction@@QAE@PAVEmbroideryMachine@@PBVNeedlePos@@ED@Z"
+      },
+      {
+        "address": "0x1036d6a8",
+        "kind": "import",
+        "library": "mod1.dll",
+        "name": "?Do@AddStateRecordTransaction@@UAEXXZ"
+      },
+      {
+        "address": "0x1036c060",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?Nfunc@OldStitch@@QBEFXZ"
+      },
+      {
+        "address": "0x1036c064",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?FunName@OldStitch@@QBE?AW4FuncName@@G@Z"
+      },
+      {
+        "address": "0x1036c068",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?FunMacID@OldStitch@@QBEEW4FuncName@@@Z"
+      },
+      {
+        "address": "0x1036c06c",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?IsSupersetMacro@OldStitch@@QBE_NW4MacroName@@@Z"
+      },
+      {
+        "address": "0x1036c070",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?FunPosn@OldStitch@@QBE?AW4FuncPosn@@W4FuncName@@@Z"
+      },
+      {
+        "address": "0x1036c074",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?IsAnchor@OldStitch@@QBE_NXZ"
+      },
+      {
+        "address": "0x1036c078",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?FunisValue@OldStitch@@QBE_NW4FuncName@@@Z"
+      },
+      {
+        "address": "0x1036c07c",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?FunValue@OldStitch@@QBEIW4FuncName@@@Z"
+      },
+      {
+        "address": "0x1036c080",
+        "kind": "import",
+        "library": "Esdrdr.dll",
+        "name": "?GetProcessingStitchType@OldStitchParameters@@QBE?AW4StitchType@1@XZ"
+      }
+    ],
+    "total": 37
+  },
+  "summary": "4 functions and 33 imports match \"Dst\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "partial",
+    "examined": 30,
+    "total": 37,
+    "next_offset": 30
+  },
+  "locations": [],
+  "links": []
+}

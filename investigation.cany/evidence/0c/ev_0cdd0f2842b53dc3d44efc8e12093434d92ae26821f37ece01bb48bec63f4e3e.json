@@ -1,0 +1,49 @@
+{
+  "id": "ev_0cdd0f2842b53dc3d44efc8e12093434d92ae26821f37ece01bb48bec63f4e3e",
+  "subject": {
+    "kind": "pe",
+    "sha256": "faabe3e689f5f07c59eb283be2e797db4c7b233bb2b4888691641fe9c4320eb3",
+    "name": "IMPORT.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "factory.autost"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10370848",
+        "references": [],
+        "section": ".rdata",
+        "text": "\\factory.autost"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"factory.autost\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

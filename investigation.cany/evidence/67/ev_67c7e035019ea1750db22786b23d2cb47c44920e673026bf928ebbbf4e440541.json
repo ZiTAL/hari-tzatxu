@@ -1,0 +1,314 @@
+{
+  "id": "ev_67c7e035019ea1750db22786b23d2cb47c44920e673026bf928ebbbf4e440541",
+  "subject": {
+    "kind": "pe",
+    "sha256": "cab5d0d28c0eafeb9ecbdb15997dc913eda3c9f51784ef283e1aa2c51554cde8",
+    "name": "JANOME.EXE"
+  },
+  "operation": "native_library_calls_list",
+  "params": {
+    "contains": null,
+    "kind": null,
+    "limit": 1,
+    "offset": 0,
+    "path": "/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"
+  },
+  "result": {
+    "bound_modules": [],
+    "format": "pe",
+    "imports": [
+      {
+        "hint": 481,
+        "kind": "normal",
+        "library": "ADVAPI32.dll",
+        "name": "RegOpenKeyExA",
+        "slot": "0xc2d0dc"
+      }
+    ],
+    "libraries": [
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ADVAPI32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "COMCTL32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Defmgr.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Desview.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Dialog.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "GDI32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Geometry.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Hwrsetup.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Image.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Import.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 43,
+        "kinds": [
+          "normal"
+        ],
+        "name": "KERNEL32.dll"
+      },
+      {
+        "by_ordinal_only": 1,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MFC70.DLL"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MSVCI70.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MSVCP70.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "MSVCR70.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "NG.dll"
+      },
+      {
+        "by_ordinal_only": 1,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "OLEAUT32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Oleintf.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Resource.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 2,
+        "kinds": [
+          "normal"
+        ],
+        "name": "SETUPAPI.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "SHELL32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "SHLWAPI.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 2,
+        "kinds": [
+          "normal"
+        ],
+        "name": "USER32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Versndll.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "Wessys.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "controls.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ediskdll.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ezstitch.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "gdiplus.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "mod1.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "ole32.dll"
+      },
+      {
+        "by_ordinal_only": 0,
+        "imports": 1,
+        "kinds": [
+          "normal"
+        ],
+        "name": "product.dll"
+      }
+    ],
+    "matching": 76,
+    "path": "/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE",
+    "total": 76
+  },
+  "summary": "76 imported function(s) from 32 libraries.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "partial",
+    "examined": 1,
+    "total": 76,
+    "next_offset": 1
+  },
+  "locations": [
+    {
+      "kind": "path",
+      "value": "/run/user/1000/doc/fppx9CtMfmvuGMW7HFnGFw/JANOME.EXE"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

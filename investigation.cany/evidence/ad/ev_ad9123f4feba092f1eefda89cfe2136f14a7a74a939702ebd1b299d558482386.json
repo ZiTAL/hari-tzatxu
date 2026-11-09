@@ -1,0 +1,75 @@
+{
+  "id": "ev_ad9123f4feba092f1eefda89cfe2136f14a7a74a939702ebd1b299d558482386",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 12,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "ShortStitch"
+  },
+  "result": {
+    "functions": 5,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x10071410",
+        "demangled": null,
+        "kind": "function",
+        "name": "??0ShortStitchesEffect@@QAE@XZ",
+        "size": 81
+      },
+      {
+        "address": "0x100714e0",
+        "demangled": null,
+        "kind": "function",
+        "name": "??0ShortStitchesEffect@@QAE@AAVUndefined@@@Z",
+        "size": 83
+      },
+      {
+        "address": "0x1021d510",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CreateData@ShortStitchesEffect@@UBE?AVDataItem@@XZ",
+        "size": 229
+      },
+      {
+        "address": "0x1021dcc0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?init@ShortStitchesEffect@@AAEXXZ",
+        "size": 70
+      },
+      {
+        "address": "0x1021dd10",
+        "demangled": null,
+        "kind": "function",
+        "name": "??0ShortStitchesEffect@@QAE@ABVDataItem@@@Z",
+        "size": 296
+      }
+    ],
+    "total": 5
+  },
+  "summary": "5 functions and 0 imports match \"ShortStitch\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 5,
+    "total": 5
+  },
+  "locations": [],
+  "links": []
+}

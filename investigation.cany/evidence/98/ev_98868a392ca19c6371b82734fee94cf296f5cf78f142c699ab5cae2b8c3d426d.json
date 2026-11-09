@@ -1,0 +1,45 @@
+{
+  "id": "ev_98868a392ca19c6371b82734fee94cf296f5cf78f142c699ab5cae2b8c3d426d",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10018310"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10018310",
+    "function": "FUN_10018310",
+    "pseudo_code": "\nvoid __thiscall\nFUN_10018310(int param_1,undefined4 *param_2,char param_3,int param_4,undefined1 param_5)\n\n{\n  undefined8 uVar1;\n  undefined4 *puVar2;\n  undefined4 uVar3;\n  undefined4 uVar4;\n  undefined4 uVar5;\n  undefined4 uVar6;\n  int iVar7;\n  \n  puVar2 = *(undefined4 **)(*(int *)(param_1 + 0x10) + 8);\n  if (param_3 == '\\0') {\n    iVar7 = puVar2[4];\n  }\n  else {\n    iVar7 = puVar2[3];\n  }\n  _param_3 = *(int *)(param_1 + 0x94);\n  if (*(int *)(param_1 + 0x94) <= iVar7) {\n    _param_3 = iVar7;\n  }\n  iVar7 = puVar2[5];\n  if ((param_4 != 0) && ((iVar7 == 0 || (param_4 < iVar7)))) {\n    iVar7 = param_4;\n  }\n  uVar3 = puVar2[9];\n  uVar1 = *(undefined8 *)(puVar2 + 6);\n  uVar4 = puVar2[1];\n  uVar5 = *puVar2;\n  uVar6 = puVar2[8];\n  param_2[3] = puVar2[2];\n  *(undefined8 *)(param_2 + 4) = uVar1;\n  param_2[1] = uVar4;\n  param_2[7] = uVar6;\n  *param_2 = uVar5;\n  param_2[6] = iVar7;\n  param_2[2] = _param_3;\n  param_2[8] = uVar3;\n  *(undefined1 *)(param_2 + 9) = param_5;\n  return;\n}\n\n",
+    "signature": "void __thiscall FUN_10018310(int param_1,undefined4 *param_2,char param_3,int param_4,undefined1 param_5);"
+  },
+  "summary": "Pseudo-C for FUN_10018310 from the Deep engine (45 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10018310"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ev_dc660a35fe92e7bfe78f14ae89723b4ea583f1524ac9c684648e852536cd9e18",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Default"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1007d270",
+        "references": [
+          {
+            "from": "0x10001e4b",
+            "function": "sub_10001da0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Defaults file Missing"
+      },
+      {
+        "address": "0x1007d288",
+        "references": [
+          {
+            "from": "0x10001de4",
+            "function": "sub_10001da0"
+          },
+          {
+            "from": "0x10001f04",
+            "function": "sub_10001ec0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "No Defaults Dir Specified"
+      },
+      {
+        "address": "0x1007d2a4",
+        "references": [
+          {
+            "from": "0x10001ddf",
+            "function": "sub_10001da0"
+          },
+          {
+            "from": "0x10001e46",
+            "function": "sub_10001da0"
+          },
+          {
+            "from": "0x10001eff",
+            "function": "sub_10001ec0"
+          },
+          {
+            "from": "0x10002009",
+            "function": "sub_10001ec0"
+          }
+        ],
+        "section": ".rdata",
+        "text": "Default Manager"
+      }
+    ],
+    "total": 29
+  },
+  "summary": "29 strings match \"Default\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 29,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

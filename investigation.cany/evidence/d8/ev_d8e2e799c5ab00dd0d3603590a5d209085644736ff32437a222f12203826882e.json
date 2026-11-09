@@ -1,0 +1,45 @@
+{
+  "id": "ev_d8e2e799c5ab00dd0d3603590a5d209085644736ff32437a222f12203826882e",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10005be0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10005be0",
+    "function": "GetDefaultData",
+    "pseudo_code": "\n/* public: static bool __cdecl MMGDefaults::GetDefaultData(int,class DataItem &) */\n\nbool __cdecl MMGDefaults::GetDefaultData(int param_1,DataItem *param_2)\n\n{\n  bool bVar1;\n  undefined1 uVar2;\n  int iVar3;\n  \n                    /* 0x5be0  8  ?GetDefaultData@MMGDefaults@@SA_NHAAVDataItem@@@Z */\n  iVar3 = FUN_10005600();\n  if (iVar3 == 2) {\n    FUN_10005020();\n    iVar3 = FUN_10005990();\n  }\n  if (iVar3 != 0) {\n    return false;\n  }\n  if (param_1 == 0x22e2) {\n    uVar2 = FUN_100052c0(param_2);\n    return (bool)uVar2;\n  }\n  if (param_1 != 0x22e3) {\n    return false;\n  }\n  bVar1 = GetMachineUnitsUniqueIds(param_2);\n  return bVar1;\n}\n\n",
+    "signature": "bool __cdecl MMGDefaults::GetDefaultData(int param_1,DataItem *param_2);"
+  },
+  "summary": "Pseudo-C for GetDefaultData from the Deep engine (30 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10005be0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

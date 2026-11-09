@@ -1,0 +1,45 @@
+{
+  "id": "ev_9e43ff6c645590c41530f0598f2cc6e9c859927480ec7c25edebcc9ef9b6106a",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x101dd4a0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x101dd4a0",
+    "function": "GetStitchCriteria",
+    "pseudo_code": "\n/* public: virtual class StitchCriteria __thiscall FillStyle::GetStitchCriteria(void)const  */\n\nvoid __thiscall FillStyle::GetStitchCriteria(FillStyle *this)\n\n{\n  undefined4 uVar1;\n  undefined4 uVar2;\n  undefined4 uVar3;\n  undefined4 uVar4;\n  undefined4 *in_stack_00000004;\n  \n                    /* 0x1dd4a0  1643  ?GetStitchCriteria@FillStyle@@UBE?AVStitchCriteria@@XZ */\n  if (this[0x1c] == (FillStyle)0x0) {\n    uVar3 = 0;\n    uVar4 = *(undefined4 *)(this + 0x10);\n  }\n  else {\n    uVar3 = *(undefined4 *)(this + 0x10);\n    uVar4 = 0;\n  }\n  uVar1 = *(undefined4 *)(this + 0x14);\n  uVar2 = *(undefined4 *)(this + 0x18);\n  *in_stack_00000004 = uVar4;\n  in_stack_00000004[2] = uVar1;\n  in_stack_00000004[1] = uVar3;\n  in_stack_00000004[3] = uVar2;\n  in_stack_00000004[4] = 0;\n  in_stack_00000004[5] = 0;\n  in_stack_00000004[6] = 0;\n  in_stack_00000004[7] = 0;\n  in_stack_00000004[8] = 0;\n  *(undefined1 *)(in_stack_00000004 + 9) = 0;\n  return;\n}\n\n",
+    "signature": "void __thiscall FillStyle::GetStitchCriteria(FillStyle *this);"
+  },
+  "summary": "Pseudo-C for GetStitchCriteria from the Deep engine (36 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x101dd4a0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

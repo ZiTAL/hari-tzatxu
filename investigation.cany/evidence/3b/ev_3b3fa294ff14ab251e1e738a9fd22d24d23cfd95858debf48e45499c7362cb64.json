@@ -1,0 +1,48 @@
+{
+  "id": "ev_3b3fa294ff14ab251e1e738a9fd22d24d23cfd95858debf48e45499c7362cb64",
+  "subject": {
+    "kind": "pe",
+    "sha256": "b4caa53001e4f16687f473e93d483f46b8a8649ba09663acfce7bc29b4992cc7",
+    "name": "REVERT.EXE"
+  },
+  "operation": "native_xrefs_list",
+  "params": {
+    "address": "0x4053e8",
+    "limit": 20,
+    "offset": 0
+  },
+  "result": {
+    "address": "0x4053e8",
+    "name": null,
+    "references_from": [],
+    "references_to": [],
+    "total_to": 0
+  },
+  "summary": "0x4053e8 is referenced from 0 places and refers to 0.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "static_references",
+      "message": "references made through computed pointers at run time are not seen"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x4053e8"
+    }
+  ],
+  "links": []
+}

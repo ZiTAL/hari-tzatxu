@@ -1,0 +1,449 @@
+{
+  "id": "ev_91deb79f548e7f968263066296823219ef5f1e93301475ccd8ce02ba10f331b3",
+  "subject": {
+    "kind": "pe",
+    "sha256": "7e4898b8aa1a6e862b839867faa92569b09322965fc990953e6c65a38e0eae78",
+    "name": "DEFMGR.DLL"
+  },
+  "operation": "native_functions_list",
+  "params": {
+    "limit": 40,
+    "offset": 0
+  },
+  "result": {
+    "functions": [
+      {
+        "address": "0x10001000",
+        "blocks": 9,
+        "found_by": "call",
+        "instructions": 36,
+        "name": "sub_10001000",
+        "name_source": "generated",
+        "size": 121,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001080",
+        "blocks": 4,
+        "found_by": "call",
+        "instructions": 8,
+        "name": "sub_10001080",
+        "name_source": "generated",
+        "size": 34,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100010d0",
+        "blocks": 5,
+        "found_by": "call",
+        "instructions": 24,
+        "name": "sub_100010d0",
+        "name_source": "generated",
+        "size": 56,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001110",
+        "blocks": 7,
+        "found_by": "call",
+        "instructions": 211,
+        "name": "sub_10001110",
+        "name_source": "generated",
+        "size": 866,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001480",
+        "blocks": 8,
+        "found_by": "call",
+        "instructions": 265,
+        "name": "sub_10001480",
+        "name_source": "generated",
+        "size": 895,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001810",
+        "blocks": 1,
+        "found_by": "code_pointer",
+        "instructions": 9,
+        "name": "sub_10001810",
+        "name_source": "generated",
+        "size": 25,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001860",
+        "blocks": 8,
+        "found_by": "call",
+        "instructions": 66,
+        "name": "sub_10001860",
+        "name_source": "generated",
+        "size": 151,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001930",
+        "blocks": 3,
+        "found_by": "call",
+        "instructions": 28,
+        "name": "sub_10001930",
+        "name_source": "generated",
+        "size": 100,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100019f0",
+        "blocks": 1,
+        "found_by": "call",
+        "instructions": 31,
+        "name": "sub_100019f0",
+        "name_source": "generated",
+        "size": 124,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001aa0",
+        "blocks": 8,
+        "found_by": "call",
+        "instructions": 33,
+        "name": "sub_10001aa0",
+        "name_source": "generated",
+        "size": 106,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001da0",
+        "blocks": 10,
+        "found_by": "call",
+        "instructions": 89,
+        "name": "sub_10001da0",
+        "name_source": "generated",
+        "size": 288,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10001ec0",
+        "blocks": 11,
+        "found_by": "call",
+        "instructions": 132,
+        "name": "sub_10001ec0",
+        "name_source": "generated",
+        "size": 457,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002090",
+        "blocks": 10,
+        "found_by": "call",
+        "instructions": 74,
+        "name": "sub_10002090",
+        "name_source": "generated",
+        "size": 171,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002140",
+        "blocks": 18,
+        "found_by": "call",
+        "instructions": 75,
+        "name": "sub_10002140",
+        "name_source": "generated",
+        "size": 207,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002210",
+        "blocks": 1,
+        "found_by": "export",
+        "instructions": 7,
+        "name": "?GetGlobalDefaultData@@YA_NIAAVDataItem@@@Z",
+        "name_source": "export",
+        "size": 22,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002230",
+        "blocks": 1,
+        "found_by": "export",
+        "instructions": 7,
+        "name": "?PutGlobalDefaultData@@YA_NIABVDataItem@@@Z",
+        "name_source": "export",
+        "size": 22,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002330",
+        "blocks": 1,
+        "found_by": "call",
+        "instructions": 25,
+        "name": "sub_10002330",
+        "name_source": "generated",
+        "size": 69,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002380",
+        "blocks": 1,
+        "found_by": "export",
+        "instructions": 2,
+        "name": "?SaveGlobalDefaults@@YAXXZ",
+        "name_source": "export",
+        "size": 11,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002390",
+        "blocks": 3,
+        "found_by": "call",
+        "instructions": 38,
+        "name": "sub_10002390",
+        "name_source": "generated",
+        "size": 133,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002430",
+        "blocks": 17,
+        "found_by": "export",
+        "instructions": 62,
+        "name": "?FormatsAreEqual@FormatManager@@SA_NABVDataItem@@0@Z",
+        "name_source": "export",
+        "size": 131,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100024c0",
+        "blocks": 8,
+        "found_by": "call",
+        "instructions": 68,
+        "name": "sub_100024c0",
+        "name_source": "generated",
+        "size": 218,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100025a0",
+        "blocks": 5,
+        "found_by": "export",
+        "instructions": 51,
+        "name": "?GetFormatStatus@FormatManager@@SAHABVDataItem@@@Z",
+        "name_source": "export",
+        "size": 176,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002670",
+        "blocks": 5,
+        "found_by": "call",
+        "instructions": 33,
+        "name": "sub_10002670",
+        "name_source": "generated",
+        "size": 102,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100026e0",
+        "blocks": 18,
+        "found_by": "call",
+        "instructions": 127,
+        "name": "sub_100026e0",
+        "name_source": "generated",
+        "size": 397,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002870",
+        "blocks": 10,
+        "found_by": "export",
+        "instructions": 34,
+        "name": "?NotifyTitleChanged@FormatManager@@SAXPBVDesignDocument@@ABVString@@@Z",
+        "name_source": "export",
+        "size": 80,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100028c0",
+        "blocks": 1,
+        "found_by": "call",
+        "instructions": 5,
+        "name": "sub_100028c0",
+        "name_source": "generated",
+        "size": 10,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100028d0",
+        "blocks": 11,
+        "found_by": "export",
+        "instructions": 90,
+        "name": "?GetFormatUniqueSuffix@FormatManager@@SAXAAVDataItem@@@Z",
+        "name_source": "export",
+        "size": 303,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002a10",
+        "blocks": 9,
+        "found_by": "export",
+        "instructions": 62,
+        "name": "?GetDesignTitle@FormatManager@@SA_NAAVDataItem@@@Z",
+        "name_source": "export",
+        "size": 201,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002ae0",
+        "blocks": 6,
+        "found_by": "call",
+        "instructions": 35,
+        "name": "sub_10002ae0",
+        "name_source": "generated",
+        "size": 109,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002b50",
+        "blocks": 3,
+        "found_by": "call",
+        "instructions": 10,
+        "name": "sub_10002b50",
+        "name_source": "generated",
+        "size": 29,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002b70",
+        "blocks": 11,
+        "found_by": "call",
+        "instructions": 96,
+        "name": "sub_10002b70",
+        "name_source": "generated",
+        "size": 305,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002cb0",
+        "blocks": 16,
+        "found_by": "call",
+        "instructions": 187,
+        "name": "sub_10002cb0",
+        "name_source": "generated",
+        "size": 698,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10002f70",
+        "blocks": 19,
+        "found_by": "call",
+        "instructions": 220,
+        "name": "sub_10002f70",
+        "name_source": "generated",
+        "size": 806,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100032a0",
+        "blocks": 30,
+        "found_by": "export",
+        "instructions": 205,
+        "name": "?GetPreferredFormat@FormatManager@@SAXAAVDataItem@@@Z",
+        "name_source": "export",
+        "size": 628,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10003520",
+        "blocks": 10,
+        "found_by": "export",
+        "instructions": 52,
+        "name": "?GetFormatDescriptor@FormatManager@@SAABVDataItem@@PBVDesignDocument@@@Z",
+        "name_source": "export",
+        "size": 110,
+        "thunk_of": null
+      },
+      {
+        "address": "0x100035a0",
+        "blocks": 12,
+        "found_by": "export",
+        "instructions": 75,
+        "name": "?GetMachineFormatByUniqId@FormatManager@@SAPBVDataItem@@ABV2@@Z",
+        "name_source": "export",
+        "size": 203,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10003670",
+        "blocks": 15,
+        "found_by": "call",
+        "instructions": 97,
+        "name": "sub_10003670",
+        "name_source": "generated",
+        "size": 261,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10003780",
+        "blocks": 14,
+        "found_by": "export",
+        "instructions": 140,
+        "name": "?ValidateSaveDefaultFormat@FormatManager@@SA_NABVDataItem@@AAV2@@Z",
+        "name_source": "export",
+        "size": 450,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10003950",
+        "blocks": 5,
+        "found_by": "call",
+        "instructions": 50,
+        "name": "sub_10003950",
+        "name_source": "generated",
+        "size": 164,
+        "thunk_of": null
+      },
+      {
+        "address": "0x10003a00",
+        "blocks": 15,
+        "found_by": "export",
+        "instructions": 121,
+        "name": "?BuildFormatNameList@FormatManager@@SAXAAVDataItem@@@Z",
+        "name_source": "export",
+        "size": 354,
+        "thunk_of": null
+      }
+    ],
+    "total": 2387
+  },
+  "summary": "2387 functions (showing 40).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "indirect_jumps_unresolved",
+      "message": "48048 indirect jumps could not be resolved; code they reach may be missing"
+    },
+    {
+      "code": "stripped_binary",
+      "message": "no local symbols: most function names are generated (sub_…)"
+    },
+    {
+      "code": "static_analysis_only",
+      "message": "functions reached only through computed pointers or at run time may be missing; absence is not proof"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 40,
+    "total": 2387,
+    "next_offset": 40
+  },
+  "locations": [],
+  "links": []
+}

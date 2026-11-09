@@ -1,0 +1,39 @@
+{
+  "id": "ev_4bea7d83a3082d617ef4e65668f5a841bd75377469cb894d0da0751253942146",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 60,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Speed"
+  },
+  "result": {
+    "functions": 0,
+    "imports": 0,
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 functions and 0 imports match \"Speed\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

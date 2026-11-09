@@ -1,0 +1,45 @@
+{
+  "id": "ev_57231dd87ae49e7e81c6f7572951d4ab36d36ecb8121c68f08dfb172d446f778",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x10018400"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x10018400",
+    "function": "GetObjectStitchCriteria",
+    "pseudo_code": "\n/* public: class StitchCriteria __thiscall DesignDocument::GetObjectStitchCriteria(class\n   EmbroideryObject const *)const  */\n\nEmbroideryObject * __thiscall\nDesignDocument::GetObjectStitchCriteria(DesignDocument *this,EmbroideryObject *param_1)\n\n{\n  int iVar1;\n  bool bVar2;\n  uint uVar3;\n  undefined4 uVar4;\n  EmbroideryObject *in_stack_00000008;\n  FuncPropertyInfo local_24 [8];\n  undefined4 local_1c;\n  undefined4 *local_14;\n  void *local_c;\n  undefined1 *puStack_8;\n  undefined4 local_4;\n  \n                    /* 0x18400  1532\n                       ?GetObjectStitchCriteria@DesignDocument@@QBE?AVStitchCriteria@@PBVEmbroideryObject@@@Z\n                        */\n  local_4 = 0xffffffff;\n  puStack_8 = &LAB_104b7e28;\n  local_c = ExceptionList;\n  ExceptionList = &local_c;\n  FUN_10416480();\n  local_4 = 0;\n  bVar2 = EmbroideryObject::GetFuncProperty(in_stack_00000008,'\\x01',0x99,local_24);\n  uVar4 = 0;\n  if (bVar2) {\n    uVar4 = local_1c;\n  }\n  bVar2 = EmbroideryObject::IsTuftingObject(in_stack_00000008);\n  uVar3 = (uint)bVar2;\n  bVar2 = EmbroideryObject::IsChenilleObject(in_stack_00000008);\n  FUN_10018310(param_1,bVar2,uVar4,uVar3);\n  local_4 = 0xffffffff;\n  if ((local_14 != (undefined4 *)0x0) &&\n     (iVar1 = local_14[1], local_14[1] = iVar1 + -1, iVar1 + -1 == 0)) {\n    (**(code **)*local_14)(1);\n  }\n  ExceptionList = local_c;\n  return param_1;\n}\n\n",
+    "signature": "EmbroideryObject * __thiscall DesignDocument::GetObjectStitchCriteria(DesignDocument *this,EmbroideryObject *param_1);"
+  },
+  "summary": "Pseudo-C for GetObjectStitchCriteria from the Deep engine (47 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x10018400"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

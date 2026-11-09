@@ -1,0 +1,45 @@
+{
+  "id": "ev_3c534922defecd998ddde05df8812d187c42d7aac43d8417e95e09bb8a8d5b8b",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x100024c0"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x100024c0",
+    "function": "FUN_100024c0",
+    "pseudo_code": "\nvoid FUN_100024c0(void)\n\n{\n  bool bVar1;\n  undefined4 *puVar2;\n  uint uVar3;\n  undefined4 local_1c;\n  undefined4 local_18;\n  undefined4 local_14;\n  undefined4 local_10;\n  void *local_c;\n  undefined1 *puStack_8;\n  uint local_4;\n  \n  local_4 = 0xffffffff;\n  puStack_8 = &LAB_10005d30;\n  local_c = ExceptionList;\n  if (DAT_1000c35c == '\\0') {\n    ExceptionList = &local_c;\n    if (DAT_1000c36c == 0) {\n      uVar3 = 0;\n      ExceptionList = &local_c;\n      do {\n        local_18 = 0;\n        FUN_10004800(\"Hoop ST (126 x 110)\" + uVar3);\n        local_1c = 0;\n        local_4 = 1;\n        bVar1 = GetResourceString(*(uint *)((int)&DAT_10007220 + uVar3),(String *)&local_1c,true);\n        if (bVar1) {\n          FUN_100023c0(&local_18,&local_1c);\n        }\n        local_4 = local_4 & 0xffffff00;\n        FUN_100046e0();\n        local_4 = 0xffffffff;\n        FUN_100046e0();\n        uVar3 = uVar3 + 0x104;\n      } while (uVar3 < 0x2db4);\n    }\n    if ((DAT_1000c388 == 0) && (uVar3 = 0, DAT_1000c36c != 0)) {\n      do {\n        local_10 = 0;\n        puVar2 = *(undefined4 **)(DAT_1000c364 + uVar3 * 4);\n        if (puVar2 == (undefined4 *)0x0) {\n          puVar2 = &DAT_10007118;\n        }\n        FUN_10004800(puVar2);\n        local_14 = 0;\n        puVar2 = *(undefined4 **)(DAT_1000c370 + uVar3 * 4);\n        local_4 = 2;\n        if (puVar2 == (undefined4 *)0x0) {\n          puVar2 = &DAT_10007118;\n        }\n        FUN_10004800(puVar2);\n        local_4._0_1_ = 3;\n        FUN_100023c0(&local_14,&local_10);\n        local_4 = CONCAT31(local_4._1_3_,2);\n        FUN_100046e0();\n        local_4 = 0xffffffff;\n        FUN_100046e0();\n        uVar3 = uVar3 + 1;\n      } while (uVar3 < DAT_1000c36c);\n    }\n    DAT_1000c35c = '\\x01';\n  }\n  ExceptionList = local_c;\n  return;\n}\n\n",
+    "signature": "void FUN_100024c0(void);"
+  },
+  "summary": "Pseudo-C for FUN_100024c0 from the Deep engine (69 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x100024c0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

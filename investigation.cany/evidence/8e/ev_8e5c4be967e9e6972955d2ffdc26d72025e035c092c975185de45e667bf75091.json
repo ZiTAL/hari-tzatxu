@@ -1,0 +1,49 @@
+{
+  "id": "ev_8e5c4be967e9e6972955d2ffdc26d72025e035c092c975185de45e667bf75091",
+  "subject": {
+    "kind": "pe",
+    "sha256": "b4caa53001e4f16687f473e93d483f46b8a8649ba09663acfce7bc29b4992cc7",
+    "name": "REVERT.EXE"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "DEFAULTS.DFL"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x4053e8",
+        "references": [],
+        "section": ".rdata",
+        "text": "\\defaults.dfl"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"DEFAULTS.DFL\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ev_7e7d6cf22288ab83df2fef44b71b080f6670a0e0253e8a8740fbee9016573ac7",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x1009ba60"
+  },
+  "result": {
+    "engine": "ghidra",
+    "entry": "0x1009ba60",
+    "function": "GetBestFittingHoop",
+    "pseudo_code": "\n/* public: class DataItem const * __thiscall HoopLibrary::GetBestFittingHoop(unsigned\n   int,double,double,double) */\n\nDataItem * __thiscall\nHoopLibrary::GetBestFittingHoop\n          (HoopLibrary *this,uint param_1,double param_2,double param_3,double param_4)\n\n{\n  char cVar1;\n  int iVar2;\n  int iVar3;\n  int iVar4;\n  undefined4 in_stack_00000008;\n  DataItem *local_30;\n  uint local_2c;\n  undefined4 local_28;\n  undefined4 uStack_24;\n  undefined4 local_20;\n  undefined4 uStack_1c;\n  undefined4 local_18;\n  undefined4 uStack_14;\n  undefined4 local_10;\n  undefined4 uStack_c;\n  \n                    /* 0x9ba60  1264  ?GetBestFittingHoop@HoopLibrary@@QAEPBVDataItem@@INNN@Z */\n  iVar4 = 0;\n  local_30 = (DataItem *)0x0;\n  local_10 = 0;\n  uStack_c = 0;\n  local_18 = 0;\n  uStack_14 = 0;\n  iVar2 = FUN_1009b720(param_1);\n  if ((iVar2 == 0) || (local_2c = 0, *(int *)(iVar2 + 0xc) == 0)) {\n    return (DataItem *)0x0;\n  }\n  do {\n    if (*(int *)(iVar2 + 8) == 6) {\n      iVar3 = *(int *)(iVar2 + 0x10);\n    }\n    else {\n      iVar3 = 0;\n    }\n    local_20 = 0;\n    uStack_1c = 0;\n    local_28 = 0;\n    uStack_24 = 0;\n    cVar1 = FUN_10404fc0(0x9cc,&local_20,0,0);\n    if (cVar1 != '\\0') {\n      cVar1 = FUN_10404fc0(0x9cd,&local_28,0,0);\n      if (((cVar1 != '\\0') &&\n          ((double)CONCAT44(param_2._0_4_,in_stack_00000008) +\n           (double)CONCAT44(param_4._0_4_,param_3._4_4_) < (double)CONCAT44(uStack_1c,local_20))) &&\n         ((double)CONCAT44(param_3._0_4_,param_2._4_4_) +\n          (double)CONCAT44(param_4._0_4_,param_3._4_4_) < (double)CONCAT44(uStack_24,local_28))) {\n        if (local_30 == (DataItem *)0x0) {\n          local_10 = local_20;\n          uStack_c = uStack_1c;\n          local_18 = local_28;\n          uStack_14 = uStack_24;\n        }\n        else if ((double)CONCAT44(uStack_14,local_18) * (double)CONCAT44(uStack_c,local_10) <=\n                 (double)CONCAT44(uStack_24,local_28) * (double)CONCAT44(uStack_1c,local_20))\n        goto LAB_1009bb73;\n        local_30 = (DataItem *)(iVar4 + iVar3);\n      }\n    }\nLAB_1009bb73:\n    local_2c = local_2c + 1;\n    iVar4 = iVar4 + 0x1c;\n    if (*(uint *)(iVar2 + 0xc) <= local_2c) {\n      return local_30;\n    }\n  } while( true );\n}\n\n",
+    "signature": "DataItem * __thiscall HoopLibrary::GetBestFittingHoop(HoopLibrary *this,uint param_1,double param_2,double param_3,double param_4);"
+  },
+  "summary": "Pseudo-C for GetBestFittingHoop from the Deep engine (76 lines).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "ghidra",
+    "engine_version": "12.1.4",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "deep_engine",
+      "message": "the pseudo-C comes from the external Deep engine (Ghidra), not the original source"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x1009ba60"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

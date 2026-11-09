@@ -1,0 +1,66 @@
+{
+  "id": "ev_db6b6b6678d218a79116c865e0636d290f3d946f45f33677e1e7c5c72e1dead2",
+  "subject": {
+    "kind": "pe",
+    "sha256": "0868a9b668810a119d20a09c5fa6336874707af16d1ff060dedfa5cb36eed36d",
+    "name": "DEFMERGE.EXE"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 10,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "DFL"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x47d680",
+        "references": [
+          {
+            "from": "0x482030",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "Defaults Files (*.dfl)|*.dfl|All Files (*.*)|*.*||"
+      },
+      {
+        "address": "0x47e15c",
+        "references": [],
+        "section": ".rdata",
+        "text": "defes60.dfl"
+      },
+      {
+        "address": "0x47e168",
+        "references": [],
+        "section": ".rdata",
+        "text": "defnew.dfl"
+      }
+    ],
+    "total": 3
+  },
+  "summary": "3 strings match \"DFL\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ev_535432f596ba2be1a45347c4663a805eb8ed3b03269ae60cdff25a46f8023b30",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 12,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Density"
+  },
+  "result": {
+    "functions": 2,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x101efa40",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateStitchDensityGivenRes@PhotoFillDynamic@@UBENABVStitchCriteria@@ABVGeoRect@@ABVLongPoint@@@Z",
+        "size": 287
+      },
+      {
+        "address": "0x101efb60",
+        "demangled": null,
+        "kind": "function",
+        "name": "?EstimateStitchDensityGivenRes@PhotoFillPredefined@@UBENABVStitchCriteria@@ABVGeoRect@@ABVLongPoint@@@Z",
+        "size": 2060
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 functions and 0 imports match \"Density\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

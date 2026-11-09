@@ -1,0 +1,49 @@
+{
+  "id": "ev_41e6da95d7f3eaf7930f6cfc582f72353e694a2d0f65df3e2670e1c73cf9da9a",
+  "subject": {
+    "kind": "pe",
+    "sha256": "8078d02899c433d416153d708f4945a07a3a71741efd0585f5d78c7893f66739",
+    "name": "RESOURCE.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 5,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "too large"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x100b5346",
+        "references": [],
+        "section": ".rsrc",
+        "text": ")Cannot delete all the patches in a letterPThe design cannot be output, because it is too large for the selected file type."
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"too large\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

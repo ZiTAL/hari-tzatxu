@@ -1,0 +1,77 @@
+{
+  "id": "ev_32a16b03f5f08d5da2504b6ebb1800df32398f5b225ef447f7f5edc4ae567d8e",
+  "subject": {
+    "kind": "pe",
+    "sha256": "faabe3e689f5f07c59eb283be2e797db4c7b233bb2b4888691641fe9c4320eb3",
+    "name": "IMPORT.DLL"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 3,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Stitch"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x10379434",
+        "references": [
+          {
+            "from": "0x10378bbc",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "printOptions_numStitches"
+      },
+      {
+        "address": "0x10379ad4",
+        "references": [
+          {
+            "from": "0x103789b8",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "showStitches"
+      },
+      {
+        "address": "0x10379b30",
+        "references": [
+          {
+            "from": "0x10378994",
+            "function": null
+          }
+        ],
+        "section": ".rdata",
+        "text": "stitchViewType"
+      }
+    ],
+    "total": 236
+  },
+  "summary": "236 strings match \"Stitch\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 3,
+    "total": 236,
+    "next_offset": 3
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,111 @@
+{
+  "id": "ev_5574845b7c6728d533f2d186de119027b65b9ec5754348c3551ee5366e9d969a",
+  "subject": {
+    "kind": "pe",
+    "sha256": "25988c9b9b7d18fac7fa11b3bee93f8da47413940d272f6a78003949c65bbd81",
+    "name": "MOD1.DLL"
+  },
+  "operation": "native_functions_search",
+  "params": {
+    "case_sensitive": false,
+    "limit": 10,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "HoopLibrary"
+  },
+  "result": {
+    "functions": 20,
+    "imports": 0,
+    "matches": [
+      {
+        "address": "0x10095560",
+        "demangled": null,
+        "kind": "function",
+        "name": "?SetLastUsedHoopsData@HoopLibrary@@QAEXABVDataItem@@@Z",
+        "size": 8
+      },
+      {
+        "address": "0x100955c0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetHoopLibrary@EmbroideryMachine@@SAPAVHoopLibrary@@XZ",
+        "size": 6
+      },
+      {
+        "address": "0x1009b1f0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetHoopData@HoopLibrary@@QBEPBVDataItem@@H@Z",
+        "size": 210
+      },
+      {
+        "address": "0x1009b810",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetMatchingHoop@HoopLibrary@@QBEPBVDataItem@@INN@Z",
+        "size": 267
+      },
+      {
+        "address": "0x1009b920",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetMatchingHoop@HoopLibrary@@QBEPBVDataItem@@ABVString@@@Z",
+        "size": 313
+      },
+      {
+        "address": "0x1009ba60",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetBestFittingHoop@HoopLibrary@@QAEPBVDataItem@@INNN@Z",
+        "size": 322
+      },
+      {
+        "address": "0x1009bbb0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?GetLastUsedHoopForMachine@HoopLibrary@@QBEPBVDataItem@@I@Z",
+        "size": 258
+      },
+      {
+        "address": "0x1009bcc0",
+        "demangled": null,
+        "kind": "function",
+        "name": "?PutLastUsedHoopForMachine@HoopLibrary@@QAEXIABVDataItem@@@Z",
+        "size": 193
+      },
+      {
+        "address": "0x1009bd90",
+        "demangled": null,
+        "kind": "function",
+        "name": "?CreateUserDefinedHoopPrototype@HoopLibrary@@QBEXAAVDataItem@@@Z",
+        "size": 691
+      },
+      {
+        "address": "0x1009c050",
+        "demangled": null,
+        "kind": "function",
+        "name": "?HasHoop@HoopLibrary@@QBEHABVDataItem@@H@Z",
+        "size": 908
+      }
+    ],
+    "total": 20
+  },
+  "summary": "20 functions and 0 imports match \"HoopLibrary\".",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "partial",
+    "examined": 10,
+    "total": 20,
+    "next_offset": 10
+  },
+  "locations": [],
+  "links": []
+}
