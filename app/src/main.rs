@@ -1,4 +1,4 @@
-//! Stitch Studio - an embroidery workspace that needs no USB key.
+//! hari-tzatxu - an embroidery workspace that needs no USB key.
 
 #![cfg_attr(
     all(not(debug_assertions), target_os = "windows"),
@@ -17,13 +17,13 @@ use eframe::egui;
 use lang::t;
 use std::path::PathBuf;
 
-pub(crate) const APP_TITLE: &str = "Stitch Studio";
+pub(crate) const APP_TITLE: &str = "hari-tzatxu";
 
 fn main() -> eframe::Result<()> {
     if std::env::args().any(|a| a == "--help" || a == "-h") {
-        println!("Stitch Studio — an embroidery workspace that needs no USB key");
+        println!("hari-tzatxu — an embroidery workspace that needs no USB key");
         println!();
-        println!("Usage: stitch_studio [--lang <code>] [--screenshot <file.png>]");
+        println!("Usage: hari-tzatxu [--lang <code>] [--screenshot <file.png>]");
         println!("  --lang <code>            en, es or eu (or any language file in lang/)");
         println!("  --screenshot <file.png>  draw a few frames, save the window as a PNG, exit");
         println!();

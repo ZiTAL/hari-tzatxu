@@ -1,6 +1,6 @@
 {
   "_name": "English",
-  "app.title": "Stitch Studio",
+  "app.title": "hari-tzatxu",
   "app.tagline": "EMBROIDERY WORKSPACE",
   "app.window": "Embroidery Workspace",
   "menu.file": "File",
@@ -172,7 +172,7 @@
   "dialog.tip": "Tip: double-click a file to open it",
   "dialog.name_first": "Give the file a name first.",
   "filter.design": "Design",
-  "filter.designs": "Stitch Studio designs",
+  "filter.designs": "hari-tzatxu designs",
   "filter.dst": "DST stitch files",
   "filter.svg": "SVG drawings",
   "filter.csv": "Stitch lists",

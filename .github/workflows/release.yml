@@ -98,13 +98,13 @@ jobs:
               version="$(sed -n 's/^version = "\(.*\)"/\1/p' app/Cargo.toml | head -n1)"
               ;;
           esac
-          name="stitch-studio-${version}-${{ matrix.name }}"
+          name="hari-tzatxu-${version}-${{ matrix.name }}"
           out="dist/${name}"
           mkdir -p "$out"
-          cp "app/target/${{ matrix.target }}/release/stitch_studio${{ matrix.ext }}" "$out/"
+          cp "app/target/${{ matrix.target }}/release/hari-tzatxu${{ matrix.ext }}" "$out/"
           cp app/README.md app/TRANSLATING.md app/MECHANICS.md DOCUMENTATION.md "$out/"
           cp -r app/lang "$out/"
-          chmod +x "$out/stitch_studio" 2>/dev/null || true
+          chmod +x "$out/hari-tzatxu" 2>/dev/null || true
           cd dist
           if [ "${{ matrix.archive }}" = "zip" ]; then
             zip -r "${name}.zip" "$name"
@@ -142,9 +142,12 @@ jobs:
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
-          name: Stitch Studio ${{ github.ref_name }}
+          name: hari-tzatxu ${{ github.ref_name }}
           body: |
-            Stitch Studio ${{ github.ref_name }} — native embroidery workspace.
+            hari-tzatxu ${{ github.ref_name }} — native embroidery workspace.
+
+            This release renames the application from Stitch Studio to
+            hari-tzatxu.
 
             Downloads:
             - `linux-x64` — x86_64 Linux

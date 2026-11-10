@@ -686,7 +686,7 @@ mod tests {
     use crate::model::demo_project;
 
     fn out_dir() -> PathBuf {
-        let d = std::env::temp_dir().join("stitch-studio-tests");
+        let d = std::env::temp_dir().join("hari-tzatxu-tests");
         std::fs::create_dir_all(&d).unwrap();
         d
     }

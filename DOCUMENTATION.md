@@ -1,6 +1,6 @@
-# Stitch Studio — Repository Documentation
+# hari-tzatxu — Repository Documentation
 
-> Generated on 2026-11-09. The code was reorganised into the module layout described below.
+> Generated on 2026-11-10. The code was reorganised into the module layout described below.
 > Repository: <https://github.com/ZiTAL/hari-tzatxu>
 
 This document describes everything in the repository: the application, its
@@ -33,7 +33,7 @@ artifacts, and the reverse-engineering evidence that informed the rebuild.
 
 ## 1. What this repository is
 
-Stitch Studio is a native desktop embroidery workspace written in Rust with
+hari-tzatxu is a native desktop embroidery workspace written in Rust with
 the `egui`/`eframe` GUI toolkit. It is a **new program**, not a patched copy of
 the original Windows application.
 
@@ -60,9 +60,9 @@ The original files were read only; they were never modified or redistributed.
 
 | Property | Value |
 |---|---|
-| Application name | Stitch Studio |
-| Cargo package / binary | `stitch_studio` |
-| Version | 0.1.0 |
+| Application name | hari-tzatxu |
+| Cargo package / binary | `hari-tzatxu` |
+| Version | 0.2.0 |
 | Language / edition | Rust, edition 2021 |
 | GUI | `eframe` / `egui` 0.28.1 |
 | Image output | `image` 0.25.10, PNG only |
@@ -207,9 +207,9 @@ started from the repository root with
 `--help` prints:
 
 ```text
-Stitch Studio — an embroidery workspace that needs no USB key
+hari-tzatxu — an embroidery workspace that needs no USB key
 
-Usage: stitch_studio [--lang <code>] [--screenshot <file.png>]
+Usage: hari-tzatxu [--lang <code>] [--screenshot <file.png>]
   --lang <code>            en, es or eu (or any language file in lang/)
   --screenshot <file.png>  draw a few frames, save the window as a PNG, exit
 
@@ -236,13 +236,13 @@ directory if needed, writes the PNG with `image::save_buffer`, prints
 The saved language file is:
 
 ```text
-$XDG_CONFIG_HOME/stitch-studio/settings.json
+$XDG_CONFIG_HOME/hari-tzatxu/settings.json
 ```
 
 or, when `XDG_CONFIG_HOME` is unset:
 
 ```text
-~/.config/stitch-studio/settings.json
+~/.config/hari-tzatxu/settings.json
 ```
 
 It contains only the language code:
@@ -260,10 +260,10 @@ tag is pushed:
 
 | Asset | Rust target |
 |---|---|
-| `stitch-studio-<version>-linux-x64.tar.gz` | `x86_64-unknown-linux-gnu` |
-| `stitch-studio-<version>-windows-x64.zip` | `x86_64-pc-windows-gnu` |
-| `stitch-studio-<version>-linux-arm64.tar.gz` | `aarch64-unknown-linux-gnu` |
-| `stitch-studio-<version>-linux-riscv64.tar.gz` | `riscv64gc-unknown-linux-gnu` |
+| `hari-tzatxu-<version>-linux-x64.tar.gz` | `x86_64-unknown-linux-gnu` |
+| `hari-tzatxu-<version>-windows-x64.zip` | `x86_64-pc-windows-gnu` |
+| `hari-tzatxu-<version>-linux-arm64.tar.gz` | `aarch64-unknown-linux-gnu` |
+| `hari-tzatxu-<version>-linux-riscv64.tar.gz` | `riscv64gc-unknown-linux-gnu` |
 
 Each archive contains the binary, `README.md`, `TRANSLATING.md`,
 `MECHANICS.md`, `DOCUMENTATION.md`, and the `lang/` folder. The workflow also
@@ -396,7 +396,7 @@ The state is centralised in `App`:
 | Derived data | `seq: Vec<Step>`, `stats: Stats` |
 | History | `undo: Vec<Vec<Obj>>`, `redo: Vec<Vec<Obj>>`, `prop_drag`, `hoop_drag` |
 | Transient UI | `tab`, `help_open`, `about_open`, `toast`, `dialog`, `shot`, `quit` |
-| Build identity | `APP_TITLE = "Stitch Studio"` |
+| Build identity | `APP_TITLE = "hari-tzatxu"` |
 
 Every model change follows the same pattern:
 
@@ -886,7 +886,7 @@ for the rest of the session.
 
 ```text
 ┌────────────────────────────────────────────────────────────────────┐
-│ logo  Stitch Studio   File Edit View Stitch Help      Language [en]│
+│ logo  hari-tzatxu   File Edit View Stitch Help      Language [en]│
 │ toolbar: tools | undo redo | fit grid rulers stitches | zoom | fit │
 ├──────────────┬──────────────────────────────────┬──────────────────┤
 │ DESIGN       │                                  │ Threads Settings │

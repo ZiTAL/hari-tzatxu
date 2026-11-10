@@ -227,7 +227,7 @@ fn config_file() -> Option<PathBuf> {
     let base = std::env::var_os("XDG_CONFIG_HOME")
         .map(PathBuf::from)
         .or_else(|| std::env::var_os("HOME").map(|h| PathBuf::from(h).join(".config")))?;
-    Some(base.join("stitch-studio").join("settings.json"))
+    Some(base.join("hari-tzatxu").join("settings.json"))
 }
 
 pub fn saved_language() -> Option<String> {

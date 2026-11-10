@@ -1,6 +1,6 @@
 {
   "_name": "Español",
-  "app.title": "Stitch Studio",
+  "app.title": "hari-tzatxu",
   "app.tagline": "TALLER DE BORDADO",
   "app.window": "Taller de bordado",
   "menu.file": "Archivo",
@@ -172,7 +172,7 @@
   "dialog.tip": "Consejo: haz doble clic en un archivo para abrirlo",
   "dialog.name_first": "Primero pon un nombre al archivo.",
   "filter.design": "Diseño",
-  "filter.designs": "Diseños de Stitch Studio",
+  "filter.designs": "Diseños de hari-tzatxu",
   "filter.dst": "Archivos de puntadas DST",
   "filter.svg": "Dibujos SVG",
   "filter.csv": "Listas de puntadas",

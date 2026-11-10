@@ -1,4 +1,4 @@
-# Translating Stitch Studio
+# Translating hari-tzatxu
 
 All the text in the window lives in the `lang` folder, one file per
 language:
@@ -43,9 +43,9 @@ The language then appears in the picker at the top right of the window
 ## Choosing the language
 
 - The picker at the top right of the window, or
-- `stitch_studio --lang es` on the command line, or
+- `hari-tzatxu --lang es` on the command line, or
 - leave it alone and the program remembers the last choice (saved in
-  `~/.config/stitch-studio/settings.json`).
+  `~/.config/hari-tzatxu/settings.json`).
 
 ## Checking a file
 

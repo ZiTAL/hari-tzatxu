@@ -1,6 +1,6 @@
 {
   "_name": "Euskara",
-  "app.title": "Stitch Studio",
+  "app.title": "hari-tzatxu",
   "app.tagline": "BRODATZE-TAILERRA",
   "app.window": "Brodatze-tailerra",
   "menu.file": "Fitxategia",
@@ -172,7 +172,7 @@
   "dialog.tip": "Aholkua: egin klik bikoitza fitxategi bat irekitzeko",
   "dialog.name_first": "Eman lehenengo izen bat fitxategiari.",
   "filter.design": "Diseinua",
-  "filter.designs": "Stitch Studio diseinuak",
+  "filter.designs": "hari-tzatxu diseinuak",
   "filter.dst": "DST puntu-fitxategiak",
   "filter.svg": "SVG marrazkiak",
   "filter.csv": "Puntu-zerrendak",

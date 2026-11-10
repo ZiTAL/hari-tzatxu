@@ -1,4 +1,4 @@
-# Stitch Studio
+# hari-tzatxu
 
 A desktop embroidery workspace that starts with no USB key and opens no
 network connection.
@@ -9,9 +9,9 @@ network connection.
 
 ## Options
 
-    stitch_studio --lang es              start in Spanish (en, es, eu)
-    stitch_studio --screenshot shot.png  draw the window, save a PNG, exit
-    stitch_studio --help
+    hari-tzatxu --lang es              start in Spanish (en, es, eu)
+    hari-tzatxu --screenshot shot.png  draw the window, save a PNG, exit
+    hari-tzatxu --help
 
 ## What it does
 
