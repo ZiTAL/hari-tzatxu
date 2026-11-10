@@ -1,0 +1,160 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    name: Build ${{ matrix.name }}
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: x86_64-unknown-linux-gnu
+            name: linux-x64
+            packages: ""
+            linker: ""
+            rustflags: ""
+            ext: ""
+            archive: tar.gz
+          - target: x86_64-pc-windows-gnu
+            name: windows-x64
+            packages: gcc-mingw-w64-x86-64
+            linker: x86_64-w64-mingw32-gcc
+            rustflags: "-C target-feature=+crt-static"
+            ext: ".exe"
+            archive: zip
+          - target: aarch64-unknown-linux-gnu
+            name: linux-arm64
+            packages: gcc-aarch64-linux-gnu
+            linker: aarch64-linux-gnu-gcc
+            rustflags: ""
+            ext: ""
+            archive: tar.gz
+          - target: riscv64gc-unknown-linux-gnu
+            name: linux-riscv64
+            packages: gcc-riscv64-linux-gnu
+            linker: riscv64-linux-gnu-gcc
+            rustflags: ""
+            ext: ""
+            archive: tar.gz
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Install cross compiler
+        if: matrix.packages != ''
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ${{ matrix.packages }}
+
+      - name: Cache cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: ${{ runner.os }}-${{ matrix.target }}-${{ hashFiles('app/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.target }}-
+
+      - name: Build
+        env:
+          RUSTFLAGS: ${{ matrix.rustflags }}
+        run: |
+          set -euo pipefail
+          if [ -n "${{ matrix.linker }}" ]; then
+            target_key="$(printf '%s' '${{ matrix.target }}' | tr '[:lower:]-' '[:upper:]_')"
+            export "CARGO_TARGET_${target_key}_LINKER=${{ matrix.linker }}"
+            target_env="$(printf '%s' '${{ matrix.target }}' | tr '-' '_')"
+            export "CC_${target_env}=${{ matrix.linker }}"
+          fi
+          cargo build --release --locked \
+            --manifest-path app/Cargo.toml \
+            --target "${{ matrix.target }}"
+
+      - name: Package
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF_NAME#v}"
+          case "$version" in
+            v*|main|master)
+              version="$(sed -n 's/^version = "\(.*\)"/\1/p' app/Cargo.toml | head -n1)"
+              ;;
+          esac
+          name="stitch-studio-${version}-${{ matrix.name }}"
+          out="dist/${name}"
+          mkdir -p "$out"
+          cp "app/target/${{ matrix.target }}/release/stitch_studio${{ matrix.ext }}" "$out/"
+          cp app/README.md app/TRANSLATING.md app/MECHANICS.md DOCUMENTATION.md "$out/"
+          cp -r app/lang "$out/"
+          chmod +x "$out/stitch_studio" 2>/dev/null || true
+          cd dist
+          if [ "${{ matrix.archive }}" = "zip" ]; then
+            zip -r "${name}.zip" "$name"
+          else
+            tar -czf "${name}.tar.gz" "$name"
+          fi
+          sha256sum "${name}.${{ matrix.archive }}" > "SHA256SUMS-${{ matrix.name }}.txt"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.name }}
+          path: |
+            dist/*.${{ matrix.archive }}
+            dist/SHA256SUMS-${{ matrix.name }}.txt
+          if-no-files-found: error
+
+  release:
+    name: Publish GitHub release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: Create checksums
+        run: |
+          cd artifacts
+          sha256sum * > SHA256SUMS.txt
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Stitch Studio ${{ github.ref_name }}
+          body: |
+            Stitch Studio ${{ github.ref_name }} — native embroidery workspace.
+
+            Downloads:
+            - `linux-x64` — x86_64 Linux
+            - `windows-x64` — x86_64 Windows (standalone executable, static CRT)
+            - `linux-arm64` — aarch64 Linux
+            - `linux-riscv64` — riscv64gc Linux
+
+            Each archive contains the program, the language files, and the
+            project documentation. Check `SHA256SUMS.txt` for checksums.
+
+            The program needs no USB key and contains no network code.
+          files: artifacts/*
+          generate_release_notes: true

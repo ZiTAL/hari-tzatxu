@@ -114,7 +114,7 @@ hari-tzatxu/
 │   │   └── eu.json                 Basque labels
 │   ├── shots/                      Screenshots from development, 1280 × 820 PNG
 │   ├── src/
-│   │   ├── main.rs                 Entry point, CLI and font setup (93 lines)
+│   │   ├── main.rs                 Entry point, CLI and font setup (98 lines)
 │   │   ├── app/
 │   │   │   ├── mod.rs              App state, actions, ticks, eframe loop (551 lines)
 │   │   │   ├── chrome.rs           Top/bottom bars, menus and toolbar (498 lines)
@@ -253,6 +253,28 @@ It contains only the language code:
 }
 ```
 
+### Release builds
+
+`.github/workflows/release.yml` builds four release archives whenever a `v*`
+tag is pushed:
+
+| Asset | Rust target |
+|---|---|
+| `stitch-studio-<version>-linux-x64.tar.gz` | `x86_64-unknown-linux-gnu` |
+| `stitch-studio-<version>-windows-x64.zip` | `x86_64-pc-windows-gnu` |
+| `stitch-studio-<version>-linux-arm64.tar.gz` | `aarch64-unknown-linux-gnu` |
+| `stitch-studio-<version>-linux-riscv64.tar.gz` | `riscv64gc-unknown-linux-gnu` |
+
+Each archive contains the binary, `README.md`, `TRANSLATING.md`,
+`MECHANICS.md`, `DOCUMENTATION.md`, and the `lang/` folder. The workflow also
+publishes `SHA256SUMS.txt` on the GitHub release. A manual
+`workflow_dispatch` run builds and uploads the same artifacts without creating
+a release.
+
+The Windows build uses the GNU target with static CRT linking and the Windows
+GUI subsystem in release mode. The Linux cross builds use the Ubuntu
+`gcc-<arch>-linux-gnu` toolchains.
+
 ### Build configuration and portability
 
 Both `.cargo/config.toml` files use paths relative to their own location, so
@@ -308,7 +330,7 @@ with the normal system compiler).
 
 | File | Lines | Responsibility |
 |---|---:|---|
-| `app/src/main.rs` | 93 | Crate declarations, `main`, CLI parsing, window setup, font installation |
+| `app/src/main.rs` | 98 | Crate declarations, `main`, CLI parsing, window setup, font installation |
 | `app/src/app/mod.rs` | 551 | `App` state, constructors, document actions, shortcuts, simulation/screenshot ticks, eframe loop |
 | `app/src/app/chrome.rs` | 498 | Top bar, language picker, menus, toolbar, transport bar, status bar |
 | `app/src/app/panels.rs` | 771 | Design/summary/object panel, Threads/Settings/Plan tabs |

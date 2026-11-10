@@ -1,5 +1,10 @@
 //! Stitch Studio - an embroidery workspace that needs no USB key.
 
+#![cfg_attr(
+    all(not(debug_assertions), target_os = "windows"),
+    windows_subsystem = "windows"
+)]
+
 mod app;
 mod io;
 mod lang;
